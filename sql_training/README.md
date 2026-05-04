@@ -226,8 +226,8 @@ order by department_id, ranked;
 
 ### 練習題
 
-- **LC 1225. Report Contiguous Dates** — CTE 處理連續日期分組（Islands and Gaps）-> [link](report_contiguous_dates/README.md)
-- **LC 1270. All People Report to the Given Manager** — 遞迴 CTE 找管理鏈
+- **LC 1225. Report Contiguous Dates** — CTE 處理連續日期分組（Islands and Gaps）-> [link](report_contiguous_dates)
+- **LC 1270. All People Report to the Given Manager** — 遞迴 CTE 找管理鏈 -> [link](all_people_report_to_the_given_manager/README.md)
 - **LC 1384. Total Sales Amount by Year** — 遞迴 CTE 生成日期序列
 - **LC 1613. Find the Missing IDs** — 遞迴 CTE 生成連續數列
 - **LC 1767. Find the Subtasks That Did Not Execute** — 遞迴 CTE + LEFT JOIN
