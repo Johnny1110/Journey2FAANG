@@ -52,3 +52,4 @@ link: https://leetcode.com/problem-list/plakya4j
 37. Insert Interval -> [link](insertinterval)
 38. Permutation in String -> [link](permutation_in_string)
 39. Subtree of Another Tree -> [link](subtree_of_another_tree)
+40. Unique Paths -> [link](unique_paths)
