@@ -92,3 +92,20 @@ INSERT INTO employees (employee_id, employee_name, manager_id) VALUES
 (9,  'Angela', 8),
 (77, 'Robert', 1);
 ```
+
+<br>
+
+## New Skill: RECURSIVE CTE
+
+```sql
+WITH RECURSIVE cte_name AS (
+    -- 1. Anchor member (base case): runs ONCE
+    SELECT ...
+    
+    UNION ALL
+    
+    -- 2. Recursive member: runs REPEATEDLY
+    SELECT ... FROM cte_name WHERE ...
+)
+SELECT * FROM cte_name;
+```
