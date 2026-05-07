@@ -53,4 +53,6 @@ link: https://leetcode.com/problem-list/plakya4j
 38. Permutation in String -> [link](permutation_in_string)
 39. Subtree of Another Tree -> [link](subtree_of_another_tree)
 40. Unique Paths -> [link](unique_paths)
-41. Plus One -> [link](plus_one/README.md)
+41. Plus One -> [link](plus_one)
+42. Climbing Stairs -> [link](climbing_stairs)
+43. Edit Distance -> [link](edit_distance)
