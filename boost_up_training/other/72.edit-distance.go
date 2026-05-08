@@ -1,14 +1,10 @@
-# 72. Edit Distance
+/*
+ * @lc app=leetcode id=72 lang=golang
+ *
+ * [72] Edit Distance
+ */
 
-<br>
-
----
-
-<br>
-
-## Coding
-
-```go
+// @lc code=start
 func minDistance(word1 string, word2 string) int {
 	// define dp: dp[i][j] = from word1[i] to word2[j] need how many step
 	dp := make([][]int, len(word1)+1)
@@ -48,17 +44,12 @@ func minDistance(word1 string, word2 string) int {
 
 	return dp[len(word1)][len(word2)]
 }
-```
 
-<br>
-<br>
+// Input: word1 = "horse", word2 = "ros"
+// Output: 3
+// Explanation:
+// horse -> rorse (replace 'h' with 'r')
+// rorse -> rose (remove 'r')
+// rose -> ros (remove 'e')
+// @lc code=end
 
-## Time & Space Complexity
-
-```
-Assume: word1 length is m, word2 length is n
-
-Time: O(m*n)
- 
-Space: O(m*n)
-```
