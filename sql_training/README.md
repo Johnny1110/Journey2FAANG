@@ -230,7 +230,7 @@ order by department_id, ranked;
 - **LC 1270. All People Report to the Given Manager** — 遞迴 CTE 找管理鏈 -> [link](all_people_report_to_the_given_manager)
 - **LC 1384. Total Sales Amount by Year** — 遞迴 CTE 生成日期序列 -> [link](total_sales_amount_by_year)
 - **LC 1613. Find the Missing IDs** — 遞迴 CTE 生成連續數列 -> [link](find_the_missing_ids)
-- **LC 1767. Find the Subtasks That Did Not Execute** — 遞迴 CTE + LEFT JOIN
+- **LC 1767. Find the Subtasks That Did Not Execute** — 遞迴 CTE + LEFT JOIN -> [link](find_the_subtasks_that_did_not_execute/README.md)
 - **LC 185（改用 CTE 重寫）** — 對比子查詢版本的清晰度差異
 
 ### Phase 4 自我檢測
