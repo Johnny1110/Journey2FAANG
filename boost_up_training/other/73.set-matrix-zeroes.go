@@ -6,26 +6,68 @@
 
 // @lc code=start
 func setZeroes(matrix [][]int) {
-	// find all 0 at first
-	// dfs expolore.
-	idxs := [][]int{} // could replace with 1D array.
-	for i := 0; i < len(matrix); i++ {
-		for j := 0; j < len(matrix[i]); j++ {
-			if matrix[i][j] == 0 {
-				idxs = append(idxs, []int{i, j})
+	m, n := len(matrix), len(matrix[0])
+
+	firstRowHasZero := false
+
+	// handle first row
+	for i := 0; i < n; i++ {
+		if matrix[0][i] == 0 {
+			firstRowHasZero = true
+			break
+		}
+	}
+
+	// handle first col
+	for i := 0; i < m; i++ {
+		if matrix[i][0] == 0 {
+			matrix[0][0] = 0
+			break
+		}
+	}
+
+	// run others
+	for row := 1; row < m; row++ {
+		for col := 1; col < n; col++ {
+			if matrix[row][col] == 0 {
+				matrix[0][col] = 0
+				matrix[row][0] = 0
 			}
 		}
 	}
 
-	for _, idx := range idxs {
-		row, col := idx[0], idx[1]
-		for i := 0; i < len(matrix); i++ {
-			matrix[i][col] = 0
-		}
-		for i := 0; i < len(matrix[row]); i++ {
-			matrix[row][i] = 0
+	//fmt.Printf("matrix: %v \n", matrix)
+
+	//--------------------------------------
+	for col := 1; col < n; col++ {
+		if matrix[0][col] == 0 {
+			for row := 1; row < m; row++ {
+				matrix[row][col] = 0
+			}
 		}
 	}
+
+	for row := 1; row < m; row++ {
+		if matrix[row][0] == 0 {
+			for col := 1; col < n; col++ {
+				matrix[row][col] = 0
+			}
+		}
+	}
+
+	// handle first row & col
+	if matrix[0][0] == 0 {
+		for row := 0; row < m; row++ {
+			matrix[row][0] = 0
+		}
+	}
+
+	if firstRowHasZero {
+		for col := 0; col < n; col++ {
+			matrix[0][col] = 0
+		}
+	}
+
 }
 
 // @lc code=end
