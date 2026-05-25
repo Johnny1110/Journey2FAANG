@@ -231,7 +231,7 @@ order by department_id, ranked;
 - **LC 1384. Total Sales Amount by Year** — 遞迴 CTE 生成日期序列 -> [link](total_sales_amount_by_year)
 - **LC 1613. Find the Missing IDs** — 遞迴 CTE 生成連續數列 -> [link](find_the_missing_ids)
 - **LC 1767. Find the Subtasks That Did Not Execute** — 遞迴 CTE + LEFT JOIN -> [link](find_the_subtasks_that_did_not_execute)
-- **LC 185（改用 CTE 重寫）** — 對比子查詢版本的清晰度差異 -> [link](department_top_three_salaries_CTE/README.md)
+- **LC 185（改用 CTE 重寫）** — 對比子查詢版本的清晰度差異 -> [link](department_top_three_salaries_CTE)
 
 ### Phase 4 自我檢測
 
@@ -262,8 +262,8 @@ order by department_id, ranked;
 
 ### 練習題
 
-- **LC 196. Delete Duplicate Emails** — DELETE + 自連接保留最小 ID
-- **LC 627. Swap Salary** — UPDATE + CASE WHEN 值交換
+- **LC 196. Delete Duplicate Emails** — DELETE + 自連接保留最小 ID -> [link](delete_duplicate_emails)
+- **LC 627. Swap Salary** — UPDATE + CASE WHEN 值交換 -> [link](swap_salary/README.md)
 - **LC 1873. Calculate Special Bonus** — 條件 UPDATE
 - **練習題（自設）**：寫一個 UPSERT — 如果 user_id 存在就更新 last_login，不存在就插入新行
 - **練習題（自設）**：用 `INSERT INTO ... SELECT` 把統計結果寫入報表表
