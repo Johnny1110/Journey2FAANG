@@ -7,14 +7,14 @@ This project is my self training prject to chasing FAANG software engineer.
 Category: `boost_up_training/`
 
 * basic intro (beginner): boost_up_training/README.md (done)
-* neetcode-150: boost_up_training/neetcode150 (my current progression)
+* neetcode-150: boost_up_training/neetcode150 < (my current progression)
 * neetcode-300: boost_up_training/neetcode300 (pending)
 
 ## SQL Traning
 
 Category: `sql_training/`
 
-* basic intro (begineer): sql_training/README.md (my current progression)
+* basic intro (begineer): sql_training/README.md < (my current progression)
 
 ## System Design
 
