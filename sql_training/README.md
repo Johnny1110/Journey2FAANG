@@ -239,6 +239,61 @@ order by department_id, ranked;
 這需要遞迴 CTE 遍歷管理鏈。
 
 <br>
+
+Assume table:
+
+```sql
+-- CEO id is 1 and only report to himself
+create table employee (
+    id int unique,
+    name varchar(50),
+    report_to int not null
+);
+```
+
+<br>
+
+```sql
+-- Testing data
+insert into employee
+values (1, 'CEO', 1),
+       (2, 'CTO', 2),
+       (3, 'B', 1),
+       (4, 'C', 1),
+       (5, 'D', 4),
+       (6, 'E', 5),
+       (7, 'F', 6),
+       (8, 'F', 6);
+```
+
+<br>
+
+Expect answer is:
+
+```
+3, 4, 5, 6, 7, 8
+```
+
+<br>
+
+Solution:
+
+```sql
+
+with recursive cte as (select id, name, report_to
+                       from employee e
+                       where report_to = 1
+                         and report_to != id
+                       union all
+                       select e.id, e.name, e.report_to
+                       from employee e
+                                join cte c on c.id = e.report_to)
+select name
+from cte;
+```
+
+
+<br>
 <br>
 
 ---
