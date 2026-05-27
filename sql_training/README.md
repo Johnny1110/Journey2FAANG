@@ -318,8 +318,8 @@ from cte;
 ### 練習題
 
 - **LC 196. Delete Duplicate Emails** — DELETE + 自連接保留最小 ID -> [link](delete_duplicate_emails)
-- **LC 627. Swap Salary** — UPDATE + CASE WHEN 值交換 -> [link](swap_salary/README.md)
-- **LC 1873. Calculate Special Bonus** — 條件 UPDATE
+- **LC 627. Swap Salary** — UPDATE + CASE WHEN 值交換 -> [link](swap_salary)
+- **LC 1873. Calculate Special Bonus** — 條件 UPDATE -> [link](calculate_special_bonus)
 - **練習題（自設）**：寫一個 UPSERT — 如果 user_id 存在就更新 last_login，不存在就插入新行
 - **練習題（自設）**：用 `INSERT INTO ... SELECT` 把統計結果寫入報表表
 
