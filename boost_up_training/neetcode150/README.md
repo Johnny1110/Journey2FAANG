@@ -58,4 +58,4 @@ link: https://leetcode.com/problem-list/plakya4j
 43. Edit Distance -> [link](edit_distance) -> Levenshtein distance 要多練幾次背熟
 44. Set Matrix Zeroes -> [link](set_matrix_zeroes) -> 空間複雜度要優化 (最優解很刁鑽)
 45. Search a 2D Matrix -> [link](search_a_2d_matrix) -> (Binary Search 很不熟練，要多練習成本能反應)
-46. Minimum Window Substring -> [link](minimum_window_substring/README.md)
+46. Minimum Window Substring -> [link](minimum_window_substring) -> (要重寫一遍以上，把它當最經典的 slide-window 算法考題)
