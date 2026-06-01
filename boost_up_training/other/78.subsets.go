@@ -1,14 +1,10 @@
-# 78. Subsets
+/*
+ * @lc app=leetcode id=78 lang=golang
+ *
+ * [78] Subsets
+ */
 
-<br>
-
----
-
-<br>
-
-## Coding
-
-```go
+// @lc code=start
 func subsets(nums []int) [][]int {
 	result := [][]int{}
 	state := make([]int, 0, len(nums))
@@ -35,20 +31,8 @@ func subsets(nums []int) [][]int {
 
 	return result
 }
-```
 
-* 10/10 cases passed (0 ms)
-* Your runtime beats 100 % of golang submissions
-* Your memory usage beats 83.07 % of golang submissions (4.2 MB)
+// Input: nums = [1,2,3]
+// Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+// @lc code=end
 
-<br>
-
-## Time & Space Complexity
-
-```
-Assume: n = len(nums)
-
-Time: O(2 的 m 次方)
-
-Space: O()
-```
