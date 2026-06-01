@@ -28,6 +28,7 @@
 2. Ethereum MPT 世界樹實作
 3. Merkle Tree 實作
 4. 地址生成，交易簽名驗證，ecrecover 還原地址
+5. EVM stack opcode 部分實現
 
 <br>
 
