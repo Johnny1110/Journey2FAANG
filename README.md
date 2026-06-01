@@ -158,7 +158,7 @@ Behavioral: -> [link](behavioral_training/README.md)
 
 1. 2026/02/14 __Circle__ Golang Backend 90 mins Algo Test (1面失敗)-> [link](interview_in_action/circle_260214)
 2. 2026/03/09 __Binance__ Binance KYC Module Backend Interview (1面過關，2面失敗) -> [link](interview_in_action/binance_260309)
-
+3. 2026/06/02 __MaiCoin__ MaiCoin Blockchain Engineer (Wallet Team) -> [link](interview_in_action/maicoin_260602/README.md)
 
 <br>
 <br>
