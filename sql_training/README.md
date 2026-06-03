@@ -369,7 +369,7 @@ delete from person where id not in (
 
 ## Phase 6：Pivot / 行列轉換 與報表格式化
 
-**為什麼特別獨立這一章**：你幣安面試的 SQL 第二題，最後要把結果轉成橫向欄位格式，就是 Pivot。這類題型看似簡單但如果沒練過，現場很難即興寫出來。
+**為什麼特別獨立這一章**：這類題型看似簡單但如果沒練過，面試現場很難即興寫出來。
 
 ### 核心概念
 
@@ -382,7 +382,7 @@ delete from person where id not in (
 
 ### 練習題
 
-- **LC 618. Students Report By Geography** — 經典行轉列 Pivot
+- **LC 618. Students Report By Geography** — 經典行轉列 Pivot -> [link](students_report_by_geography)
 - **LC 1179. Reformat Department Table** — CASE WHEN Pivot（月份轉欄位）
 - **LC 1777. Product's Price for Each Store** — 條件聚合
 - **LC 1795. Rearrange Products Table** — UNION ALL 反 Pivot
