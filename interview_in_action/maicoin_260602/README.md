@@ -188,3 +188,25 @@ leetcode 還是要持續刷，無論在以前的時代還是 AI 時代，手寫 
 接下來不確定有沒有二面的機會，二面聽說是算法考試．在這之前先維持一天一題 leetcode 來保持手感吧．
 
 <br>
+
+## 二面提前準備
+
+根據網路上的資訊，面試核心為：
+
+* **演算法 / Coding 白板題（最常見）**：LeetCode Medium 難度為主，但 follow-up 很深（時間/空間優化、不同做法比較、edge cases）。過去分享有 2~3 題，會有引導。
+* **System Design**：設計錢包相關系統、交易系統、高併發、區塊鏈整合等。會討論 trade-off、cache、scaling 等。
+* **技術深度 / 專案討論**：依職缺（如 Wallet Team 會問區塊鏈、錢包安全、consensus、crypto 原理）。
+* **Culture Fit / 行為面試**：誠信、正直（加密貨幣產業很重視）、團隊合作、過去挫折等。MaiCoin 特別有「文化面試」環節。
+
+### 算法複習
+
+* LRU Cache
+* Top K
+* BFS / DFS
+* Sliding Window
+* Interval
+* Simulation
+
+### SD 準備
+
+錢包系統的 scaling、安全、出入金流程。
