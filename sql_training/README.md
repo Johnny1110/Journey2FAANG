@@ -326,7 +326,38 @@ from cte;
 ### Phase 5 自我檢測
 
 能不能寫出：「刪除 Person 表中重複的 email，只保留 ID 最小的那條」？  
-注意 MySQL 不允許在 DELETE 的子查詢中引用被刪除的表本身。
+
+Assume Table & Testing Data:
+
+```sql
+create table person
+(
+    id    integer primary key,
+    email varchar(50) not null
+);
+
+insert into person (id, email)
+values (1, 'aaa@gmail.com'),
+       (2, 'bbb@gmail.com'),
+       (3, 'aaa@gmail.com'),
+       (4, 'ccc@gmail.com'),
+       (5, 'aaa@gmail.com'),
+       (6, 'aaa@gmail.com'),
+       (7, 'ccc@gmail.com'),
+       (8, 'aaa@gmail.com'),
+       (9, 'ddd@gmail.com'),
+       (10, 'eee@gmail.com');
+```
+
+Answer:
+
+```sql
+delete from person where id not in (
+    select min(id) from person group by email
+    );
+```
+
+<br>
 
 <br>
 <br>
