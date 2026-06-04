@@ -44,6 +44,7 @@ __質量比數量更重要__
 
 * 訓練集總目錄: -> [link](boost_up_training)
 * NeetCode-150: -> [link](boost_up_training/neetcode150)
+* 面試實戰後的弱項補強 -> [link](boost_up_training/strengthen/README.md)
 
 <br>
 <br>
@@ -158,7 +159,7 @@ Behavioral: -> [link](behavioral_training/README.md)
 
 1. 2026/02/14 __Circle__ Golang Backend 90 mins Algo Test (1面失敗)-> [link](interview_in_action/circle_260214)
 2. 2026/03/09 __Binance__ Binance KYC Module Backend Interview (1面過關，2面失敗) -> [link](interview_in_action/binance_260309)
-3. 2026/06/02 __MaiCoin__ MaiCoin Blockchain Engineer - Wallet Team (1面 ?) -> [link](interview_in_action/maicoin_260602/README.md)
+3. 2026/06/02 __MaiCoin__ MaiCoin Blockchain Engineer - Wallet Team (1面失敗) -> [link](interview_in_action/maicoin_260602/README.md)
 
 <br>
 <br>
