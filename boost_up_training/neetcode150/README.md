@@ -61,3 +61,4 @@ link: https://leetcode.com/problem-list/plakya4j
 46. Minimum Window Substring -> [link](minimum_window_substring) -> (要重寫一遍以上，把它當最經典的 slide-window 算法考題)
 47. Subsets -> [link](subsets)
 48. Word Search -> [link](word_search)
+49. Largest Rectangle in Histogram -> [link](largest_rectangle_in_histogram) (說實話，無法理解...這題應該只能用背的)
