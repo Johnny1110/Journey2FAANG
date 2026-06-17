@@ -384,7 +384,7 @@ delete from person where id not in (
 
 - **LC 618. Students Report By Geography** — 經典行轉列 Pivot -> [link](students_report_by_geography)
 - **LC 1179. Reformat Department Table** — CASE WHEN Pivot（月份轉欄位）-> [link](reformat_department_table)
-- **LC 1777. Product's Price for Each Store** — 條件聚合
+- **LC 1777. Product's Price for Each Store** — 條件聚合 -> [link](product_price_for_each_store)
 - **LC 1795. Rearrange Products Table** — UNION ALL 反 Pivot
 - **練習題（自設，模擬幣安原題）**：給定部門表、員工表、專案表、員工專案關聯表，寫出 Top-3 專案最多的部門並以橫向格式輸出
 
