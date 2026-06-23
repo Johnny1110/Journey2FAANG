@@ -404,6 +404,37 @@ delete from person where id not in (
 |-----|-----|-----|
 | ADMIN | PAYMENT | CORE |
 
+assume:
+
+```sql
+create table phase_6
+(
+    dept          varchar,
+    project_count int
+);
+
+insert into phase_6
+values ('ADMIN', 15),
+       ('PAYMENT', 12),
+       ('CORE', 10);
+```
+
+<br>
+
+answer:
+
+```sql
+select
+    max(case when rank = 1 then dept end) as "1st",
+    max(case when rank = 2 then dept end) as "2st",
+    max(case when rank = 3 then dept end) as "3st"
+    from (
+    select dept,
+           row_number() over (order by project_count desc) as rank
+    from phase_6) as ranked_departments where ranked_departments.rank <= 3;
+```
+
+
 <br>
 <br>
 
