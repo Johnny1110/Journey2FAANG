@@ -468,6 +468,15 @@ select
 - 試一次 `OFFSET 100000 LIMIT 10` vs cursor-based 分頁的效能差異
 - 讀懂一次 Hash Join vs Nested Loop 的 EXPLAIN 輸出
 
+### 模擬情境
+
+以下 4 個情境題模擬真實面試場景，每題包含 table schema、testing data、slow query、EXPLAIN ANALYZE 輸出，以及面試官的追問。請在對應的 `answer.sql` 中撰寫你的診斷與解決方案。
+
+- **Scenario 01 — The Login Slowdown**：function-wrapped column 導致 index 失效（Seq Scan vs Index Scan）-> [link](phase-7/scenario-01-index-failure)
+- **Scenario 02 — The Never-Ending Page Scroll**：OFFSET-based pagination 效能衰退 → cursor-based pagination 改寫 -> [link](phase-7/scenario-02-pagination-pain)
+- **Scenario 03 — The Daily Report That Times Out**：缺少 composite index 導致 Nested Loop 全表掃描 -> [link](phase-7/scenario-03-join-optimization)
+- **Scenario 04 — The Index That Doesn't Work**：composite index 最左前綴法則違反，index 不被使用 -> [link](phase-7/scenario-04-composite-index-design)
+
 ### Phase 7 自我檢測
 
 面試官問你：「這個查詢跑很慢，你怎麼排查？」  

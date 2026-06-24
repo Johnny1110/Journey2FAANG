@@ -1,0 +1,16 @@
+-- Scenario 04: The Index That Doesn't Work
+-- Your leftmost-prefix explanation, corrected index, and design decisions go here.
+--
+-- 1. Why query A (WHERE user_id=? AND created_at>?) cannot use idx_events_status_created_user (status, created_at, user_id):
+--
+-- 2. Corrected index DDL for the dashboard query:
+--
+-- 3. Query-pattern support table for each index:
+--    | Query pattern                           | idx_status_created_user | idx_user_created_at |
+--    |-----------------------------------------|--------------------------|---------------------|
+--    | WHERE status = ?                        |                          |                     |
+--    | WHERE status = ? AND created_at > ?     |                          |                     |
+--    | WHERE user_id = ?                       |                          |                     |
+--    | WHERE user_id = ? AND created_at > ?    |                          |                     |
+--
+-- 4. Decision: keep or drop the original index? Why?

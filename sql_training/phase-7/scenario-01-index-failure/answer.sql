@@ -1,0 +1,10 @@
+-- Scenario 01: The Login Slowdown
+-- Your diagnosis, solutions, and index DDL go here.
+--
+-- 1. Root cause (why Seq Scan despite the index on email):
+--
+-- 2. Proposed fixes + trade-offs:
+--
+-- 3. Index DDL for the functional-index approach:
+--
+-- 4. Common index-avoidance pitfalls (at least 3):

@@ -1,0 +1,10 @@
+-- Scenario 02: The Never-Ending Page Scroll
+-- Your diagnosis, cursor-based pagination rewrite, and trade-offs go here.
+--
+-- 1. Why OFFSET degrades with large values:
+--
+-- 2. Cursor-based pagination rewrite (show SQL for "next page"):
+--
+-- 3. Trade-offs: cursor-based vs offset-based:
+--
+-- 4. (Optional) Additional index recommendation:

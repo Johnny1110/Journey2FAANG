@@ -1,0 +1,10 @@
+-- Scenario 03: The Daily Report That Times Out
+-- Your diagnosis, index DDL, and expected plan changes go here.
+--
+-- 1. Bottleneck identification from EXPLAIN output:
+--
+-- 2. Index DDL (at least 2 CREATE INDEX statements with justification):
+--
+-- 3. Expected plan change after indexing (what replaces the Nested Loop?):
+--
+-- 4. (Optional) Covering index suggestion:
