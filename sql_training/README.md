@@ -477,10 +477,65 @@ select
 - **Scenario 03 — The Daily Report That Times Out**：缺少 composite index 導致 Nested Loop 全表掃描 -> [link](phase-7/scenario-03-join-optimization)
 - **Scenario 04 — The Index That Doesn't Work**：composite index 最左前綴法則違反，index 不被使用 -> [link](phase-7/scenario-04-composite-index-design)
 
+
+### PostgreSQL All Scan Types
+
+> 此為速查表。完整教學（含內部原理、EXPLAIN 範例、實戰判斷流程、常見陷阱）→ [完整 Scan Type 教學](postgresql_scan_types.md)
+
+在 `EXPLAIN` 輸出中，Scan 節點是查詢效能的關鍵訊號。以下是 PostgreSQL 所有 Scan 類型，依面試重要性排列：
+
+---
+
+#### 面試必懂（高頻出現）
+
+| Scan Type | 觸發條件 | 效能訊號 | 面試重點 |
+|-----------|---------|---------|---------|
+| **Seq Scan** | 無可用 index，或 planner 認為回表行數太多（選擇率 > 5~10%） | 大表 Seq Scan = 瓶頸 | 代表缺少 index、index 失效、或查詢選擇率太高 |
+| **Index Scan** | 有 index 可用，且查詢選擇性高（回表行數少） | 高效，但每次回表都是一次 random I/O | 理解 Heap Fetches 數量 = 回表次數 |
+| **Index Only Scan** | index 包含所有 SELECT 欄位（covering index）+ visibility map 乾淨 | 最快，不訪問 heap | 面試加分項：知道 `VACUUM` 對 Index Only Scan 的影響 |
+| **Bitmap Index Scan** | 多個 index 可組合（OR/AND），或查詢選擇率中等 | 輸出 bitmap 給下一步 | 本身不返回行，總是配對 **Bitmap Heap Scan** |
+| **Bitmap Heap Scan** | 承接 Bitmap Index Scan 的 bitmap，按物理頁順序讀取 heap | 比 random I/O 的 Index Scan 更適合中等選擇率 | 理解"先建 bitmap → 再順序讀 heap"的好處 |
+| **Parallel Seq Scan** | 大表 + `parallel_workers > 0` | 多 worker 分工掃描，比單線程 Seq Scan 快 | `Gather` 節點 = 彙總 parallel worker 結果的節點 |
+
+#### 掃描策略選擇流程
+
+```
+查詢 SELECT 的欄位是否全在 index 裡？
+  ├─ YES → 考慮 Index Only Scan（最快）
+  └─ NO  → 查詢選擇率（回表行數佔總行數比例）？
+            ├─ < 1%    → Index Scan（random I/O 開銷 < 全表掃描）
+            ├─ 1% ~ 10% → Bitmap Index Scan + Bitmap Heap Scan
+            └─ > 10%   → Seq Scan（順序讀比大量 random I/O 快）
+```
+
+---
+
+#### 進階 / 少見但要知道
+
+| Scan Type | 用途 |
+|-----------|------|
+| **Parallel Index Scan** | PG 11+，多 worker 並行 B-tree Index Scan |
+| **TID Scan** | 透過實體行位置（ctid）直接讀取，例如 `WHERE ctid = '(0,1)'` |
+| **Function Scan** | 掃描 set-returning function 的輸出，如 `generate_series()` |
+| **Values Scan** | 掃描 `VALUES (...)` 子句 |
+| **Subquery Scan** | 掃描子查詢結果（通常被 planner 優化掉） |
+| **CTE Scan** | 掃描 CTE 物化結果；PG 12+ 非物化 CTE 會被 inline 而消失 |
+| **WorkTable Scan** | 遞迴 CTE 中掃描上一步寫入的 work table |
+| **Foreign Scan** | 透過 FDW 掃描外部資料源（如另一台 PostgreSQL） |
+| **Custom Scan** | 由 extension 註冊的自定義掃描（罕見） |
+
+#### 面試常見追問
+
+- **"Index Scan 和 Index Only Scan 的根本差異是什麼？"** → Index Scan 要回 heap 拿 SELECT 欄位，Index Only Scan 是 covering index，不碰 heap。但如果 visibility map 有死 tuple 還是會回表。
+- **"為什麼有時 planner 選擇 Seq Scan 而不是 Index Scan？"** → 當查詢的選擇率太高（回表行數多），大量 random I/O 的成本超過一次全表 Sequential I/O。Planner 用 `random_page_cost` vs `seq_page_cost` 做判斷。
+- **"Bitmap Scan 為什麼是兩階段？"** → Bitmap Index Scan 只負責從 index 找出符合條件的 page 號碼並做成 bitmap；Bitmap Heap Scan 拿 bitmap 按物理順序讀取 heap blocks，把 random I/O 變成 sequential I/O。
+
 ### Phase 7 自我檢測
 
 面試官問你：「這個查詢跑很慢，你怎麼排查？」  
 你能不能有條理地回答：EXPLAIN → 看 Scan Type → 判斷 Index → 檢查篩選條件 → 考慮改寫查詢。
+
+
 
 <br>
 <br>
