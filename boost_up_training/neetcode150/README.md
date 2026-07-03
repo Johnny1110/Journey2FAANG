@@ -67,3 +67,4 @@ link: https://leetcode.com/problem-list/plakya4j
 52. Detect Squares -> [link](detect_squares) (難啊... 重做幾次)
 53. Interleaving String -> [link](interleaving_string) (DP 問題，多寫幾遍)
 54. Validate Binary Search Tree -> [link](validate_bin_search_tree)
+55. Same Tree -> [link](same_tree/README.md)
