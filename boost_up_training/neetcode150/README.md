@@ -69,3 +69,4 @@ link: https://leetcode.com/problem-list/plakya4j
 54. Validate Binary Search Tree -> [link](validate_bin_search_tree)
 55. Same Tree -> [link](same_tree)
 56. Binary Tree Level Order Traversal -> [link](binary_tree_level_order_traversal)
+57. Last Stone Weight -> [link](last_stone_weight)
