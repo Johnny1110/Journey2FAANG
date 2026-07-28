@@ -71,3 +71,4 @@ link: https://leetcode.com/problem-list/plakya4j
 56. Binary Tree Level Order Traversal -> [link](binary_tree_level_order_traversal)
 57. Last Stone Weight -> [link](last_stone_weight)
 58. Maximum Depth of Binary Tree -> [link](maximum_depth_of_binary_tree)
+59. Construct Binary Tree from Preorder and Inorder Traversal -> [link](cbtfpait)
