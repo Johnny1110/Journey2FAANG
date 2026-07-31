@@ -66,7 +66,7 @@ __質量比數量更重要__
 <br>
 
 * 基礎訓練: -> [link](sql_training)
-* 進階訓練: -> [link](advance_sql_trainging)
+* 進階訓練: -> [link](advance_sql_training)
 
 <br>
 <br>

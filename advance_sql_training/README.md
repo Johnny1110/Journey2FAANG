@@ -13,7 +13,7 @@
 
 ## 這套訓練和 sql_training 有什麼不同？
 
-| | sql_training | advance_sql_trainging |
+| | sql_training | advance_sql_training |
 |---|---|---|
 | 題目來源 | LeetCode 原題 | **自設情境題**（Google 不到答案） |
 | 資料乾淨度 | 乾淨、無 NULL、無重複 | **髒資料**：NULL、重複、邊界值、缺漏 |
@@ -112,12 +112,12 @@ SELECT ...
 
 <br>
 
-## 進度圖例
+## 進度
 
-| 標記 | 意思 |
-|------|------|
-| ✅ | 題目已建立，可以開始 |
-| ⬜ | 尚未建立 — 說一聲 `init sql-adv: phase-N NN` 我就產生 |
+**54 題全部建立完成（✅）。** 每一題都有 `README.md` + `setup.sql` + `answer.sql`，
+測試資料與預期輸出全部在 PostgreSQL 18 上實跑驗證過 —— README 裡的每一個數字都是真的跑出來的，不是推算的。
+
+想追蹤自己的進度，把做完的題目在下面各 Phase 的表格裡自己打勾就好。
 
 <br>
 
@@ -362,13 +362,13 @@ APAC    | (NULL)  | 300     <- APAC 小計
 
 | # | 題目 | 核心技巧 | 難度 | 狀態 |
 |---|------|---------|------|------|
-| 01 | The Retention Matrix | Day 1/7/30 留存矩陣、分母定義 | ★★★★★ | ⬜ |
-| 02 | Funnel Analysis With Order Constraint | 漏斗 + 事件順序約束 | ★★★★★ | ⬜ |
-| 03 | Cohort Revenue Curve | Cohort 分群 + 累計營收曲線 | ★★★★☆ | ⬜ |
-| 04 | The As-Of Join | Point-in-time 正確性（歷史匯率） | ★★★★★ | ⬜ |
-| 05 | SCD Type 2 Point Query | 時間切片查詢 + 區間邊界 | ★★★★☆ | ⬜ |
-| 06 | Days With No Sales | Calendar spine + 補零 + LOCF 前值填補 | ★★★★☆ | ⬜ |
-| 07 | DAU / WAU / MAU in One Query | 滑動視窗去重計數 | ★★★★★ | ⬜ |
+| 01 | [The Retention Matrix](phase-5-time-series/01-the-retention-matrix) | Day-N 留存、分母定義、未成熟 cohort | ★★★★★ | ✅ |
+| 02 | [Funnel Analysis With Order Constraint](phase-5-time-series/02-funnel-analysis-with-order-constraint) | 事件順序約束、逐層收斂 | ★★★★★ | ✅ |
+| 03 | [Cohort Revenue Curve](phase-5-time-series/03-cohort-revenue-curve) | Cohort 分群 + 累計曲線 + ARPU/ARPPU | ★★★★☆ | ✅ |
+| 04 | [The As-Of Join](phase-5-time-series/04-the-as-of-join) | Point-in-time 正確性（歷史匯率） | ★★★★★ | ✅ |
+| 05 | [SCD Type 2 Point Query](phase-5-time-series/05-scd-type-2-point-query) | 區間重疊/缺口稽核、半開區間 | ★★★★☆ | ✅ |
+| 06 | [Days With No Sales](phase-5-time-series/06-days-with-no-sales) | **流量 vs 存量**的填補策略、LOCF | ★★★★☆ | ✅ |
+| 07 | [DAU / WAU / MAU in One Query](phase-5-time-series/07-dau-wau-mau-in-one-query) | 滑動視窗去重、`COUNT(DISTINCT)` 不可組合 | ★★★★★ | ✅ |
 
 ### Phase 5 自我檢測
 
@@ -412,15 +412,18 @@ APAC    | (NULL)  | 300     <- APAC 小計
 
 ### 練習題
 
+> ⚠️ **這一章的題目多數需要「同時開兩個 session」。**
+> 開始前先讀 [Phase 6 章節說明](phase-6-dml-concurrency)（怎麼開兩個 session、怎麼查誰擋住誰、保命習慣）。
+
 | # | 題目 | 核心技巧 | 難度 | 狀態 |
 |---|------|---------|------|------|
-| 01 | The Idempotent Upsert | `ON CONFLICT` + 部分唯一索引 + 重試安全 | ★★★★☆ | ⬜ |
-| 02 | The Job Queue That Double-Processed | `FOR UPDATE SKIP LOCKED` | ★★★★★ | ⬜ |
-| 03 | Preventing Double Booking | `EXCLUDE` 約束 + `tstzrange`（Phase 1-03 的寫入端解法） | ★★★★★ | ⬜ |
-| 04 | The Lost Update | 隔離級別 + 樂觀鎖 vs 悲觀鎖 | ★★★★★ | ⬜ |
-| 05 | Transfer Money Atomically | 交易 + 死鎖避免（鎖順序） | ★★★★☆ | ⬜ |
-| 06 | Deduplicate a 10M-Row Table | 分批刪除 + `ctid` + 鎖影響評估 | ★★★★★ | ⬜ |
-| 07 | MERGE vs ON CONFLICT | PG 15+ `MERGE` 語法與它的併發陷阱 | ★★★☆☆ | ⬜ |
+| 01 | [The Idempotent Upsert](phase-6-dml-concurrency/01-the-idempotent-upsert) | `ON CONFLICT`、部分唯一索引、冪等性 | ★★★★☆ | ✅ |
+| 02 | [The Job Queue That Double-Processed](phase-6-dml-concurrency/02-the-job-queue-that-double-processed) | `FOR UPDATE SKIP LOCKED` | ★★★★★ | ✅ |
+| 03 | [Preventing Double Booking](phase-6-dml-concurrency/03-preventing-double-booking) | `EXCLUDE` 約束（Phase 1-03 的寫入端解法） | ★★★★★ | ✅ |
+| 04 | [The Lost Update](phase-6-dml-concurrency/04-the-lost-update) | 隔離級別、樂觀鎖 vs 悲觀鎖 | ★★★★★ | ✅ |
+| 05 | [Transfer Money Atomically](phase-6-dml-concurrency/05-transfer-money-atomically) | 交易原子性、死鎖與鎖順序 | ★★★★☆ | ✅ |
+| 06 | [Deduplicate a 10M-Row Table](phase-6-dml-concurrency/06-deduplicate-a-10m-row-table) | `ctid`、分批刪除、鎖持有時間 | ★★★★★ | ✅ |
+| 07 | [MERGE vs ON CONFLICT](phase-6-dml-concurrency/07-merge-vs-on-conflict) | PG15 `MERGE` 的**併發陷阱** | ★★★☆☆ | ✅ |
 
 ### Phase 6 自我檢測
 
@@ -468,15 +471,18 @@ UPDATE accounts SET balance = 700 WHERE id = 1;  -- 寫回
 
 ### 練習題
 
+> 這一章每一題都要跑 `EXPLAIN (ANALYZE, BUFFERS)`，**把實際輸出貼進 `answer.sql`** —— 數字就是證據。
+> 資料量比較大（最大 100 萬列），`setup.sql` 執行需要數十秒。
+
 | # | 題目 | 核心技巧 | 難度 | 狀態 |
 |---|------|---------|------|------|
-| 01 | The Query That Got Slower After Adding an Index | 選擇性誤判、`n_distinct` 修正 | ★★★★★ | ⬜ |
-| 02 | Correlated Subquery → Window Rewrite | N+1 式查詢改寫 + 計畫對比 | ★★★★☆ | ⬜ |
-| 03 | Partial Index for the 1% Case | Partial / Expression Index | ★★★★☆ | ⬜ |
-| 04 | The Covering Index That Stopped Covering | `INCLUDE` + Heap Fetches + `VACUUM` | ★★★★☆ | ⬜ |
-| 05 | The Statistics Lie | 相關欄位誤估 + `CREATE STATISTICS` | ★★★★★ | ⬜ |
-| 06 | Partition Pruning Gone Wrong | 分區表 + 裁剪失效的三種原因 | ★★★★★ | ⬜ |
-| 07 | Materialized View Refresh Strategy | MV + `CONCURRENTLY` + 增量刷新設計 | ★★★★☆ | ⬜ |
+| 01 | [The Query That Got Slower After Adding an Index](phase-7-optimization-deep-water/01-the-query-that-got-slower-after-adding-an-index) | `ORDER BY`+`LIMIT` 的提前終止誤判 | ★★★★★ | ✅ |
+| 02 | [Correlated Subquery → Window Rewrite](phase-7-optimization-deep-water/02-correlated-subquery-to-window-rewrite) | N+1 查詢、`loops=N` 的意義 | ★★★★☆ | ✅ |
+| 03 | [Partial Index for the 1% Case](phase-7-optimization-deep-water/03-partial-index-for-the-1-percent-case) | Partial / Expression Index、計畫快取 | ★★★★☆ | ✅ |
+| 04 | [The Covering Index That Stopped Covering](phase-7-optimization-deep-water/04-the-covering-index-that-stopped-covering) | Index Only Scan、Visibility Map、`VACUUM` | ★★★★☆ | ✅ |
+| 05 | [The Statistics Lie](phase-7-optimization-deep-water/05-the-statistics-lie) | 欄位獨立性假設、`CREATE STATISTICS` | ★★★★★ | ✅ |
+| 06 | [Partition Pruning Gone Wrong](phase-7-optimization-deep-water/06-partition-pruning-gone-wrong) | 裁剪失效的三種原因、Runtime Pruning | ★★★★★ | ✅ |
+| 07 | [Materialized View Refresh Strategy](phase-7-optimization-deep-water/07-materialized-view-refresh-strategy) | `REFRESH` 的鎖行為、增量刷新設計 | ★★★★☆ | ✅ |
 
 ### Phase 7 自我檢測
 
@@ -516,13 +522,15 @@ UPDATE accounts SET balance = 700 WHERE id = 1;  -- 寫回
 
 ### 練習題
 
+> 開始前先讀 [Phase 8 章節說明](phase-8-interview-simulation)（評分標準、作答結構、通關標準）。
+
 | # | 題目 | 場景 | 難度 | 狀態 |
 |---|------|------|------|------|
-| 01 | The Ambiguous Metric | 「算出我們的活躍用戶數」— 需求釐清 + 多定義實作 | ★★★★★ | ⬜ |
-| 02 | Design a Leaderboard Query | 排行榜 + 分頁 + 並列 + 即時性取捨 | ★★★★★ | ⬜ |
-| 03 | The Fraud Detection Query | 多條件行為偵測（短時間高頻交易、異地登入） | ★★★★★ | ⬜ |
-| 04 | Debug This Query | 給一段有 3 個 bug 的複雜 SQL，找出並修正 | ★★★★★ | ⬜ |
-| 05 | The 90-Minute Take-Home | 綜合題：一組 schema + 5 個商業問題 | ★★★★★ | ⬜ |
+| 01 | [The Ambiguous Metric](phase-8-interview-simulation/01-the-ambiguous-metric) | 「算一下活躍用戶數」— 需求釐清 + 多定義並陳 | ★★★★★ | ✅ |
+| 02 | [Design a Leaderboard Query](phase-8-interview-simulation/02-design-a-leaderboard-query) | 排行榜：排名、分頁、並列、即時性 | ★★★★★ | ✅ |
+| 03 | [The Fraud Detection Query](phase-8-interview-simulation/03-the-fraud-detection-query) | 多訊號盜刷偵測（三條白話規則） | ★★★★★ | ✅ |
+| 04 | [Debug This Query](phase-8-interview-simulation/04-debug-this-query) | 一段有 **5 個 bug** 的報表 SQL（唯一有標準答案的一題） | ★★★★★ | ✅ |
+| 05 | [The 90-Minute Take-Home](phase-8-interview-simulation/05-the-90-minute-take-home) | **計時畢業考**：完整 schema + 5 題 + 10 個資料陷阱 | ★★★★★ | ✅ |
 
 ### Phase 8 自我檢測
 
@@ -538,17 +546,43 @@ UPDATE accounts SET balance = 700 WHERE id = 1;  -- 寫回
 
 ## 總覽
 
-| Phase | 主題 | 題數 | 變化自 | 建議天數 |
-|-------|------|------|--------|---------|
-| 1 | JOIN 的暗面 | 7 | 基礎 Phase 1 | 7 |
-| 2 | 聚合的極限 | 7 | 基礎 Phase 1/6 | 7 |
-| 3 | Window Function 深水區 | 7 | 基礎 Phase 3 | 10 |
-| 4 | 遞迴 CTE 進階 | 7 | 基礎 Phase 4 | 8 |
-| 5 | 時間序列與行為分析 | 7 | 基礎 Phase 2/3 | 10 |
-| 6 | DML、併發、資料正確性 | 7 | 基礎 Phase 5 | 8 |
-| 7 | 查詢優化深水區 | 7 | 基礎 Phase 7 | 8 |
-| 8 | 面試實戰模擬 | 5 | — | 7 |
-| | **合計** | **54** | | **~65 天** |
+**全部 54 題已建立完成。** 每一題的測試資料與預期輸出都在 PostgreSQL 18 上實跑驗證過。
+
+| Phase | 主題 | 題數 | 變化自 | 建議天數 | 狀態 |
+|-------|------|------|--------|---------|------|
+| [1](#phase-1join-的暗面--當--不夠用時) | JOIN 的暗面 | 7 | 基礎 Phase 1 | 7 | ✅ |
+| [2](#phase-2聚合的極限--一次查詢完成整張報表) | 聚合的極限 | 7 | 基礎 Phase 1/6 | 7 | ✅ |
+| [3](#phase-3window-function-深水區--frame-才是真正的考點) | Window Function 深水區 | 7 | 基礎 Phase 3 | 10 | ✅ |
+| [4](#phase-4遞迴-cte-進階--圖樹與展開) | 遞迴 CTE 進階 | 7 | 基礎 Phase 4 | 8 | ✅ |
+| [5](#phase-5時間序列與行為分析--資料分析職缺的主戰場) | 時間序列與行為分析 | 7 | 基礎 Phase 2/3 | 10 | ✅ |
+| [6](#phase-6dml併發與資料正確性) | DML、併發、資料正確性 | 7 | 基礎 Phase 5 | 8 | ✅ |
+| [7](#phase-7查詢優化深水區) | 查詢優化深水區 | 7 | 基礎 Phase 7 | 8 | ✅ |
+| [8](#phase-8面試實戰模擬--模糊需求下的完整作答) | 面試實戰模擬 | 5 | — | 7 | ✅ |
+| | **合計** | **54** | | **~65 天** | |
+
+<br>
+
+### 貫穿全書的五條線
+
+這 54 題不是獨立的。有五個觀念會反覆出現，**每次換一個場景咬你一次**：
+
+| 主題 | 出現在 |
+|------|--------|
+| **NULL 與三值邏輯** | 1-01 → 1-04 → 2-02 → 3-05 → 4-06 → 8-04 |
+| **半開區間 `[a, b)`** | 1-03 → 2-06 → 5-05 → 6-03 → **7-06（這次會算錯答案）** |
+| **JOIN 扇出 / 預聚合** | 2-07 → 5-05 → 7-02 → 8-04 |
+| **骨架補齊（缺漏的維度）** | 1-07 → 2-06 → 3-06 → 5-06 → 8-05 |
+| **讓錯誤狀態無法被表達** | 1-02 → 1-06 → 4-01 → 5-05 → **6-03（寫入端解法）** |
+
+<br>
+
+### 三條跨章節的問題線
+
+| 問題 | 提出 | 深化 | 收束 |
+|------|------|------|------|
+| 有下限的餘額怎麼算 | [3-07](phase-3-window-deep-water/07-the-running-balance-with-a-floor) window 做不到 | [4-05](phase-4-recursive-cte/05-running-balance-recursive-edition) 遞迴做得到但慢 | [6-04](phase-6-dml-concurrency/04-the-lost-update) 真實系統兩個都不用 |
+| 區間重疊怎麼處理 | [1-03](phase-1-join-dark-side/03-the-double-booked-meeting-room) 偵測已發生的 | [3-04](phase-3-window-deep-water/04-gaps-and-islands-ii-merge-intervals) 合併它們 | [6-03](phase-6-dml-concurrency/03-preventing-double-booking) 寫入時就擋掉 |
+| 為什麼估計會錯 | [7-01](phase-7-optimization-deep-water/01-the-query-that-got-slower-after-adding-an-index) 位置分布誤判 | [7-05](phase-7-optimization-deep-water/05-the-statistics-lie) 欄位相關性誤判 | [7-05 D1](phase-7-optimization-deep-water/05-the-statistics-lie) 統計修不好 7-01 —— 工具的能力邊界 |
 
 <br>
 
