@@ -72,3 +72,10 @@ link: https://leetcode.com/problem-list/plakya4j
 57. Last Stone Weight -> [link](last_stone_weight)
 58. Maximum Depth of Binary Tree -> [link](maximum_depth_of_binary_tree)
 59. Construct Binary Tree from Preorder and Inorder Traversal -> [link](cbtfpait)
+60. Task Scheduler -> [link](task_scheduler) 👈 
+61. Balanced Binary Tree -> [link](balanced_binary_tree/README.md)
+62. Distinct Subsequences -> [link](distinct_subsequences/README.md)
+63. Best Time to Buy and Sell Stock -> [link](bttbass/README.md)
+64. Binary Tree Maximum Path Sum -> [link](binary_tree_maximum_path_sum/README.md)
+65. Valid Palindrome -> [link](valid_palindrome/README.md)
+66. Word Ladder -> [link](word_ladder/README.md)

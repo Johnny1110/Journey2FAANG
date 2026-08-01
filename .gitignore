@@ -43,3 +43,4 @@ target/
 
 .claude
 .leetcode
+.DS_Store
