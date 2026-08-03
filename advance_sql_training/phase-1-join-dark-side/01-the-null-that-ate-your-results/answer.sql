@@ -94,3 +94,94 @@ where o.id is null;
 -- ------------------------------------------------------------
 
 
+-- 1. 「`IN` 遇到 NULL 也會有問題嗎？還是只有 `NOT IN`？」
+
+-- ans: yes, because the main issue is NULL comparison is UNKNOWN, it won't turn out to TRUE or FLASE.
+-- like select 4 IN (1, 2, NULL, 3);
+-- it will turn to:
+-- 4 = 1 OR 4 = 2 OR 4 = NULL OR 4 = 3
+-- FALSE OR FALSE OR UNKNOWN OR FALSE = UNKNOWN
+-- it wont return any data, beause where only accept TRUE.
+-- but it will be safer than NOT IN
+-- 4 NOT IN (1,2,NULL,3) -> 4 <> 1 AND 4 <> 2 AND 4 <> NULL AND 4 <> 3
+-- TRUE AND TRUE AND UNKNOWN AND TRUE = UNKNOWN
+-- so the whole where comparision is not work.
+
+-- 2. 「如果我在子查詢加上 `WHERE customer_id IS NOT NULL`，是不是就等價於 `NOT EXISTS` 了？有沒有任何情況不等價？」
+
+-- generally speak, both lead to same result.but semetic and planner is different, so I won't say they are the same.
+-- for example:
+select name from customers where in not in (
+    select customer_id 
+    from orders
+    where customer_id is not null
+);
+
+select name from customers c
+where not exists (
+    select 1 from orders o where o.customer_id = c.id
+    );
+
+-- they both have the same outcome. because NULL has been excluded, so not in (...) won't have UNKNOWN case any more.
+-- NOT IN means:      x not in collection -> x <> ALL(...) -> planner will do it like `Hash SubPlan` or `HASH Anti Join`
+-- NOT EXISTS means: there is no row match to rules. -> planner will do it like `HASH Anti Join`
+
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM t2
+    WHERE t1.a=t2.a
+      AND t1.b=t2.b
+);
+
+(a, b) not in (...);
+
+-- In this case, NULL will be complicated.
+-- final answer: result is same. sematic is not same, safety is not same.
+
+
+-- 3. 「你說 `NOT EXISTS` 比較安全。那為什麼還有這麼多人寫 `NOT IN`？`NOT IN` 有什麼場合是更好的？」
+
+-- NOT IN is not bad, it just more sensitive about the NULL case. If I know subquery  won't have NULL data in collection then NOT IN is 100% avaliable to use.
+-- The real issue is not `NOT IN`, it is sensitive about table schema.
+
+-- sometime I perfer to use `not in` because it have more concreate sematic.
+-- for example:
+
+WHERE role_id NOT IN (
+    SELECT role_id
+    FROM disabled_roles
+)
+
+-- NOT EXISTS (...) is more difficult to understand.
+
+-- using not exists is moe like just in case.
+-- for example:
+
+schema: customer_id NOT NULL
+
+-- one year later, another ppl change the schema:
+ALTER TABLE orders
+ALTER COLUMN customer_id DROP NOT NULL;
+
+-- then sql will return 0 rows as result. it is not a SQL error, just business logic broken.
+
+
+-- 4. 「`LEFT JOIN ... WHERE x IS NULL` 這種寫法，如果 `orders.customer_id` 有大量重複值，會有什麼問題？」
+
+-- It won't affect the result. it will affect performance.
+-- if customer_id=1 have 10000 rows in orders table, then `left join` must create 10000 rows join.
+-- eventhough `WHERE o.id IS NULL` will filter out those data, it still need join that much times useless data.
+
+-- NOT EXISTS:
+
+SELECT *
+FROM customers c
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM orders o
+    WHERE o.customer_id=c.id
+);
+
+-- we take a username = Alice, customer_id = 1, then go to orders find any row orders.customer_id = 1 then we can just stop, becasue we already know Alice(id=1) exists.
+
+--Final: LEFT JOIN 的風險不是結果錯，而是可能產生大量中間資料（row explosion）；NOT EXISTS 表達的是存在性檢查，通常更符合 Anti Join 的語意，也避免了不必要的資料擴張。
