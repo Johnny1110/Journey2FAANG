@@ -160,6 +160,13 @@ UPDATE discount_tiers SET max_amount = 999.99 WHERE tier_name = 'Silver';
 
 如果不用稽核查詢，而是要**在資料庫層面根本擋掉**重疊，PostgreSQL 有什麼機制？（只要講出方向即可，實作是 Phase 6 的內容）
 
+create table discount_tiers (
+    tier_name varchar(20) primary key,
+    amount_range numrange NOT NULL,
+    discount numeric(4,3) NOT NULL,
+    EXCLUDE USING gist (amount_range with &&) -- not allow overlapping ranges
+);
+
 <br>
 
 ---

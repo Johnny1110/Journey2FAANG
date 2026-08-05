@@ -98,49 +98,75 @@ INSERT INTO discount_tiers VALUES
 -- B1: ops 改壞設定後為什麼變 14 筆 + 找出被複製的訂單
 -- ------------------------------------------------------------
 
+
 -- because the discount_tiers amount range have overlapping issue:
--- Sliver from 499 to 999.99
+-- Sliver from 100 to 999.99
 -- ('Silver',    100.00,  999.99, 0.050),
 -- ('Gold',      500.00, 1999.99, 0.100),
 -- If order amount is 800, it could be Silver or Gold, which is the reason why business logic broke.
 
 -- find out duplicate orders:
-with cte as (
-select id from (
-select o.id, count(o.id) as cnt
-from orders o
-         join discount_tiers dt on trunc(o.amount, 2) between dt.min_amount and coalesce(dt.max_amount, trunc(o.amount, 2))
-group by o.id) as tmp where cnt > 1)
-
-select o.id, o.amount, dt.tier_name
-from orders o
-         join discount_tiers dt on trunc(o.amount, 2) between dt.min_amount and coalesce(dt.max_amount, trunc(o.amount, 2))
-        join cte c on o.id = c.id
+with cte as (select o.id, o.amount, dt.tier_name, dt.discount, dt.min_amount, dt.max_amount, count(o.id) over (partition by o.id) as duplicate_count
+    from orders o
+    join discount_tiers dt on o.amount >= dt.min_amount and (o.amount <= dt.max_amount or dt.max_amount is NULL)
+    ) select id, amount, tier_name, discount, min_amount, max_amount from cte where duplicate_count > 1;
 ;
-where tmp.count > 1;
 
 -- result:
-6,500.000,Gold
-11,750.000,Gold
-12,999.990,Gold
-6,500.000,Silver
-11,750.000,Silver
-12,999.990,Silver
+id,amount,tier_name,discount,min_amount,max_amount
+6,500.000,Gold,0.100,500.000,1999.990
+6,500.000,Silver,0.050,100.000,999.990
+11,750.000,Gold,0.100,500.000,1999.990
+11,750.000,Silver,0.050,100.000,999.990
+12,999.990,Gold,0.100,500.000,1999.990
+12,999.990,Silver,0.050,100.000,999.990
+
+-- If this query result count into financial report, it will cause double counting issue.
 
 -- ------------------------------------------------------------
 -- B2: 重疊稽核查詢
 -- ------------------------------------------------------------
 
+select a.tier_name as tier_a,
+       b.tier_name tier_b,
+       numrange(a.min_amount, a.max_amount, '[]') as range_a,
+       numrange(b.min_amount, b.max_amount, '[]') as range_b
+from discount_tiers a
+    join discount_tiers b
+        on (a.min_amount, a.tier_name) < (b.min_amount, b.tier_name)
+        and (a.max_amount >= b.min_amount or a.max_amount is NULL)
+order by a.min_amount;
 
 -- ------------------------------------------------------------
 -- B3: 縫隙偵測查詢
 -- ------------------------------------------------------------
 
+with cte as(
+    select tier_name,
+           max_amount,
+           min_amount,
+           lead(min_amount) over (order by min_amount) as next_min
+    from discount_tiers)
+select tier_name,
+       max_amount,
+       next_min,
+       (next_min - max_amount) as gap
+from cte where next_min - max_amount > 0;
 
 -- ------------------------------------------------------------
 -- B4: 資料庫層面根本擋掉重疊的機制
 -- ------------------------------------------------------------
 
+create table discount_tiers (
+    tier_name varchar(20) primary key,
+    amount_range numrange NOT NULL,
+    discount numeric(4,3) NOT NULL,
+    EXCLUDE USING gist (amount_range with &&) -- not allow overlapping ranges
+);
+
+-- overlapping is cross column constraint, so check constraint is not enough, unique also.
+-- EXCLUSION CONSTRAINT is like a kind of unique constraint but it works for ranges and other data types.
+-- in EXCLUDE, UNIQUE is `WITH =`, we using `WITH &&` range overlap operator to prevent overlapping ranges.
 
 -- ------------------------------------------------------------
 -- 面試官追問 1~4
