@@ -75,7 +75,7 @@ link: https://leetcode.com/problem-list/plakya4j
 60. Task Scheduler -> [link](task_scheduler) -> 值得重複品嚐，queue + stack 組合的貪懶算法
 61. Balanced Binary Tree -> [link](balanced_binary_tree)
 62. Distinct Subsequences -> [link](distinct_subsequences) -> 高難度 DP state 定義，可能要用背的 
-63. Best Time to Buy and Sell Stock -> [link](bttbass/README.md) 👈
-64. Binary Tree Maximum Path Sum -> [link](binary_tree_maximum_path_sum/README.md)
+63. Best Time to Buy and Sell Stock -> [link](bttbass) 
+64. Binary Tree Maximum Path Sum -> [link](binary_tree_maximum_path_sum/README.md) 👈
 65. Valid Palindrome -> [link](valid_palindrome/README.md)
 66. Word Ladder -> [link](word_ladder/README.md)
