@@ -149,8 +149,8 @@ SELECT ...
 
 | # | 題目 | 核心技巧 | 難度 | 狀態 |
 |---|------|---------|------|------|
-| 01 | [The NULL That Ate Your Results](phase-1-join-dark-side/01-the-null-that-ate-your-results) | Anti-Join 三寫法 × 三值邏輯 | ★★★☆☆ |  |
-| 02 | [Price Tier Assignment](phase-1-join-dark-side/02-price-tier-assignment) | Non-Equi Join、無上限邊界、區間重疊偵測 | ★★★☆☆ |  |
+| 01 | [The NULL That Ate Your Results](phase-1-join-dark-side/01-the-null-that-ate-your-results) | Anti-Join 三寫法 × 三值邏輯 | ★★★☆☆ | 🟢 |
+| 02 | [Price Tier Assignment](phase-1-join-dark-side/02-price-tier-assignment) | Non-Equi Join、無上限邊界、區間重疊偵測 | ★★★☆☆ | ⏳ |
 | 03 | [The Double-Booked Meeting Room](phase-1-join-dark-side/03-the-double-booked-meeting-room) | 區間重疊自連接、半開區間 | ★★★★☆ |  |
 | 04 | [Ledger Reconciliation](phase-1-join-dark-side/04-ledger-reconciliation) | FULL OUTER JOIN、`IS DISTINCT FROM` | ★★★★☆ |  |
 | 05 | [Top-3 Orders per Customer, Four Ways](phase-1-join-dark-side/05-top-n-four-ways) | LATERAL vs Window vs Correlated vs `DISTINCT ON` | ★★★★☆ |  |
