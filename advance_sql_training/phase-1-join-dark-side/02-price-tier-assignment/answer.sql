@@ -173,3 +173,11 @@ create table discount_tiers (
 -- ------------------------------------------------------------
 
 
+-- 1. 「Band Join 的執行計畫長什麼樣？和等值 JOIN 的 Hash Join 有什麼不同？為什麼？」
+-->
+-- 2. 「如果 `orders` 有 1000 萬筆、`discount_tiers` 有 4 筆，這個 join 的成本是多少？如果 `discount_tiers` 有 10 萬筆呢？」
+-->
+-- 3. 「Band Join 可以用 index 加速嗎？加在哪個欄位？」
+-->
+-- 4. 「不用 JOIN，你能用 `CASE WHEN` 寫出同樣的結果嗎？兩種寫法各自的維護成本是什麼？」
+-->

@@ -145,6 +145,10 @@ SELECT ...
 | 對稱配對去重 | `a.id < b.id` 為什麼是必須的（含自我配對） |
 | LEFT JOIN + WHERE 陷阱 | 條件放 `ON` 還是 `WHERE`，結果完全不同 |
 
+### 學習筆記 (Phase - 1 考點)
+
+* [Nested Loop / Hash / Merge Join 三種 Join 演算法](notes/three_join.md)
+
 ### 練習題
 
 | # | 題目 | 核心技巧 | 難度 | 狀態 |
