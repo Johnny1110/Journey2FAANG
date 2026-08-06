@@ -174,7 +174,33 @@ create table discount_tiers (
 
 
 -- 1. 「Band Join 的執行計畫長什麼樣？和等值 JOIN 的 Hash Join 有什麼不同？為什麼？」
--->
+
+-- Band join 只能走 Nested Loop —— 這不是 planner 選擇的結果，是它唯一的選項。
+-- 範圍謂詞（>=、<=、BETWEEN）不是 hashable、也不是 mergejoinable 的運算子，這兩條路在 planner 生成計畫時就直接被排除了。
+-- 怎麼從 EXPLAIN 看出來:
+Hash Cond:   (a.id = b.id)          ← 等值，走 Hash
+Merge Cond:  (a.id = b.id)          ← 等值，走 Merge
+Join Filter: (a.amount >= b.min ...) ← 範圍，逐列驗證  ★
+Index Cond:  ...                     ← 有索引在幫忙縮範圍
+
+-- Join Filter 就是 band join 的指紋。典型計畫長這樣：
+
+Nested Loop
+  Join Filter: ((o.amount >= dt.min_amount) AND ...)
+  Rows Removed by Join Filter: 33         ← ★ 這行是重點 (Nested Loop 未命中被丟棄的 part)
+  -> Seq Scan on orders o
+  -> Materialize
+       -> Seq Scan on discount_tiers dt
+
+-- 兩個要點：
+-- 1). Materialize：內表被讀一次後暫存在記憶體，避免外表每一列都重掃一次磁碟。小表這招很有效。
+-- 2). Rows Removed by Join Filter（要 EXPLAIN ANALYZE 才有）：這是 band join 的浪費指標。 它告訴你比對了幾次、丟掉幾次。Hash Join 是「算一次雜湊直接命中」，Nested Loop 是「比 M 次留 1 次」，這個數字就是差距的來源。
+
+--回答範本：
+-- Band join 的計畫是 Nested Loop + Join Filter，不會是 Hash Join —— 而且不是 planner 不想用，是不能用。
+-- Hash Join 的前提是等值條件：雜湊會破壞順序，你沒辦法問雜湊表『所有小於 X 的 key 在哪』。Merge Join 也要等值，因為雙指標推進依賴相等判斷。範圍運算子既不 hashable 也不 mergejoinable，這兩條路在 planner 階段就被排除了。
+-- 實務上看 EXPLAIN 就是看謂詞落在 Hash Cond 還是 Join Filter。落在 Join Filter 就代表在逐列驗證，這時要看 Rows Removed by Join Filter —— 那是被浪費掉的比較次數。
+
 -- 2. 「如果 `orders` 有 1000 萬筆、`discount_tiers` 有 4 筆，這個 join 的成本是多少？如果 `discount_tiers` 有 10 萬筆呢？」
 -->
 -- 3. 「Band Join 可以用 index 加速嗎？加在哪個欄位？」
