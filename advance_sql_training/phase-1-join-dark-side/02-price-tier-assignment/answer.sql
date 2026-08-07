@@ -202,8 +202,80 @@ Nested Loop
 -- 實務上看 EXPLAIN 就是看謂詞落在 Hash Cond 還是 Join Filter。落在 Join Filter 就代表在逐列驗證，這時要看 Rows Removed by Join Filter —— 那是被浪費掉的比較次數。
 
 -- 2. 「如果 `orders` 有 1000 萬筆、`discount_tiers` 有 4 筆，這個 join 的成本是多少？如果 `discount_tiers` 有 10 萬筆呢？」
--->
+
+-- 情境 A：10M × 4
+-- 比較次數 = 10M × 4 = 4×10⁷
+-- 這個 join 幾乎 0 成本
+-- 1. 4 列 discount_tiers 只佔一個 8KB page，Materialize 之後常駐 shared_buffers，實際上在 CPU cache 裡
+-- 2. 每列 order 做 4 次 numeric 比較，沒有任何 I/O
+-- 3. 真正的成本是 orders 那 10M 列的 Seq Scan 本身
+
+-- 情境 B：10M × 100K
+-- 比較次數 = 10M × 10⁵ = 10¹²
+-- 100K 列的 tier 表已經塞不進 work_mem，Materialize 會 spill 到磁碟，變成每列 order 都在讀暫存檔。
+-- 瓶頸從 I/O 換成了 CPU + 內表反覆掃描。這已經不是慢，是不能跑。
+-- 加上 GiST 索引後：10M × log₂(10⁵) ≈ 10M × 17 ≈ 1.7×10⁸ 次索引走訪。降了四個數量級，變成分鐘級。
+
+-- 回答範本
+--「Nested Loop 的成本是 O(N×M)，所以要分兩段看：
+
+-- 4 筆的情況：4×10⁷ 次比較，但 4 列只佔一個 page，Materialize 之後全在 cache 裡，沒有 I/O。真正的成本是 orders 那 10M 列的 Seq Scan —— join 只加了 10~30% overhead。這個規模不用優化，加索引反而更慢，因為要讀 10M 列的話 Seq Scan 一定贏 Index Scan。
+
+-- 10 萬筆的情況：10¹² 次比較，直接不可行。而且內表塞不進 work_mem，Materialize 會 spill 到磁碟，每列 order 都在讀暫存檔。瓶頸從 I/O 移到 CPU 和內表重掃。
+
+-- 這時唯一的解是把內側的 Seq Scan 換成 Index Scan —— GiST 索引可以把 10⁵ 降到 log(10⁵)≈17，總量從 10¹² 降到 10⁸ 量級，變成分鐘級。」
+
+-- 技巧：「粗略的判準是：內表能不能常駐記憶體。幾百到幾千列以內，Nested Loop 完全可以接受；上萬列開始就必須有索引。而且成本是乘法關係，內表大小的影響是線性放大到每一列外表上的。」
+
 -- 3. 「Band Join 可以用 index 加速嗎？加在哪個欄位？」
--->
+
+-- 考點：B-tree 的維度限制
+-- 這題大部分人會答錯，因為直覺是「在 min_amount 和 max_amount 上建索引」。這個答案只對一半，而錯的那一半才是考點。
+
+-- 原理：B-tree 只能剪掉一半
+-- 謂詞是 `min_amount <= X AND max_amount >= X`。假設你建了複合索引 (min_amount, max_amount)：
+-- `min_amount <= X` → B-tree 可以 seek，從索引開頭掃到 X 的位置。有效。
+-- `max_amount >= X` → 不能當 seek 邊界。因為第一個欄位是範圍掃描，在這個範圍內第二個欄位是無序的，只能逐筆 filter。
+
+-- 結果：索引平均要掃過一半的表。 10 萬列的 tier 表，掃 5 萬列再逐筆過濾。有幫助，但遠遠不夠。
+-- 理論：
+-- 一個區間是二維物件（在 (min, max) 平面上的一個點），而 min <= X <= max 是一個象限查詢。
+-- B-tree 是一維有序結構，天生處理不了二維範圍查詢。
+
+-- 正解：GiST + 範圍型別
+CREATE INDEX idx_tier_range ON discount_tiers
+  USING gist (numrange(min_amount, max_amount, '[)'));
+
+-- 查詢端必須改用 @> 才吃得到索引
+JOIN discount_tiers dt ON dt.amount_range @> o.amount
+
+-- GiST 是可擴充的樹狀索引框架，範圍型別在上面實作了 @>（包含）和 &&（重疊），能真正做到 O(log n) 的區間查詢。
+-- 計畫會從 Seq Scan + Join Filter 變成 Index Scan + Index Cond。
+
+-- 回答範本:
+-- 「能加速，但不能用 B-tree，這是重點。
+-- 對 (min_amount, max_amount) 建 B-tree，只有 min <= X 能當 seek 邊界；第一欄是範圍掃描之後，第二欄在該範圍內是無序的，只能 filter。所以 B-tree 只剪掉一半，平均要掃半張表。
+-- 根本原因是：一個區間本質上是 (min,max) 平面上的一個點，min <= X <= max 是象限查詢 —— 一維的 B-tree 處理不了二維範圍。
+-- 正解是 GiST 索引 + 範圍型別，查詢用 @>。而且如果已經加了 EXCLUDE ... WITH && 的排它約束，那個索引本來就存在，等於約束和效能一起解決了。
+-- 不過該加在哪張表要看誰是外側。如果 tier 表只有 4 筆、orders 要全掃，那其實不該加索引 —— Seq Scan 比 Index Scan 快。索引是給『大內表 + 逐列探查』的情境用的。」
+
+
 -- 4. 「不用 JOIN，你能用 `CASE WHEN` 寫出同樣的結果嗎？兩種寫法各自的維護成本是什麼？」
--->
+select id, amount,
+    case when amount < 100 then 'Bronze'
+         when amount < 500 then 'Silver'
+         when amount < 2000 then 'Gold'
+         else 'Platinum'
+    end as tier_name,
+    case when amount < 100 then 0.000
+         when amount < 500 then 0.050
+         when amount < 2000 then 0.1000
+         else 0.1500
+    end as discount
+from orders
+
+-- CASE WHEN 在正確性上結構性地更安全
+-- CASE WHEN 是由上而下、第一個命中就停
+
+-- JOIN      = 彈性（資料驅動）  但正確性靠約束維持
+-- CASE WHEN = 正確性（結構保證）但規則凍在程式裡
