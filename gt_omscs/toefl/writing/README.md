@@ -30,4 +30,4 @@
 
 | 週次 | 日期 | 主題 | 分數 |
 | --- | --- | --- | --- |
-| - | - | - | - |
+| [Week 01](week01/README.md) | 2026-08-08 | Course enrollment request、AI tools in coursework | 未作答 |

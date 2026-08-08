@@ -6,11 +6,24 @@
 
 <br>
 
-每週一回，由 Claude 依 2026 新制題型出題。流程：
+每週一回，由 Claude 依 2026 新制題型出題。**推薦用 App 練習**（可計時、自動批改、當場復盤）：
 
-1. 我說 `toefl: init reading` → Claude 建立 `weekXX/README.md`（題目）
-2. 我把作答寫在 `weekXX/answer.md`
-3. 我說 `toefl: score reading weekXX` → Claude 產出 `weekXX/feedback.md`（分數 + 逐題解析 + 生字建議加入詞彙表）
+```bash
+cd gt_omscs/toefl/toefl-reading && npm run dev
+```
+
+App 說明見 [toefl-reading/README.md](../toefl-reading/README.md)。
+
+<br>
+
+## 兩種練習方式
+
+| 方式 | 流程 |
+| --- | --- |
+| **App**（推薦） | 啟動後選週次 → 選計時／不計時 → 作答 → 交卷 → 當場看正解與解析 |
+| 紙筆／Markdown | 寫在 `weekXX/answer.md` → 說 `/toefl score reading weekXX` → Claude 產出 `weekXX/feedback.md` |
+
+App 的題庫在 `toefl-reading/src/data/weekXX.json`（含答案），本資料夾的 `weekXX/README.md` 是不含答案的列印版，兩者題目相同。用 `/toefl init reading` 會同時產生。
 
 <br>
 
@@ -30,4 +43,4 @@
 
 | 週次 | 日期 | 主題 | 分數 |
 | --- | --- | --- | --- |
-| - | - | - | - |
+| [Week 01](week01/README.md) | 2026-08-08 | Soil & Sediment（科學）、Coffeehouses（歷史／社會） | 未作答 |

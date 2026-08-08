@@ -1,0 +1,82 @@
+:root {
+  --bg: #fbfaf8;
+  --paper: #ffffff;
+  --card: #ffffff;
+  --bar: rgba(251, 250, 248, 0.88);
+  --text: #1c1b19;
+  --text-soft: #46443f;
+  --muted: #8a867e;
+  --border: #e6e2da;
+  --border-strong: #cfc9bd;
+  --chip: #f3f0ea;
+  --blank-bg: #f3f0ea;
+  --accent: #b4531f;
+  --accent-soft: #fbeee5;
+  --ok: #2f7a4d;
+  --ok-bg: #e8f4ec;
+  --bad: #b3261e;
+  --bad-bg: #fceceb;
+  --warn: #8a6116;
+  --warn-bg: #fdf3de;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14130f;
+    --paper: #1c1a16;
+    --card: #1c1a16;
+    --bar: rgba(20, 19, 15, 0.88);
+    --text: #ebe7df;
+    --text-soft: #c2bcb0;
+    --muted: #8d877b;
+    --border: #302c25;
+    --border-strong: #4a443a;
+    --chip: #252119;
+    --blank-bg: #252119;
+    --accent: #e08b52;
+    --accent-soft: #33241a;
+    --ok: #6fbf8b;
+    --ok-bg: #1b2c21;
+    --bad: #e88b83;
+    --bad-bg: #2f1d1b;
+    --warn: #d9ad5e;
+    --warn-bg: #2d2517;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia,
+    'Noto Serif TC', 'PingFang TC', 'Microsoft JhengHei', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+label,
+table {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC',
+    'Microsoft JhengHei', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC',
+    'Microsoft JhengHei', sans-serif;
+}
+
+::selection {
+  background: var(--accent-soft);
+}

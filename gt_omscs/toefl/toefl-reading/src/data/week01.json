@@ -1,0 +1,309 @@
+{
+  "id": "week01",
+  "week": 1,
+  "title": "Week 01",
+  "date": "2026-08-08",
+  "topics": ["Soil & Sediment（科學）", "Coffeehouses（歷史／社會）"],
+  "timeLimitSec": 1620,
+  "parts": [
+    {
+      "id": "part1",
+      "type": "cloze",
+      "title": "Part 1 — Complete the Words",
+      "instructions": "每個空格是一個單字，只顯示前半部字母。依上下文補完整個單字（輸入完整拼字，不是只填缺的部分）。",
+      "blocks": [
+        {
+          "title": "Passage A",
+          "template": "Soil is far more than simple dirt. It is a living system that {{1}} nearly all land plants. When leaves and branches fall to the ground, bacteria and fungi break them down, {{2}} nutrients back into the earth. Plants then {{3}} these nutrients through their roots. Farmers who ignore this cycle may {{4}} their fields within a few seasons. For this reason, many now {{5}} their crops, planting beans one year and corn the next. Beans add nitrogen, an essential {{6}}, to the soil. This simple {{7}} helps tired soil {{8}} over time, {{9}} the need for chemical fertilizer and {{10}} long-term yields.",
+          "blanks": [
+            { "id": 1, "prefix": "supp", "missing": 4, "answer": "supports", "explanation": "主詞 a living system 是第三人稱單數，動詞要加 -s。" },
+            { "id": 2, "prefix": "rele", "missing": 5, "answer": "releasing", "explanation": "分詞構句：break them down 的伴隨結果，用 V-ing。" },
+            { "id": 3, "prefix": "abs", "missing": 3, "answer": "absorb", "explanation": "Plants 為複數主詞，原形動詞。absorb nutrients = 吸收養分。" },
+            { "id": 4, "prefix": "exh", "missing": 4, "answer": "exhaust", "explanation": "情態動詞 may 之後接原形。exhaust the fields = 把地力耗盡。" },
+            { "id": 5, "prefix": "rot", "missing": 3, "answer": "rotate", "explanation": "rotate crops = 輪作，後面的「一年種豆一年種玉米」就是定義。" },
+            { "id": 6, "prefix": "nutr", "missing": 4, "answer": "nutrient", "explanation": "an essential ___ 需要單數可數名詞；氮是一種養分。" },
+            { "id": 7, "prefix": "prac", "missing": 4, "answer": "practice", "explanation": "This simple ___ 指前面描述的做法，practice = 慣行做法。" },
+            { "id": 8, "prefix": "rec", "missing": 4, "answer": "recover", "explanation": "help + O + 原形動詞。recover = 恢復。" },
+            { "id": 9, "prefix": "redu", "missing": 4, "answer": "reducing", "explanation": "分詞構句表結果，與後面的 protecting 平行。" },
+            { "id": 10, "prefix": "prote", "missing": 5, "answer": "protecting", "explanation": "與 reducing 用 and 並列，形式必須一致。" }
+          ]
+        },
+        {
+          "title": "Passage B",
+          "template": "Before the fourteenth century, most Europeans {{11}} time by the position of the sun. Monks, however, had to pray at fixed hours, even during the night, so they searched for a more {{12}} method. The mechanical clock, which {{13}} in the late 1200s, solved this {{14}}. The earliest models had neither hands nor a face; they simply rang a bell at regular {{15}}. Towns competed to build the tallest clock towers, and the new devices soon {{16}} daily life. Work no longer {{17}} on daylight alone. Merchants could {{18}} meetings {{19}}, and factory owners {{20}} began to pay workers by the hour.",
+          "blanks": [
+            { "id": 11, "prefix": "meas", "missing": 4, "answer": "measured", "explanation": "全文為過去式敘述，measure time = 計時。" },
+            { "id": 12, "prefix": "reli", "missing": 4, "answer": "reliable", "explanation": "a more ___ method 需形容詞；reliable = 可靠的。" },
+            { "id": 13, "prefix": "appe", "missing": 4, "answer": "appeared", "explanation": "關係子句 which ___ in the late 1200s，指「出現」。" },
+            { "id": 14, "prefix": "prob", "missing": 3, "answer": "problem", "explanation": "solved this ___ 指前面僧侶夜間計時的難題。" },
+            { "id": 15, "prefix": "inte", "missing": 5, "answer": "intervals", "explanation": "at regular intervals = 每隔固定時間，固定搭配。" },
+            { "id": 16, "prefix": "chan", "missing": 3, "answer": "changed", "explanation": "與前半句 competed 時態一致；change daily life = 改變日常生活。" },
+            { "id": 17, "prefix": "depe", "missing": 4, "answer": "depended", "explanation": "depend on = 取決於，過去式。" },
+            { "id": 18, "prefix": "sche", "missing": 4, "answer": "schedule", "explanation": "情態動詞 could 之後接原形。schedule meetings = 安排會議。" },
+            { "id": 19, "prefix": "prec", "missing": 5, "answer": "precisely", "explanation": "修飾動詞 schedule 要用副詞，不是 precision（名詞）。" },
+            { "id": 20, "prefix": "grad", "missing": 5, "answer": "gradually", "explanation": "修飾 began 要用副詞；graduated 是動詞，文法不通。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "type": "choice",
+      "title": "Part 2 — Read in Daily Life",
+      "instructions": "閱讀生活情境短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Text 1",
+          "style": "email",
+          "body": [
+            "**From:** Daniel Reyes, Teaching Assistant, CS 6200",
+            "**Subject:** Change to Project 2 deadline",
+            "Hi everyone,",
+            "Because the autograder was offline for most of Tuesday, we are moving the Project 2 deadline from Friday, March 6 to Monday, March 9 at 11:59 p.m. No late penalty will apply to submissions made before the new deadline.",
+            "Please note that this extension does **not** affect the Project 3 release date, which is still Wednesday, March 11. If you have already submitted Project 2, you may resubmit; only your final submission will be graded.",
+            "Office hours this week will move to Thursday afternoon.",
+            "Daniel"
+          ],
+          "questions": [
+            {
+              "id": 21,
+              "prompt": "Why was the deadline changed?",
+              "options": [
+                "Too many students requested an extension.",
+                "A grading system was unavailable for a period of time.",
+                "The project instructions contained an error.",
+                "The teaching assistant was unable to hold office hours."
+              ],
+              "answer": "B",
+              "explanation": "第一句就講明 the autograder was offline for most of Tuesday。autograder 就是 grading system 的同義改寫。(A)(C) 文中未提；(D) 是另一件事，不是原因。"
+            },
+            {
+              "id": 22,
+              "prompt": "What will happen to a student who submits Project 2 twice?",
+              "options": [
+                "Only the first submission will count.",
+                "Only the last submission will count.",
+                "Both submissions will be averaged.",
+                "A late penalty will be applied to the second submission."
+              ],
+              "answer": "B",
+              "explanation": "only your final submission will be graded — final = 最後一次。(A) 剛好相反；(D) 信中明說新期限前不罰。"
+            },
+            {
+              "id": 23,
+              "prompt": "What does the email say about Project 3?",
+              "options": [
+                "It has been delayed by three days.",
+                "It will be released earlier than planned.",
+                "Its release date remains unchanged.",
+                "It will replace Project 2."
+              ],
+              "answer": "C",
+              "explanation": "does **not** affect the Project 3 release date, which is still Wednesday。(A) 是 Project 2 才延三天，這是最容易中的陷阱。"
+            }
+          ]
+        },
+        {
+          "title": "Text 2",
+          "style": "notice",
+          "body": [
+            "**NOTICE — Klaus Building, Level 2**",
+            "The east stairwell will be closed for repairs from Monday, April 13 through Friday, April 17. During this period, please use the west stairwell or the elevators near the main entrance.",
+            "Study rooms 2210–2225 remain open, but access is only from the west corridor. Rooms 2230 and above are unaffected.",
+            "Work will take place between 8 a.m. and 4 p.m. Some noise is expected. Students who need a quiet space during these hours are encouraged to reserve a room in the library instead.",
+            "— Facilities Management"
+          ],
+          "questions": [
+            {
+              "id": 24,
+              "prompt": "What is the main purpose of this notice?",
+              "options": [
+                "To announce that a building will be closed",
+                "To inform readers about a temporary closure and its alternatives",
+                "To advertise study rooms in the library",
+                "To explain how to reserve a study room"
+              ],
+              "answer": "B",
+              "explanation": "公告同時說明「關閉什麼」和「改走哪裡」。(A) 誇大——只關一座樓梯間，不是整棟樓；(C)(D) 只是末段的附帶建議。"
+            },
+            {
+              "id": 25,
+              "prompt": "How can students reach study room 2215 during the repairs?",
+              "options": [
+                "Through the east stairwell",
+                "Through the west corridor",
+                "Only by elevator",
+                "They cannot reach it at all."
+              ],
+              "answer": "B",
+              "explanation": "2215 落在 2210–2225 區間，access is only from the west corridor。(D) 錯在 remain open 已明說仍開放。"
+            },
+            {
+              "id": 26,
+              "prompt": "What does the notice suggest to students who need quiet?",
+              "options": [
+                "Come before 8 a.m.",
+                "Use rooms 2230 and above",
+                "Book a room in the library",
+                "Wait until April 17"
+              ],
+              "answer": "C",
+              "explanation": "encouraged to reserve a room in the library instead。(A) 雖然邏輯上說得通，但公告沒這樣建議——TOEFL 只認文中明講的。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "type": "choice",
+      "title": "Part 3 — Read an Academic Passage",
+      "instructions": "閱讀學術短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Passage 1 — Reading the Layers",
+          "style": "academic",
+          "body": [
+            "Beneath every riverbed and lake lies a record of the past. Each year, tiny particles of rock, sand, and organic material settle to the bottom, forming a thin band called a sediment layer. Over centuries these bands stack one upon another, and geologists can read them much as one reads the pages of a book.",
+            "The principle behind the method is simple: in undisturbed ground, older layers lie below younger ones. By counting downward, scientists assign an approximate date to each band. The layers also preserve clues about the climate of their time. A band rich in pollen suggests a warm, forested period, while one full of coarse gravel points to heavy flooding.",
+            "This record is not always easy to interpret. Earthquakes can fold or overturn entire sections, placing old material above new. Burrowing animals mix particles from different periods. For this reason, researchers rarely rely on a single site. They compare cores drilled from several locations, and only when the same pattern appears in all of them do they treat the sequence as reliable. Such caution has made sediment analysis one of the most trusted tools for reconstructing the Earth's distant past."
+          ],
+          "questions": [
+            {
+              "id": 27,
+              "prompt": "What is the main idea of the passage?",
+              "options": [
+                "Earthquakes make geological dating impossible.",
+                "Sediment layers record the past, though they must be interpreted carefully.",
+                "Pollen is the most useful material found in sediment.",
+                "Geologists prefer lakes to rivers when studying the Earth."
+              ],
+              "answer": "B",
+              "explanation": "三段結構正好是「能記錄過去 → 怎麼讀 → 但要小心解讀」。(A) 把第三段的警告誇大成「不可能」；(C)(D) 都是細節或文中沒提。"
+            },
+            {
+              "id": 28,
+              "prompt": "According to the passage, a layer containing a great deal of pollen indicates",
+              "options": [
+                "a period of heavy flooding",
+                "recent earthquake activity",
+                "a warm period with many trees",
+                "the presence of burrowing animals"
+              ],
+              "answer": "C",
+              "explanation": "A band rich in pollen suggests a warm, forested period。(A) 是 coarse gravel 對應的答案，屬於張冠李戴型誘答。"
+            },
+            {
+              "id": 29,
+              "prompt": "Why do researchers compare cores from several locations?",
+              "options": [
+                "Because drilling a single core is too expensive",
+                "Because one site alone may have been disturbed and give a false sequence",
+                "Because different locations form layers at the same speed",
+                "Because pollen is found only in certain regions"
+              ],
+              "answer": "B",
+              "explanation": "For this reason 承接前面的地震擾動與動物掘穴，指的就是單一地點可能被擾亂。(A) 成本問題文中沒提。"
+            },
+            {
+              "id": 30,
+              "prompt": "The word **undisturbed** in paragraph 2 is closest in meaning to",
+              "options": [
+                "carefully examined",
+                "not moved or damaged",
+                "buried very deeply",
+                "formed recently"
+              ],
+              "answer": "B",
+              "explanation": "dis- + turb（攪動）+ -ed，加否定字首即「未被擾動的」。第三段的 fold、overturn、mix 正是 disturb 的具體例子。"
+            },
+            {
+              "id": 31,
+              "prompt": "The word **them** in paragraph 3 (\"the same pattern appears in all of **them**\") refers to",
+              "options": [
+                "researchers",
+                "burrowing animals",
+                "cores drilled from several locations",
+                "particles from different periods"
+              ],
+              "answer": "C",
+              "explanation": "同句前半 They compare cores drilled from several locations，them 就回指 cores。判斷指代先看同句或前一句最近的複數名詞。"
+            }
+          ]
+        },
+        {
+          "title": "Passage 2 — The London Coffeehouse",
+          "style": "academic",
+          "body": [
+            "When the first coffeehouse opened in London in 1652, few expected it to change the way the city did business. Yet within thirty years more than two thousand had appeared, and they had become the informal offices of the entire capital.",
+            "Their appeal lay partly in price. For one penny, anyone could enter, read the newspapers provided, and join the conversation at any table. Unlike taverns, where rank determined seating, coffeehouses seated customers wherever there was room. A merchant might find himself debating politics with a poet or a ship's captain.",
+            "This mixing had practical consequences. Traders who gathered at one house near the docks began posting news of arriving ships; that establishment eventually became Lloyd's, the great insurance market. Another, frequented by scientists, hosted discussions that fed directly into the early Royal Society.",
+            "Not everyone approved. Charles II tried to close the coffeehouses in 1675, arguing that they spread dangerous rumours, but the order was withdrawn within days after fierce public protest. They had already become too useful to abandon. By the eighteenth century their function had begun to divide: some evolved into private clubs, others into stock exchanges and auction houses that still operate today."
+          ],
+          "questions": [
+            {
+              "id": 32,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "The reasons coffee became popular in England",
+                "How London coffeehouses shaped the city's commercial and intellectual life",
+                "The conflict between Charles II and London merchants",
+                "The differences between taverns and coffeehouses"
+              ],
+              "answer": "B",
+              "explanation": "全文重點是咖啡館如何催生 Lloyd's、Royal Society、交易所。(C)(D) 都只佔一段，是「細節誤當主旨」的典型誘答。"
+            },
+            {
+              "id": 33,
+              "prompt": "According to the passage, how did coffeehouses differ from taverns?",
+              "options": [
+                "They charged no entrance fee.",
+                "They did not seat customers according to social rank.",
+                "They served only merchants and scientists.",
+                "They provided private rooms for business."
+              ],
+              "answer": "B",
+              "explanation": "Unlike taverns, where rank determined seating。(A) 是陷阱——要一便士，不是免費，只是很便宜。"
+            },
+            {
+              "id": 34,
+              "prompt": "What can be inferred from the fact that Charles II's order was withdrawn within days?",
+              "options": [
+                "The king had never intended to enforce it.",
+                "Coffeehouses had little political influence.",
+                "Public opposition to the closure was strong.",
+                "The rumours had already stopped spreading."
+              ],
+              "answer": "C",
+              "explanation": "after fierce public protest 直接說明原因。(B) 與事實相反——能逼國王收回成命正說明影響力大。"
+            },
+            {
+              "id": 35,
+              "prompt": "The word **frequented** in paragraph 3 is closest in meaning to",
+              "options": [
+                "visited often",
+                "funded generously",
+                "built recently",
+                "praised publicly"
+              ],
+              "answer": "A",
+              "explanation": "frequent 當動詞是「常去、光顧」，跟形容詞「頻繁的」同源。此處為過去分詞修飾 Another (coffeehouse)。"
+            },
+            {
+              "id": 36,
+              "prompt": "The phrase **that establishment** in paragraph 3 refers to",
+              "options": [
+                "Lloyd's insurance market",
+                "the coffeehouse near the docks",
+                "the Royal Society",
+                "the first coffeehouse opened in 1652"
+              ],
+              "answer": "B",
+              "explanation": "句型是 that establishment eventually BECAME Lloyd's——既然「變成」Lloyd's，它本身就不會是 Lloyd's。(A) 是最多人中的陷阱。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

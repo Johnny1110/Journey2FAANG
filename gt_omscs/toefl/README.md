@@ -45,7 +45,7 @@ TOEFL 100 分是 GT-OMSCS 入學門檻。必須先達成這一個目標才有後
 
 | 項目 | 頻率 | 方式 |
 | --- | --- | --- |
-| [Reading](reading/README.md) | 每週 1 回 | Claude 出題 → 我作答 → Claude 評分 |
+| [Reading](reading/README.md) | 每週 1 回 | Claude 出題 → 用 [App](toefl-reading/README.md) 計時作答 → 當場自動批改復盤 |
 | [Writing](writing/README.md) | 每週 1 回 | Claude 出題（計時）→ 我作答 → Claude 評分 |
 | [Listening](listening/README.md) | 每天 20–30 min | 網路資源：精聽（聽寫）+ 泛聽（podcast） |
 | [Speaking](speaking/README.md) | 每週 ≥ 3 次 | ChatGPT / Grok 語音對話，照主題清單練 |
@@ -56,6 +56,8 @@ TOEFL 100 分是 GT-OMSCS 入學門檻。必須先達成這一個目標才有後
 ## 怎麼跟 Claude 協作
 
 已建立專案 skill：`.claude/skills/toefl/SKILL.md`，用 `/toefl <subcommand>` 觸發（打 `toefl: <subcommand>` 也通）。不帶參數的 `/toefl` 會列出子指令與目前進度。
+
+閱讀練習另有 Vue App：`cd gt_omscs/toefl/toefl-reading && npm run dev`，支援計時模擬、自動批改、逐題復盤。
 
 | 指令 | 效果 |
 | --- | --- |

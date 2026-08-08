@@ -18,14 +18,28 @@ description: TOEFL-100 training workflow for GT OMSCS — generate weekly readin
 
 ## init reading
 
-在 `gt_omscs/toefl/reading/weekXX/` 建立：
+題型配置（全卷 36 題，題號 1 連續編到 36）：
 
-1. `README.md` — 一回完整閱讀練習，含計時要求（27 分鐘內），題型配置：
-   - **Complete the Words** ×2 段：學術段落各挖 10 個字，每個字只給前半字母（如 `imp___ant`）
-   - **Read in Daily Life** ×2 篇：email / 公告 / 通知（15–150 字），各 2–3 題四選一
-   - **Read an Academic Passage** ×2 篇：~200 字學術短文（題材輪替：科學、歷史、社會、藝術、科技），各 5 題四選一（主旨、細節、推論、詞義、指代）
-   - 題目後**不附答案**，答案留給 score 階段
-2. `answer.md` — 空白作答模板（對應題號的作答格）
+- **Complete the Words** ×2 段（第 1–20 題）：學術段落各挖 10 個字，只顯示前半字母
+- **Read in Daily Life** ×2 篇（第 21–26 題）：email / 公告 / 通知（15–150 字），各 2–3 題四選一
+- **Read an Academic Passage** ×2 篇（第 27–36 題）：~200 字學術短文，各 5 題四選一，五題分別考主旨、細節、推論、詞義、指代
+
+題材每週輪替（科學、歷史、社會、藝術、科技），並盡量讓 `vocabulary/vocab.md` 最近新增的字自然出現在文章裡，讓生字在語境中再遇到一次。
+
+**要產生兩份檔案，兩份的題目內容必須完全一致：**
+
+1. `gt_omscs/toefl/reading/weekXX/README.md` — 給人看／列印用，**不含答案**（答案留給 score 階段）
+2. `gt_omscs/toefl/reading/weekXX/answer.md` — 空白作答模板（對應題號的作答格）
+3. `gt_omscs/toefl/toefl-reading/src/data/weekXX.json` — 給 Vue App 用，**含答案與逐題解析**
+
+JSON 格式與欄位規則見 `gt_omscs/toefl/toefl-reading/README.md`。要點：
+
+- `template` 的 `{{n}}` 要和 `blanks[].id` 一一對應
+- `answer` 必須以 `prefix` 開頭，且 `prefix.length + missing === answer.length`
+- 選擇題每題 4 個選項、`answer` 為 `A`–`D`、每題都要寫 `explanation`（解析要指出正解在原文哪裡，以及誘答選項錯在哪）
+- 克漏字的 `explanation` 說明為什麼是這個字形（時態、詞性、搭配）
+
+寫完 JSON 後**必須執行 `cd gt_omscs/toefl/toefl-reading && npm run check` 驗證**，確認通過再回報。App 用 `import.meta.glob` 自動偵測，不需要註冊新週次。
 
 ## score reading weekXX
 
