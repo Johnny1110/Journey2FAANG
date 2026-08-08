@@ -170,6 +170,12 @@ Behavioral: -> [link](behavioral_training/README.md)
 <br>
 <br>
 
+## GT Online Master of Science in Computer Science
+
+[Official Link](https://pe.gatech.edu/degrees/computer-science)
+
+* [TOEFL-100](gt_omscs/toefl/README.md)
+* [Master Journey](gt_omscs/master/README.md)
 
 <br>
 <br>
