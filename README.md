@@ -170,21 +170,6 @@ Behavioral: -> [link](behavioral_training/README.md)
 <br>
 <br>
 
-## NTU-CS 入學準備篇
-
-目標：116 學年度 台大資訊工程學系碩士在職專班（筆試約 2027/03，名額 8 名）
-
-* 成績組成：資料審查 30% ＋ 筆試 30%（計算機概論＋資料結構，各 80 分鐘）＋ 口試 40%（筆試＋審查前 12 名才有口試資格）
-* 戰略：筆試是入場券（目標穩進前 12），備審與口試合計 70% 才是決勝點。資料結構吃 NeetCode 老本轉手寫模式，計算機概論是最大缺口需系統性補強。
-
-<br>
-
-* 準備總部（考試情報＋六個月讀書計畫＋協作指令）: -> [link](ntu_cs_prep/README.md)
-* 筆試科目 I — 資料結構: -> [link](ntu_cs_prep/data_structures/README.md)
-* 筆試科目 II — 計算機概論: -> [link](ntu_cs_prep/computer_science/README.md)
-* 考古題訓練＋錯題本: -> [link](ntu_cs_prep/past_exams/README.md)
-* 模擬考（含 Phase 0 診斷考）: -> [link](ntu_cs_prep/mock_exams/README.md)
-* 備審資料（30%）＋ 口試（40%）: -> [link](ntu_cs_prep/interview_and_docs/README.md)
 
 <br>
 <br>
