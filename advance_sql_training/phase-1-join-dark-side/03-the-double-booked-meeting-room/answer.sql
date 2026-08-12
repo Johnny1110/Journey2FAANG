@@ -164,3 +164,46 @@ order by room_id, starts_at;
 -- ------------------------------------------------------------
 
 
+-- 1. 「你找出了衝突。但更好的做法是**一開始就不讓它發生**。你會怎麼做？」
+-- (1). Using SERIALIZABLE isolation level.
+begin isolation level serializable;
+select 1 from bookings where room_id = 101 AND ...;
+insert into bookings values (...);
+commit;
+-- Trade off: 
+-- * If dead lock detected, 1 txn will be dropped. application layer must write retry machanism
+-- * The whole session will be low efficiency.
+-- * In High Concurrerent situation, abort rate will be very high.
+
+-- (2). EXCLUDE Constraint
+-- add gist index support for btree types, in this case is room_id.
+create extension if not exists btree_gist;
+-- not allow same room and period have intersection (overlapping).
+alter table bookings add constraint no_double_booking
+exclude using gist (
+    room_id with =,
+    period with &&
+    );
+-- No trade off, this is best approach.
+
+-- What is 'exclude'? It's a custom-made unique constraint which allow us to define operators to check for uniqueness.
+-- UNIQUE(room_id): not allow x.room_id = y.room_id
+-- EXCLUDE: change = to any other operator. in this case, (room_id with =, period with &&) represents x.room_id = y.room_id AND x.period && y.period.
+
+-- How to make atomicity?
+-- 1. insert into GiST index before actual insert.
+-- 2. using GiST index find out possible conflict entry.
+-- 3. if found some conflict entry is not commit yet, waiting for it done. lock the index entry not row.
+-- 4. if found some conflict entry already commited, throw error or execute when opposite entry rollback.
+
+-- 2. 「如果我在應用層先 `SELECT` 檢查有沒有衝突，沒有才 `INSERT`，這樣夠嗎？」
+
+-- It is not enough, because, there is Time if check to time of use problem exists. just like  we talk above.
+
+-- 追問 1：「那我把 SELECT 和 INSERT 包進交易裡呢？」
+
+-- 交易保證的是原子性 (全部成功或全部失敗)，不保證隔離性 (中間插隊)，在 SELECT 和 INSERT 之間其他 TXN 是可以做事的．
+
+-- 3. 「三筆訂位互相重疊（A-B、B-C、A-C），你的查詢回傳 3 組配對。但使用者想看到的是『這個時段有 3 筆衝突』。怎麼改？」
+
+-- 4. 「`overlap_minutes` 怎麼算？如果一筆完全被另一筆包住呢？」
