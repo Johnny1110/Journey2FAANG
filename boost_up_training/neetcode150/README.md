@@ -78,4 +78,5 @@ link: https://leetcode.com/problem-list/plakya4j
 63. Best Time to Buy and Sell Stock -> [link](bttbass) 
 64. Binary Tree Maximum Path Sum -> [link](binary_tree_maximum_path_sum)
 65. Valid Palindrome -> [link](valid_palindrome)
-66. Word Ladder -> [link](word_ladder/README.md) 👈
+66. Word Ladder -> [link](word_ladder). -> 值得重複刷幾遍
+67. ? -> [link](?/README.md) 👈
