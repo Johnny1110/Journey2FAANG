@@ -1,0 +1,306 @@
+{
+  "id": "week02",
+  "week": 2,
+  "title": "Week 02",
+  "date": "2026-08-15",
+  "topics": ["Batteries & Undersea Cables（科技）", "Paint Tubes & Art Restoration（藝術）"],
+  "timeLimitSec": 1620,
+  "parts": [
+    {
+      "id": "part1",
+      "type": "cloze",
+      "title": "Part 1 — Complete the Words",
+      "instructions": "每個空格是一個單字，只顯示前半部字母。依上下文補完整個單字（輸入完整拼字，不是只填缺的部分）。",
+      "blocks": [
+        {
+          "title": "Passage A",
+          "template": "Almost every phone and laptop today {{1}} on a lithium-ion battery. Inside the cell, lithium ions move from one electrode to the other, and this movement {{2}} the current that powers the device. Charging simply {{3}} the flow. Unfortunately, every battery wears out. Each cycle causes tiny chemical changes that {{4}} reduce how much energy the cell can {{5}}. After a few hundred cycles, users notice that the same charge no longer {{6}} a full day. Temperature {{7}} as well: heat speeds up the damage, so a laptop left in a hot car may {{8}} its battery far sooner than expected. Engineers therefore write software that {{9}} charging to eighty percent, a simple {{10}} that can double a battery's useful life.",
+          "blanks": [
+            { "id": 1, "prefix": "rel", "missing": 3, "answer": "relies", "explanation": "rely on = 依賴（固定搭配）。主詞 every phone and laptop 被 every 修飾，視為單數，動詞加 -s；rely 結尾是「子音 + y」，變化時 y → ie，所以是 relies 不是 relys。" },
+            { "id": 2, "prefix": "gene", "missing": 5, "answer": "generates", "explanation": "主詞 this movement 是單數，現在式加 -s。generate the current = 產生電流。" },
+            { "id": 3, "prefix": "rev", "missing": 5, "answer": "reverses", "explanation": "主詞 Charging（動名詞）視為單數。reverse the flow = 使電流反向流動，正好對應充電與放電的關係。" },
+            { "id": 4, "prefix": "grad", "missing": 5, "answer": "gradually", "explanation": "修飾動詞 reduce 要用副詞。gradual 是形容詞、graduate 是動詞，兩者放這裡文法都不通。（week01 已考過同一字）" },
+            { "id": 5, "prefix": "sto", "missing": 2, "answer": "store", "explanation": "情態動詞 can 後接原形。store energy = 儲存能量，是電池的固定講法。" },
+            { "id": 6, "prefix": "las", "missing": 2, "answer": "lasts", "explanation": "主詞 the same charge 是單數，現在式加 -s。last 當動詞是「持續、撐得住」——lasts a full day = 撐一整天。" },
+            { "id": 7, "prefix": "mat", "missing": 4, "answer": "matters", "explanation": "matter 當動詞是「有影響、要緊」；主詞 Temperature 單數，加 -s。後面冒號的內容正是在解釋溫度為何要緊。" },
+            { "id": 8, "prefix": "exh", "missing": 4, "answer": "exhaust", "explanation": "情態動詞 may 後接原形。exhaust = 耗盡（week01 已收錄），這裡指把電池壽命提早用完。" },
+            { "id": 9, "prefix": "lim", "missing": 3, "answer": "limits", "explanation": "關係代名詞 that 代替先行詞 software（單數），動詞加 -s。limit A to B = 把 A 限制在 B。" },
+            { "id": 10, "prefix": "prac", "missing": 4, "answer": "practice", "explanation": "a simple ___ 需要單數可數名詞，指前面描述的「做法、慣例」，不是「練習」的意思（week01 已收錄）。" }
+          ]
+        },
+        {
+          "title": "Passage B",
+          "template": "Before the invention of the collapsible metal tube in 1841, painters had to {{11}} their own colours each morning. They ground mineral pigments by hand and mixed them with oil, a slow process that {{12}} only a small amount of paint at a time. Because the mixture dried within hours, artists rarely {{13}} far from the studio. The tube {{14}} that routine completely. Paint could now be {{15}} into the countryside and kept for weeks without drying. Landscape painters {{16}} took advantage of the freedom. Standing outdoors, they could {{17}} how light shifted from hour to hour and record it directly on the canvas. Critics at first {{18}} their quick, rough brushwork as unfinished. Yet the style {{19}} won acceptance, and the Impressionists are now {{20}} as the founders of modern painting.",
+          "blanks": [
+            { "id": 11, "prefix": "prep", "missing": 3, "answer": "prepare", "explanation": "had to 之後接原形動詞。prepare their own colours = 自己調製顏料。" },
+            { "id": 12, "prefix": "prod", "missing": 4, "answer": "produced", "explanation": "全段是過去式敘述，關係子句 that ___ 的先行詞是 a slow process。produce = 產出。" },
+            { "id": 13, "prefix": "wor", "missing": 3, "answer": "worked", "explanation": "頻率副詞 rarely 後面要有動詞，時態同全段過去式。work far from the studio = 在遠離畫室的地方作畫。" },
+            { "id": 14, "prefix": "trans", "missing": 6, "answer": "transformed", "explanation": "過去式及物動詞，受詞是 that routine。transform = 徹底改變，比 change 更強，正好搭配 completely。" },
+            { "id": 15, "prefix": "car", "missing": 4, "answer": "carried", "explanation": "be + 過去分詞的被動語態（could now be ___）。注意 carry 結尾「子音 + y」，過去分詞是 carried。" },
+            { "id": 16, "prefix": "imme", "missing": 7, "answer": "immediately", "explanation": "修飾動詞 took 要用副詞。immediate 是形容詞，放在主詞與動詞之間文法不通。" },
+            { "id": 17, "prefix": "obs", "missing": 4, "answer": "observe", "explanation": "情態動詞 could 後接原形。observe how light shifted = 觀察光線如何變化。" },
+            { "id": 18, "prefix": "dism", "missing": 5, "answer": "dismissed", "explanation": "dismiss A as B = 把 A 斥為 B（不屑一顧），後面的 as unfinished 就是這個句型的標記。時態為過去式。" },
+            { "id": 19, "prefix": "even", "missing": 6, "answer": "eventually", "explanation": "修飾動詞 won 要用副詞。前面的 Yet 表示轉折——一開始被貶低，最終獲得認可。event/eventual 詞性都不對。" },
+            { "id": 20, "prefix": "reg", "missing": 5, "answer": "regarded", "explanation": "be regarded as = 被視為（被動語態固定搭配）。register 雖然也是 reg 開頭，但語意與句型都不合。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "type": "choice",
+      "title": "Part 2 — Read in Daily Life",
+      "instructions": "閱讀生活情境短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Text 1",
+          "style": "email",
+          "body": [
+            "**From:** OIT Service Desk",
+            "**Subject:** Two-step verification required starting September 1",
+            "Beginning Monday, September 1, every student account will require two-step verification to open email, the course portal, and the library databases. Campus Wi-Fi will not be affected.",
+            "Please enroll a device before August 29. If you have not enrolled by September 1, you will still be able to sign in, but only from a campus computer lab until you complete the setup.",
+            "The recommended option is the mobile app, which works even where there is no signal. Text-message codes remain available for students who prefer them, though delivery can be slow when traveling abroad.",
+            "Enrollment takes about five minutes."
+          ],
+          "questions": [
+            {
+              "id": 21,
+              "prompt": "What are students asked to do before September 1?",
+              "options": [
+                "Replace their campus password.",
+                "Register a device for two-step verification.",
+                "Reserve a seat in a campus computer lab.",
+                "Install new software on the campus Wi-Fi network."
+              ],
+              "answer": "B",
+              "explanation": "Please enroll a device before August 29 — enroll a device 就是「登錄一台裝置」。(A) 全文沒提改密碼；(C) 電腦教室是「沒登錄的後果」，不是要求；(D) 信中明說 Wi-Fi 不受影響。"
+            },
+            {
+              "id": 22,
+              "prompt": "What will happen to a student who has not enrolled a device by September 1?",
+              "options": [
+                "The student's account will be closed.",
+                "The student will be able to sign in only from a campus computer lab.",
+                "The student will lose access to campus Wi-Fi.",
+                "The student will be charged a late fee."
+              ],
+              "answer": "B",
+              "explanation": "you will still be able to sign in, but only from a campus computer lab。(A) 誇大——still be able to sign in 就否定了「帳號關閉」；(C) 與 Campus Wi-Fi will not be affected 直接矛盾；(D) 文中沒提費用。"
+            },
+            {
+              "id": 23,
+              "prompt": "Why does the email recommend the mobile app?",
+              "options": [
+                "It is the only method that works with library databases.",
+                "It functions even without a phone signal.",
+                "It can be installed in five minutes.",
+                "It is the only option available to students abroad."
+              ],
+              "answer": "B",
+              "explanation": "which works even where there is no signal 是唯一給 app 的理由。(C) 偷換概念——五分鐘講的是 enrollment 整個流程，不是安裝 app；(D) 過度推論，簡訊只是「可能較慢」，並非不可用。"
+            }
+          ]
+        },
+        {
+          "title": "Text 2",
+          "style": "notice",
+          "body": [
+            "**NOTICE — Student Gallery, Room 118**",
+            "Submissions for the autumn student exhibition close on Friday, October 3 at 5 p.m. Each student may submit up to two works. Digital and photographic pieces must be printed and framed before delivery; the gallery does not provide framing.",
+            "Bring your work to the gallery office between 10 a.m. and 4 p.m. on weekdays. Work left outside the office will not be accepted.",
+            "Selected artists will be notified by email on October 10. Pieces that are not selected must be collected by October 17; after that date the gallery cannot store them."
+          ],
+          "questions": [
+            {
+              "id": 24,
+              "prompt": "What must a student do with a photographic piece before submitting it?",
+              "options": [
+                "Email a copy to the gallery office",
+                "Print and frame it at their own expense",
+                "Have it approved before October 3",
+                "Deliver it together with a second work"
+              ],
+              "answer": "B",
+              "explanation": "must be printed and framed before delivery + the gallery does not provide framing，兩句合起來就是「自己出錢裱框」。(D) 誤讀 up to two works——「最多兩件」是上限，不是規定要交兩件。"
+            },
+            {
+              "id": 25,
+              "prompt": "How should a student deliver a piece to the exhibition?",
+              "options": [
+                "Leave it outside Room 118 at any hour",
+                "Hand it in at Room 118 during weekday office hours",
+                "Mail it to the gallery before October 3",
+                "Bring it to the gallery on October 10"
+              ],
+              "answer": "B",
+              "explanation": "Bring your work to the gallery office between 10 a.m. and 4 p.m. on weekdays。(A) 被下一句 Work left outside the office will not be accepted 直接否定；(D) 10/10 是公布入選名單的日子。"
+            },
+            {
+              "id": 26,
+              "prompt": "What happens to a work that is not selected?",
+              "options": [
+                "It will be shown in a different gallery.",
+                "It will be returned to the student by mail.",
+                "The student must pick it up by October 17.",
+                "The gallery will keep it until the next exhibition."
+              ],
+              "answer": "C",
+              "explanation": "must be collected by October 17。collect 在這裡是「領回」不是「收集」。(D) 與 the gallery cannot store them 正好相反，是最容易中的誘答。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "type": "choice",
+      "title": "Part 3 — Read an Academic Passage",
+      "instructions": "閱讀學術短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Passage 1 — The Cables Beneath the Sea",
+          "style": "academic",
+          "body": [
+            "Most people picture the internet as something wireless, carried by satellites overhead. In fact, more than ninety-five percent of international data travels through cables lying on the ocean floor. A modern cable is no thicker than a garden hose, yet a single one can carry the traffic of an entire continent.",
+            "The idea is older than it sounds. The first working telegraph cable across the Atlantic was completed in 1866. It could carry neither speech nor images, only a few words per minute in Morse code. Today's cables use hair-thin glass fibres and pulses of light, but the route they follow is much the same, because the seabed along it is relatively flat.",
+            "Laying a cable is slow and expensive; repairing one is worse. A ship must locate the break, lift the cable from depths of several kilometres, and splice it at the surface. Most damage, however, is not caused by earthquakes or sharks, as is often reported, but by fishing gear and ship anchors in shallow water near the coast. For this reason, operators run several separate cables to each landing point. When one fails, traffic shifts to another within seconds, and users on shore notice nothing at all."
+          ],
+          "questions": [
+            {
+              "id": 27,
+              "prompt": "What is the main idea of the passage?",
+              "options": [
+                "Satellites have replaced undersea cables for international communication.",
+                "Undersea cables carry nearly all international data, and networks are built to survive damage to them.",
+                "The first Atlantic telegraph cable was a technical failure.",
+                "Sharks are the greatest threat to the world's internet cables."
+              ],
+              "answer": "B",
+              "explanation": "三段結構是「海底電纜承載幾乎所有國際流量 → 歷史與路線 → 容易壞，所以靠多條備援」。(A) 第一句正好相反——大眾以為是衛星，事實不是；(D) 文中明說鯊魚只是常見的誤傳。"
+            },
+            {
+              "id": 28,
+              "prompt": "According to the passage, what causes most damage to undersea cables?",
+              "options": [
+                "Earthquakes on the deep seabed",
+                "Sharks attracted to the cables",
+                "Fishing equipment and ship anchors near the coast",
+                "Water pressure at depths of several kilometres"
+              ],
+              "answer": "C",
+              "explanation": "not caused by earthquakes or sharks ... but by fishing gear and ship anchors。看到 not A but B 句型，答案永遠在 but 之後。(A)(B) 是作者特地點名的錯誤印象。"
+            },
+            {
+              "id": 29,
+              "prompt": "It can be inferred from the last paragraph that a landing point served by only one cable would",
+              "options": [
+                "be cheaper for operators to repair",
+                "leave its users without service until the repair was finished",
+                "carry more traffic than several cables together",
+                "be less likely to be damaged by anchors"
+              ],
+              "answer": "B",
+              "explanation": "末段說多條電纜時「一條斷了流量幾秒內轉走，岸上用戶毫無感覺」；反推只有一條就沒得轉，而修復又慢又貴，用戶只能等。(A) 修復成本與電纜數量無關，是文中沒有的連結。"
+            },
+            {
+              "id": 30,
+              "prompt": "The word **splice** in paragraph 3 is closest in meaning to",
+              "options": [
+                "join together",
+                "cut apart",
+                "measure carefully",
+                "replace completely"
+              ],
+              "answer": "A",
+              "explanation": "整句在講修復流程：找到斷點 → 拉起來 → splice。既然是修「break（斷裂）」，動作必然是把兩端接回去。(B) 與修復的目的相反；(D) 若是整條換掉就不必特地拉到海面上接。"
+            },
+            {
+              "id": 31,
+              "prompt": "The word **they** in paragraph 2 (\"the route **they** follow is much the same\") refers to",
+              "options": [
+                "hair-thin glass fibres",
+                "pulses of light",
+                "today's cables",
+                "telegraph operators"
+              ],
+              "answer": "C",
+              "explanation": "「走的路線跟以前差不多」——會有「路線」的是電纜本身，而 Today's cables 正是這句的主詞。(A)(B) 是 use 的受詞，位置雖近但語意不通：玻璃纖維不會自己選路線。"
+            }
+          ]
+        },
+        {
+          "title": "Passage 2 — Cleaning the Past",
+          "style": "academic",
+          "body": [
+            "When conservators removed centuries of grime from Michelangelo's ceiling in the Sistine Chapel during the 1980s, the colours that emerged startled the art world. The figures, long admired for their solemn, shadowed tones, turned out to be dressed in bright pink, green, and orange.",
+            "Not everyone welcomed the result. Some critics argued that the darker surface was not merely dirt but a deliberate final layer, applied by the artist himself to soften the contrasts. Remove it, they said, and you remove part of the painting. The conservators replied that chemical analysis had found no such layer — only candle soot, glue from earlier repairs, and the residue of previous cleanings.",
+            "The dispute exposed a problem that has no perfect solution. Every painting begins to change the moment it is finished: varnish yellows, pigments fade, and canvas darkens. A restorer must therefore decide which moment in a work's life counts as the true one. Returning a painting to its first day ignores four centuries of history; leaving it untouched allows the artist's intentions to disappear under a brown film. Most museums now favour the least invasive treatment possible, and, just as importantly, they document every step in detail."
+          ],
+          "questions": [
+            {
+              "id": 32,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "The cleaning of the Sistine Chapel ceiling was a serious mistake.",
+                "Restoration forces conservators to decide which moment in a painting's life should be preserved.",
+                "Michelangelo used far brighter colours than other painters of his time.",
+                "Chemical analysis has ended most disagreements about restoration."
+              ],
+              "answer": "B",
+              "explanation": "西斯汀禮拜堂只是引子，第三段才點出核心：a restorer must decide which moment in a work's life counts as the true one。(A) 作者並未選邊站；(C) 文中沒有跟同代畫家比較。"
+            },
+            {
+              "id": 33,
+              "prompt": "What did chemical analysis reveal about the dark surface of the ceiling?",
+              "options": [
+                "It had been applied by Michelangelo to soften the contrasts.",
+                "It was a varnish that had yellowed over four centuries.",
+                "It consisted of soot, glue, and material left by earlier cleanings.",
+                "It could not be removed without damaging the pigments beneath."
+              ],
+              "answer": "C",
+              "explanation": "found no such layer — only candle soot, glue ... and the residue of previous cleanings。(A) 是被分析結果推翻的「批評者主張」，把他人立場當成事實是常見陷阱；(B) 的 varnish yellows 出現在第三段的通則，不是這面天花板的檢驗結果。"
+            },
+            {
+              "id": 34,
+              "prompt": "Why do most museums document every step of a restoration?",
+              "options": [
+                "Because the law requires a written record of all museum work",
+                "Because visitors want to watch paintings being cleaned",
+                "Because later specialists may judge the same decisions differently",
+                "Because documentation slows the yellowing of varnish"
+              ],
+              "answer": "C",
+              "explanation": "推論題。全段的前提是「哪個時刻才算真跡沒有標準答案」，既然判斷可能改變，留下紀錄才能讓後人重新檢視。(D) 因果不通——寫紀錄不會影響化學變化。"
+            },
+            {
+              "id": 35,
+              "prompt": "The word **residue** in paragraph 2 is closest in meaning to",
+              "options": [
+                "material left behind",
+                "a fresh coat of paint",
+                "a written record",
+                "a chemical test"
+              ],
+              "answer": "A",
+              "explanation": "與 candle soot、glue 並列，三者都是「殘留下來的髒東西」；of previous cleanings 也暗示是先前作業留下的。(B) 若是新塗的顏料，就變成批評者主張的「刻意加的一層」，與這句要反駁的內容矛盾。"
+            },
+            {
+              "id": 36,
+              "prompt": "The word **it** in paragraph 2 (\"Remove **it**, they said, and you remove part of the painting\") refers to",
+              "options": [
+                "the chapel ceiling",
+                "the darker surface layer",
+                "the chemical analysis",
+                "the bright pink and green colour"
+              ],
+              "answer": "B",
+              "explanation": "前一句批評者主張 the darker surface 是畫家刻意留下的最後一層，所以「拿掉它就等於拿掉畫的一部分」。(A) 太大——沒有人主張把天花板整個移走；(C) 化學分析出現在下一句，時序上也不可能被回指。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -44,3 +44,4 @@ App 的題庫在 `toefl-reading/src/data/weekXX.json`（含答案），本資料
 | 週次 | 日期 | 主題 | 分數 |
 | --- | --- | --- | --- |
 | [Week 01](week01/README.md) | 2026-08-08 | Soil & Sediment（科學）、Coffeehouses（歷史／社會） | 未作答 |
+| [Week 02](week02/README.md) | 2026-08-15 | Batteries & Undersea Cables（科技）、Paint Tubes & Art Restoration（藝術） | 未作答 |
