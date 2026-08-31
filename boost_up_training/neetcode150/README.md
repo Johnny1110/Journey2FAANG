@@ -79,4 +79,5 @@ link: https://leetcode.com/problem-list/plakya4j
 64. Binary Tree Maximum Path Sum -> [link](binary_tree_maximum_path_sum)
 65. Valid Palindrome -> [link](valid_palindrome)
 66. Word Ladder -> [link](word_ladder). -> 值得重複刷幾遍
-67. Longest Consecutive Sequence -> [link](longest_consecutive_sequence/README.md) 👈
+67. Longest Consecutive Sequence -> [link](longest_consecutive_sequence) 
+68. ? -> [link](?) 👈
