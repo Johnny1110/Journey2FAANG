@@ -28,11 +28,36 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 
 <br>
 
-## Coding
+## Coding - Hastset solution
 
 ```go
 func longestConsecutive(nums []int) int {
-    return 0
+	if len(nums) == 0 {
+		return 0
+	}
+
+	hs := make(map[int]int8)
+	for _, n := range nums {
+		hs[n] = 1
+	}
+
+	best := 0
+	// 6
+	for n := range hs {
+
+		if hs[n-1] != 1 { // only from start
+			temp := 1
+			n++              // try to find next
+			for hs[n] == 1 { // found next
+				n++
+				temp++
+			}
+
+			best = max(best, temp)
+		}
+	}
+
+	return best
 }
 ```
 
@@ -42,8 +67,8 @@ func longestConsecutive(nums []int) int {
 ## Time & Space Complexity 
 
 ```
-Assume:
+Assume: N = len(nums)
 
-Time:
-Space:
+Time: O(N) ->  input or get hashset is O(N)
+Space: O(N)
 ```
