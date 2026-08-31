@@ -47,6 +47,12 @@ order by txn_ref;
 -- Q3: 天真的 <> 把 TXN-007 判成什麼 + IS DISTINCT FROM 修正
 -- ------------------------------------------------------------
 
+select *
+from internal_ledger il
+         full outer join bank_statement bs on bs.txn_ref = il.txn_ref
+where il.amount <> bs.amount;
+
+
 
 -- ------------------------------------------------------------
 -- Q4: IS DISTINCT FROM 完整真值表
