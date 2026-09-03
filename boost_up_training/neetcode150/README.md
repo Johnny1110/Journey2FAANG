@@ -83,4 +83,5 @@ link: https://leetcode.com/problem-list/plakya4j
 68. Surrounded Regions -> [link](surrounded_regions) 
 69. Palindrome Partitioning -> [link](palindrome_partitioning) -> 必須要再做一次，跟一般的 backtracking 不一樣
 70. Clone Graph -> [link](clone_graph) 
-71. ? -> [link](?/README.md) 👈 
+71. Gas Station -> [link](gas_station) -> greddy 算法，要再練一次
+72. Palindromic Substrings -> [link](palindromic_substrings/README.md) 👈 
