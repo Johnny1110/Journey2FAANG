@@ -1,0 +1,309 @@
+{
+  "id": "week03",
+  "week": 3,
+  "title": "Week 03",
+  "date": "2026-08-29",
+  "topics": ["Public Libraries & Third Places（社會）", "Ice Cores & Tree Rings（科學）"],
+  "timeLimitSec": 1620,
+  "parts": [
+    {
+      "id": "part1",
+      "type": "cloze",
+      "title": "Part 1 — Complete the Words",
+      "instructions": "每個空格是一個單字，只顯示前半部字母。依上下文補完整個單字（輸入完整拼字，不是只填缺的部分）。",
+      "blocks": [
+        {
+          "title": "Passage A",
+          "template": "A century ago a public library was judged almost entirely by the number of books it {{1}}. Today the measure is different. Librarians report that many visitors {{2}} with no intention of borrowing anything at all. They come to use the free internet, to escape the heat, or {{3}} to sit near other people. Because the building charges nothing and {{4}} nothing in return, it {{5}} a mixture of residents that few other places in a city ever bring together. Sociologists {{6}} such buildings as social infrastructure: ordinary physical settings that {{7}} whether neighbours ever meet at all. Their contribution is easy to {{8}}, because it never {{9}} in any budget line. Yet after heat waves and floods, districts with busy libraries and parks have {{10}} recovered faster than districts that have none.",
+          "blanks": [
+            { "id": 1, "prefix": "cont", "missing": 5, "answer": "contained", "explanation": "全句在描述「一個世紀以前」的情況（A century ago ... was judged），關係子句要用過去式，所以是 contained 不是 contains。the number of books it contained = 它藏了多少本書。" },
+            { "id": 2, "prefix": "arr", "missing": 3, "answer": "arrive", "explanation": "主詞 many visitors 是複數，現在式不加 -s。arrive with no intention of V-ing = 來的時候根本沒打算做某事。注意 arrive 後面接地點要用 at/in，這裡直接接 with 片語。" },
+            { "id": 3, "prefix": "sim", "missing": 3, "answer": "simply", "explanation": "這是 to use... , to escape... , or (simply) to sit... 的三段並列，simply 當副詞修飾後面的 to sit，語氣是「就只是」。simple 是形容詞，放這裡詞性不對。" },
+            { "id": 4, "prefix": "dema", "missing": 3, "answer": "demands", "explanation": "主詞是 the building（單數），與前面的 charges 並列，所以同樣加 -s。demand nothing in return = 不要求任何回報。" },
+            { "id": 5, "prefix": "att", "missing": 5, "answer": "attracts", "explanation": "主詞 it（= the building）單數，現在式加 -s。attract a mixture of residents = 吸引各式各樣的居民。" },
+            { "id": 6, "prefix": "desc", "missing": 4, "answer": "describe", "explanation": "主詞 Sociologists 複數，動詞不加 -s。describe A as B = 把 A 形容為 B——後面的 as social infrastructure 就是這個句型的標記（比較 week02 的 dismiss A as B）。" },
+            { "id": 7, "prefix": "sha", "missing": 2, "answer": "shape", "explanation": "關係代名詞 that 的先行詞是 settings（複數），動詞不加 -s。shape 當動詞是「形塑、決定…的樣貌」：shape whether neighbours ever meet = 決定鄰居會不會碰得到面。" },
+            { "id": 8, "prefix": "over", "missing": 4, "answer": "overlook", "explanation": "be easy to + 原形動詞。overlook = 忽略、沒看見（不是 oversee 監督，也不是 overtake）。easy to overlook 是常見搭配。" },
+            { "id": 9, "prefix": "app", "missing": 4, "answer": "appears", "explanation": "主詞 it（= their contribution）單數，加 -s。appear in a budget line = 出現在預算表上；因為前面有 never，所以動詞仍用肯定形。apply 語意不通。" },
+            { "id": 10, "prefix": "repea", "missing": 5, "answer": "repeatedly", "explanation": "have ___ recovered，空格夾在助動詞與過去分詞之間，只能放副詞。repeatedly = 一再地、屢次地。repeated 是形容詞，詞性不對。" }
+          ]
+        },
+        {
+          "title": "Passage B",
+          "template": "Two kilometres beneath the surface of the Antarctic ice sheet lies a record of the atmosphere that no written history can {{11}}. Snow that falls there never melts. Each year's snowfall is {{12}} by the next, and the weight of everything above slowly {{13}} it into solid ice. Sealed inside are bubbles of ancient air, along with dust, volcanic ash, and the {{14}} of distant fires. Drilling teams {{15}} cylinders of ice several kilometres long, cut them into sections, and {{16}} the gases in every bubble. The deepest cores recovered so far {{17}} back more than eight hundred thousand years. Because the annual layers can be counted like tree rings, researchers are able to {{18}} a date to each sample with surprising precision. The carbon dioxide curve that emerges from this work is one that no model could have {{19}} in advance, and it {{20}} the clearest evidence that today's atmosphere is unlike any in the past million years.",
+          "blanks": [
+            { "id": 11, "prefix": "mat", "missing": 2, "answer": "match", "explanation": "情態動詞 can 後接原形。match 在這裡是「比得上、匹敵」：a record that no written history can match = 任何文字史料都比不上的紀錄。（week02 考過 matter，注意兩字不同。）" },
+            { "id": 12, "prefix": "buri", "missing": 2, "answer": "buried", "explanation": "is + 過去分詞的被動語態：雪被後來的雪「埋起來」。bury 結尾是「子音 + y」，過去分詞 y → ie，寫作 buried。" },
+            { "id": 13, "prefix": "comp", "missing": 6, "answer": "compresses", "explanation": "主詞是 the weight（單數，不是 layers），現在式加 -s。compress A into B = 把 A 壓成 B。compressed 是過去式，與全段現在式時態不合。" },
+            { "id": 14, "prefix": "resi", "missing": 3, "answer": "residue", "explanation": "the ___ of distant fires 需要名詞。residue = 殘留物（week02 已收錄），這裡指遠方野火飄來的煙灰殘留。resist/resident 語意都不通。" },
+            { "id": 15, "prefix": "extr", "missing": 3, "answer": "extract", "explanation": "主詞 Drilling teams 複數，動詞不加 -s，並與後面的 cut、measure 三個動詞並列。extract = 取出、抽取（冰芯就叫 ice core，是「鑽取」出來的）。" },
+            { "id": 16, "prefix": "meas", "missing": 3, "answer": "measure", "explanation": "與 extract、cut 並列的第三個動詞，主詞同為複數，不加 -s。measure the gases = 測量氣體含量。" },
+            { "id": 17, "prefix": "rea", "missing": 2, "answer": "reach", "explanation": "主詞 The deepest cores 複數，動詞不加 -s。reach back + 時間 = 回溯到多久以前，是常見的時間搭配。" },
+            { "id": 18, "prefix": "assi", "missing": 2, "answer": "assign", "explanation": "be able to 後接原形。assign a date to X = 給 X 訂出一個年代。assist（協助）語意不通。" },
+            { "id": 19, "prefix": "pred", "missing": 5, "answer": "predicted", "explanation": "could have + 過去分詞，表示「（本來）能夠…（但事實上沒有）」。predict = 預測；prediction 是名詞，放這裡文法不通。" },
+            { "id": 20, "prefix": "rema", "missing": 3, "answer": "remains", "explanation": "主詞 it 單數，現在式加 -s。remain 當連綴動詞後接名詞補語：it remains the clearest evidence = 它仍舊是最明確的證據。remaining 是分詞，不能單獨當主要動詞。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "type": "choice",
+      "title": "Part 2 — Read in Daily Life",
+      "instructions": "閱讀生活情境短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Text 1",
+          "style": "email",
+          "body": [
+            "**From:** Library Access Services",
+            "**Subject:** Group study rooms — new booking rules from September 8",
+            "Starting Monday, September 8, the group study rooms on floors 3 and 4 must be booked through the library website. Walk-in use of these rooms will no longer be possible, even when a room is standing empty.",
+            "A booking may be made up to seven days in advance and may not exceed three hours per day per student. A room held more than fifteen minutes past the start time will be released to the next group waiting.",
+            "The individual carrels on floor 2 are unaffected and remain first-come, first-served.",
+            "Groups of four or more may request the seminar room (Room 402) by replying to this message. These requests are reviewed by staff and are not confirmed automatically."
+          ],
+          "questions": [
+            {
+              "id": 21,
+              "prompt": "What is the main change described in the email?",
+              "options": [
+                "Group study rooms on floors 3 and 4 must be reserved online in advance.",
+                "Floors 3 and 4 will be closed for renovation in September.",
+                "The individual carrels on floor 2 will now require a booking.",
+                "Students may book a study room for up to seven hours a day."
+              ],
+              "answer": "A",
+              "explanation": "第一段：must be booked through the library website，且 Walk-in use ... will no longer be possible。(B) 全文沒提整修或關閉，只說 9/8 起改規則；(C) 信中明說 floor 2 carrels are unaffected；(D) 混淆數字——seven days 是可提前預約的天數，每日上限是 three hours。"
+            },
+            {
+              "id": 22,
+              "prompt": "A group has booked a room from 2:00 p.m. but arrives at 2:20 p.m. According to the email, what may happen?",
+              "options": [
+                "The group will be charged a late fee.",
+                "The booking will be moved to the following day.",
+                "The room may be given to another group that is waiting.",
+                "The group will lose its booking privileges for seven days."
+              ],
+              "answer": "C",
+              "explanation": "A room held more than fifteen minutes past the start time will be released to the next group waiting——遲到 20 分鐘已超過 15 分鐘的緩衝，房間會被釋出。(A)(B)(D) 都是信中沒提到的懲罰，屬於憑常識想像的誘答。"
+            },
+            {
+              "id": 23,
+              "prompt": "How is Room 402 different from the other group study rooms?",
+              "options": [
+                "It can be booked only by students working alone.",
+                "It is available on a first-come, first-served basis.",
+                "A request for it is reviewed by staff rather than confirmed automatically.",
+                "It may be used for no more than fifteen minutes at a time."
+              ],
+              "answer": "C",
+              "explanation": "最後一段：These requests are reviewed by staff and are not confirmed automatically。(A) 剛好相反，402 是給 groups of four or more；(B) first-come, first-served 講的是 floor 2 的個人座位；(D) 十五分鐘是遲到緩衝，不是使用上限。"
+            }
+          ]
+        },
+        {
+          "title": "Text 2",
+          "style": "notice",
+          "body": [
+            "**NOTICE — Engineering Makerspace, Building D**",
+            "The makerspace reopens on Monday, September 15, following the summer equipment upgrade.",
+            "Anyone who wishes to use the laser cutter or the 3-D printers must first complete the 45-minute safety session. Sessions run every Tuesday and Thursday at 5 p.m.; no registration is needed. A certificate earned in a previous year is still valid, so there is no need to repeat the session.",
+            "The hand tools in the north room may be used without the safety session, but only while a staff member is on duty (weekdays, 1–7 p.m.).",
+            "Materials are not supplied. Wood and filament can be bought at the front desk; personal materials must be approved before use."
+          ],
+          "questions": [
+            {
+              "id": 24,
+              "prompt": "Who is required to complete the safety session?",
+              "options": [
+                "Everyone who enters the makerspace",
+                "Anyone using the laser cutter or the 3-D printers who is not already certified",
+                "Only students who have never studied engineering",
+                "The staff members on duty in the north room"
+              ],
+              "answer": "B",
+              "explanation": "第三段限定了對象（laser cutter 或 3-D printers），並補了一個例外：舊證書仍然有效，不必重上。(A) 太寬——north room 的手工具不需要上課；(C)(D) 公告完全沒提。"
+            },
+            {
+              "id": 25,
+              "prompt": "What condition applies to using the hand tools in the north room?",
+              "options": [
+                "The safety session must be completed first.",
+                "They may be used only on Tuesdays and Thursdays.",
+                "A staff member must be on duty at the time.",
+                "They must be reserved at the front desk."
+              ],
+              "answer": "C",
+              "explanation": "only while a staff member is on duty (weekdays, 1–7 p.m.)。(A) 正好是這段要排除的（may be used without the safety session）；(B) 週二週四是安全講習的時間，不是手工具開放時間，屬於張冠李戴；(D) 前台是買材料的地方。"
+            },
+            {
+              "id": 26,
+              "prompt": "What does the notice say about materials?",
+              "options": [
+                "Wood and filament are provided free of charge.",
+                "Materials must be ordered a week in advance.",
+                "Students may bring their own materials only after approval.",
+                "Only materials bought at the front desk may be used."
+              ],
+              "answer": "C",
+              "explanation": "personal materials must be approved before use——自備材料是可以的，但要先核准。(A) 與 Materials are not supplied 及 can be bought 矛盾；(B) 沒提訂購期限；(D) 是最強的誘答，但它把「須核准」誤讀成「完全不准自備」。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "type": "choice",
+      "title": "Part 3 — Read an Academic Passage",
+      "instructions": "閱讀約 200 字的學術短文，各回答 5 題。",
+      "blocks": [
+        {
+          "title": "Passage 1 — The Third Place",
+          "style": "academic",
+          "body": [
+            "Sociologist Ray Oldenburg gave a name in 1989 to something most people had never thought to define. Home, he wrote, is the first place; work is the second. What a community also needs is a third place — a café, a barbershop, a corner shop, a park bench — where people go for no purpose beyond being there.",
+            "A third place is not merely somewhere to buy coffee. Nobody presides over it; conversation is the main activity; regulars set the tone, but newcomers are absorbed without ceremony. Above all it must be cheap. A place that requires a large purchase sorts its visitors by income, and the mixing that gives a third place its value disappears.",
+            "Oldenburg argued that such settings had been quietly designed out of much of modern life. Suburbs separated houses from shops; zoning rules kept the corner store several kilometres from the front door; the car replaced the walk that would have passed it.",
+            "Critics have called his account nostalgic, and have pointed out that some of the places he admired once excluded women or minorities entirely. Yet the central claim has held up. When researchers ask people how often they speak with someone outside their own household, the answers track closely with how many such places lie within walking distance of home."
+          ],
+          "questions": [
+            {
+              "id": 27,
+              "prompt": "What is the main idea of the passage?",
+              "options": [
+                "Cafés and barbershops matter more to a community than homes or workplaces do.",
+                "Communities depend on cheap, informal gathering places, and much modern development has removed them.",
+                "Oldenburg's argument has been disproved by later research.",
+                "Suburbs turn out to be more sociable than older city neighbourhoods."
+              ],
+              "answer": "B",
+              "explanation": "四段各自對應：定義第三場所 → 它的條件（便宜、非正式）→ 現代規劃如何抹掉它 → 證據仍站得住腳。(A) 誇大——文章說社群「也」需要第三場所，沒有排名；(C) 最後一段明說 the central claim has held up，剛好相反；(D) 第三段講郊區把商店推遠，與此相反。"
+            },
+            {
+              "id": 28,
+              "prompt": "According to the passage, why must a third place be inexpensive?",
+              "options": [
+                "Because most of the people who use it are unemployed",
+                "Because zoning rules limit what such businesses may charge",
+                "Because a high price sorts visitors by income and destroys the mixing that gives the place its value",
+                "Because the owners are not permitted to make a profit"
+              ],
+              "answer": "C",
+              "explanation": "第二段原句：A place that requires a large purchase sorts its visitors by income, and the mixing ... disappears。(A) 文章沒提失業；(B) zoning rules 出現在第三段，管的是商店距離，不是價格——這是把別段的字搬過來的誘答；(D) 沒有任何依據。"
+            },
+            {
+              "id": 29,
+              "prompt": "It can be inferred from the last paragraph that people who live within walking distance of several third places",
+              "options": [
+                "spend less money each week than other residents",
+                "are more likely to talk regularly with someone outside their own household",
+                "are less likely to own a car than people living in suburbs",
+                "were the main subject of Oldenburg's 1989 book"
+              ],
+              "answer": "B",
+              "explanation": "最後一句說「與家戶外的人交談的頻率」和「步行可達的第三場所數量」高度相關（track closely with），所以場所越多、交談越頻繁。(A)(C) 是聽起來合理但文章沒建立的關聯；(D) 把研究者的調查誤當成 1989 那本書的內容。"
+            },
+            {
+              "id": 30,
+              "prompt": "The word nostalgic in paragraph 4 is closest in meaning to",
+              "options": [
+                "longing for an idealized past",
+                "supported by detailed statistics",
+                "hostile to city architecture",
+                "written for a general audience"
+              ],
+              "answer": "A",
+              "explanation": "nostalgic /nɑːˈstældʒɪk/ = 懷舊的、把過去美化的。上下文是批評語氣：他推崇的那些場所其實曾經把女性或少數族群排除在外——言下之意是他對過去想得太美好。(B)(C)(D) 都與「懷舊」無關。"
+            },
+            {
+              "id": 31,
+              "prompt": "The word it in paragraph 3 (\"the car replaced the walk that would have passed it\") refers to",
+              "options": [
+                "the front door",
+                "the corner store",
+                "the car",
+                "the suburb"
+              ],
+              "answer": "B",
+              "explanation": "整句的邏輯是：分區規定把 the corner store 推到幾公里外，於是原本「會經過那家店」的那段步行被開車取代——pass 的受詞只能是店。(C) it 不可能指 the car，因為 the car 已經是同句的主詞；(A)(D) 沒有人會說「走路經過自家大門／經過郊區」。"
+            }
+          ]
+        },
+        {
+          "title": "Passage 2 — Reading the Rings",
+          "style": "academic",
+          "body": [
+            "In a wet year a tree grows a wide ring; in a dry year, a narrow one. That simple fact, noticed around 1900 by an astronomer named A. E. Douglass, became a way of dating wood to the exact year.",
+            "Douglass was not studying trees. He was looking for sunspot cycles and needed a long weather record, so he began counting rings in the pines near Flagstaff, Arizona. He found that trees across the whole region shared the same sequence of wide and narrow years — a fingerprint that could be matched from one trunk to another. By overlapping living trees with older beams taken from ruined pueblos, he built a continuous record stretching back centuries. Archaeologists who had disputed the age of those settlements for decades suddenly had dates accurate to a single year.",
+            "The method has limits. It works only where growth is held back by one clear factor, usually water; in a tropical forest, where conditions stay relatively constant all year, the rings may be faint or missing altogether. And a beam gives the year the tree was felled, not the year the wall was built, because old timber was often reused.",
+            "For that reason, tree rings are now read alongside other archives — lake sediments, corals, ice cores. Each of these records has blind spots of its own, and researchers trust a date most when two of them agree."
+          ],
+          "questions": [
+            {
+              "id": 32,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "Why tropical forests contain no useful record of past climate",
+                "How tree rings became a precise dating method, and what that method can and cannot do",
+                "The discovery that sunspot cycles control the weather",
+                "A long disagreement among archaeologists about the pueblos of Arizona"
+              ],
+              "answer": "B",
+              "explanation": "文章前半講方法怎麼建立（Douglass、對紋、接續年表），後半講限制（熱帶無明顯年輪、木材再利用）與補救（配合其他紀錄）。(A)(D) 都只是文中的一個細節；(C) 太陽黑子只是 Douglass 的研究動機，文章從沒說黑子控制天氣。"
+            },
+            {
+              "id": 33,
+              "prompt": "According to the passage, why did Douglass begin counting tree rings?",
+              "options": [
+                "He had been hired to date the pueblo ruins.",
+                "He wanted a long weather record for his work on sunspot cycles.",
+                "He was measuring how quickly pines grow in Arizona.",
+                "He was testing a method that archaeologists had already proposed."
+              ],
+              "answer": "B",
+              "explanation": "第二段：He was looking for sunspot cycles and needed a long weather record, so he began counting rings。(A)(D) 顛倒了因果——考古學上的用途是後來才出現的結果；(C) 他關心的是年輪的寬窄序列，不是生長速度。"
+            },
+            {
+              "id": 34,
+              "prompt": "It can be inferred from paragraph 3 that a beam dated to the year 1250 in a pueblo wall",
+              "options": [
+                "proves that the wall was already standing in 1250",
+                "shows that the tree had grown in an unusually dry period",
+                "may have been placed in that wall well after 1250",
+                "cannot be dated more precisely than to the nearest century"
+              ],
+              "answer": "C",
+              "explanation": "a beam gives the year the tree was felled, not the year the wall was built, because old timber was often reused——木頭被砍下的年份可能遠早於它被砌進牆裡的年份。(A) 正是文章要否定的推論；(B) 年份本身說不出乾濕；(D) 與第一段「精確到年」矛盾。"
+            },
+            {
+              "id": 35,
+              "prompt": "The word felled in paragraph 3 is closest in meaning to",
+              "options": [
+                "cut down",
+                "split in half",
+                "carried away",
+                "planted"
+              ],
+              "answer": "A",
+              "explanation": "fell 當**及物動詞**是「砍倒（樹）」，三態 fell–felled–felled，和 fall（跌倒，fall–fell–fallen）是不同的字。上下文把 the year the tree was felled 和 the year the wall was built 對比，指的正是伐木的那一年。(D) planted 時間點相反。"
+            },
+            {
+              "id": 36,
+              "prompt": "The word them in the last paragraph (\"researchers trust a date most when two of them agree\") refers to",
+              "options": [
+                "the archaeologists",
+                "the independent records, such as tree rings, lake sediments, corals, and ice cores",
+                "the blind spots",
+                "the reused timbers"
+              ],
+              "answer": "B",
+              "explanation": "them 承接同句前半的 Each of these records，也就是破折號後列出的那幾種紀錄；兩種紀錄互相印證，可信度才最高。(C) 盲點彼此「一致」講不通；(A)(D) 都不是最近的先行詞。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
