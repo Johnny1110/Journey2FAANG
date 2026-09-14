@@ -105,6 +105,42 @@ group by u.username;
 -- Q5: 三種寫法對比（自連接 / EXISTS / INTERSECT）+ EXPLAIN
 -- ------------------------------------------------------------
 
+-- A：自連接 + `<`
+select a.follower_id user_a, a.followee_id user_b from follows a
+inner join follows b on a.followee_id = b.follower_id and a.follower_id = b.followee_id
+where a.follower_id < a.followee_id;
+
+-- Seq Scan on followers a (rows=6) Removed by Filter: 4 (a.follower_id < a.followee_id)
+-- Seq Scan on followers b (row=10)
+-- Hash Join a and b (row 3)
+
+-- B：`EXISTS` 反向確認** — `SELECT * FROM follows f WHERE f.follower_id < f.followee_id AND EXISTS (...)`
+select a.follower_id user_a, a.followee_id user_b
+from follows a
+where a.follower_id < a.followee_id and
+      exists (select 1 from follows b
+                       where a.follower_id = b.followee_id
+                         and a.followee_id = b.follower_id);
+
+-- Seq Scan on followers a (rows=6) Removed by Filter: 4 (a.follower_id < a.followee_id)
+-- Seq Scan on followers b
+-- Hash Join a and b (row 3)
+-- Although it seems like approach A, but with exists, it will jump to next row if exists cond valid. approach A won't.
+
+-- C：`INTERSECT`** — 把 `(follower, followee)` 和反轉後的集合取交集
+with cte as (
+select follower_id user_a, followee_id user_b
+from follows
+intersect
+select followee_id, follower_id
+from follows)
+select * from cte where user_a < user_b;
+
+-- Seq Scan on followers a (rows=3) Removed by Filter: 7 (followee_id < follower_id)
+-- Seq Scan on followers b (rows=6) Removed by Filter: 4 (followee_id < follower_id)
+-- HashSetOp (rows=3)
+
+-- A 和 B 把去重寫進過濾條件，C 和 把去重推遲到結果集上。 前者是一個布林判斷，後者要建雜湊表——而雜湊表會溢出到磁碟。
 
 -- ------------------------------------------------------------
 -- 面試官追問 1~4
