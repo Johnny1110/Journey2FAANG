@@ -1,0 +1,432 @@
+{
+  "id": "week04",
+  "week": 4,
+  "title": "Week 04",
+  "date": "2026-09-05",
+  "topics": [
+    "Longitude & Data Centres（歷史／科技）",
+    "QWERTY & the Ice Trade（科技／歷史）"
+  ],
+  "timeLimitSec": 1620,
+  "parts": [
+    {
+      "id": "part1",
+      "type": "cloze",
+      "title": "Part 1 — Complete the Words",
+      "instructions": "每個空格是一個單字，只顯示前半部字母。依上下文補完整個單字（輸入完整拼字，不是只填缺的部分）。",
+      "blocks": [
+        {
+          "title": "Passage A",
+          "template": "For most of the age of sail, a captain could fix his latitude before breakfast but could only {{1}} at his longitude. Latitude comes free from the height of the sun at noon; longitude is really a question about time, and answering it {{2}} knowing the hour at a distant port at the exact moment you take your own reading. In 1714 Parliament {{3}} a prize of £20,000 to anyone who could solve the problem at sea. Astronomers {{4}} that the answer would come from the sky, and they spent decades charting the motion of the moon. A carpenter named John Harrison {{5}} and built a clock instead — one that would keep time on a rolling, damp, freezing ship, where an ordinary pendulum was {{6}}. His fourth model, no bigger than a dinner plate, lost only five seconds on the voyage to Jamaica in 1761, a {{7}} nobody had believed possible. The Board of Longitude {{8}} payment for years and {{9}} two more trials before {{10}} that a mechanic had beaten the astronomers.",
+          "blanks": [
+            {
+              "id": 1,
+              "prefix": "gue",
+              "missing": 2,
+              "answer": "guess",
+              "explanation": "could 是情態動詞，後面接原形 guess。guess at something = 對無法確定的事情用猜的；和前面 could fix his latitude 形成對比：緯度算得出來，經度只能猜。"
+            },
+            {
+              "id": 2,
+              "prefix": "requ",
+              "missing": 4,
+              "answer": "requires",
+              "explanation": "主要子句 longitude is really a question 是現在式，並列的動詞也用現在式；主詞是動名詞片語 answering it，視為單數要加 -s。require + V-ing（requires knowing）。"
+            },
+            {
+              "id": 3,
+              "prefix": "off",
+              "missing": 4,
+              "answer": "offered",
+              "explanation": "時間標記 In 1714 → 過去式。offer a prize to somebody = 提供獎金給某人。"
+            },
+            {
+              "id": 4,
+              "prefix": "assu",
+              "missing": 3,
+              "answer": "assumed",
+              "explanation": "與後半句 they spent decades 並列的過去式。assume that... = 想當然地認為（強調未經證實就認定），正好對比下一句 Harrison 的 disagreed。"
+            },
+            {
+              "id": 5,
+              "prefix": "disa",
+              "missing": 5,
+              "answer": "disagreed",
+              "explanation": "前一句說天文學家認定答案在天上，Harrison 走的是相反的路 → disagreed（過去式，與 built 並列）。disagree 是不及物動詞，不直接接受詞。"
+            },
+            {
+              "id": 6,
+              "prefix": "use",
+              "missing": 4,
+              "answer": "useless",
+              "explanation": "use + -less = 無用的：擺鐘在搖晃、潮濕、結凍的船上根本派不上用場，所以 Harrison 才要另做一個鐘。useful 只有 6 個字母，長度不符。"
+            },
+            {
+              "id": 7,
+              "prefix": "prec",
+              "missing": 5,
+              "answer": "precision",
+              "explanation": "冠詞 a 後面必須接名詞；precise 是形容詞、precisely 是副詞都不能用。a precision nobody had believed possible = 一種當時沒人相信做得到的精準度。（week03 生字）"
+            },
+            {
+              "id": 8,
+              "prefix": "dela",
+              "missing": 3,
+              "answer": "delayed",
+              "explanation": "delay payment = 拖延付款；與後面的 ordered 並列，用過去式。"
+            },
+            {
+              "id": 9,
+              "prefix": "ord",
+              "missing": 4,
+              "answer": "ordered",
+              "explanation": "order + 名詞 = 下令要求（two more trials 再做兩次海試），語氣比 ask 強，符合官方委員會的身分。"
+            },
+            {
+              "id": 10,
+              "prefix": "admi",
+              "missing": 5,
+              "answer": "admitting",
+              "explanation": "before 在這裡是介系詞，後面接動名詞 V-ing；admit 是重音在後的雙音節字，字尾 t 要重複再加 -ing（admit → admitting）。"
+            }
+          ]
+        },
+        {
+          "title": "Passage B",
+          "template": "A large data centre draws as much electricity as a small town, and roughly a third of that power never {{11}} a single calculation. It goes into cooling. Every server turns the energy it {{12}} into heat, and unless the heat is carried away the machines slow themselves down or shut off altogether. For years the standard answer was to chill the whole hall to about eighteen degrees — a temperature that suited the engineers walking the aisles better than it suited the hardware. Operators have since {{13}} that servers tolerate far warmer air than anyone had assumed. Raising the set point by two or three degrees can {{14}} water use by millions of litres a year at a single {{15}}. Some companies have moved their halls north, where the outside air is cold enough for most of the year; others {{16}} their workloads to whichever site is coolest at that hour. Such gains are easy to {{17}}, because nothing about them is visible to the user. Yet cooling {{18}} the largest single item in the operating budget of most facilities, and the water it uses is drawn from the same supply that serves nearby {{19}}. Engineers who once {{20}} only about speed now defend their designs at public meetings.",
+          "blanks": [
+            {
+              "id": 11,
+              "prefix": "perf",
+              "missing": 4,
+              "answer": "performs",
+              "explanation": "主詞 a third of that power（a third of + 不可數名詞）視為單數，現在式加 -s。perform a calculation = 執行運算。"
+            },
+            {
+              "id": 12,
+              "prefix": "cons",
+              "missing": 4,
+              "answer": "consumes",
+              "explanation": "the energy it consumes 是省略關係代名詞 that 的子句，主詞 it（= every server）單數要加 -s。turn A into B = 把 A 變成 B。"
+            },
+            {
+              "id": 13,
+              "prefix": "disc",
+              "missing": 6,
+              "answer": "discovered",
+              "explanation": "have since + 過去分詞，現在完成式（since 表示「從那之後」）。discover that... = 發現某事實。"
+            },
+            {
+              "id": 14,
+              "prefix": "red",
+              "missing": 3,
+              "answer": "reduce",
+              "explanation": "情態動詞 can 後面一律接原形，不可寫 reduces。reduce X by + 數量 = 把 X 減少多少。"
+            },
+            {
+              "id": 15,
+              "prefix": "fac",
+              "missing": 5,
+              "answer": "facility",
+              "explanation": "at a single facility = 在單單一座機房／設施；後文的 most facilities 是同一個字的複數形，可以當提示。"
+            },
+            {
+              "id": 16,
+              "prefix": "mig",
+              "missing": 4,
+              "answer": "migrate",
+              "explanation": "others（複數主詞）現在式不加 -s，和前半句 Some companies have moved 形成對照。migrate workloads = 把工作負載遷移到別的機房，雲端維運的固定說法。"
+            },
+            {
+              "id": 17,
+              "prefix": "over",
+              "missing": 4,
+              "answer": "overlook",
+              "explanation": "be easy to + 原形動詞：形式主動、意思被動（are easy to overlook = 容易被忽略）。這個句型 week03 出現過。"
+            },
+            {
+              "id": 18,
+              "prefix": "rema",
+              "missing": 3,
+              "answer": "remains",
+              "explanation": "remain 是連綴動詞，後面直接接名詞補語 the largest single item，不加 to be；主詞 cooling 是動名詞，用單數 remains。（week03 句型）"
+            },
+            {
+              "id": 19,
+              "prefix": "hous",
+              "missing": 6,
+              "answer": "households",
+              "explanation": "serve nearby households = 供水給附近的家戶；nearby 前面沒有冠詞、指的是一群住戶，要用複數。"
+            },
+            {
+              "id": 20,
+              "prefix": "wor",
+              "missing": 4,
+              "answer": "worried",
+              "explanation": "關係子句 who once worried...，once（曾經）搭配過去式，與主要子句的 now defend 形成今昔對比。worry about = 在意、擔心某事。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "type": "choice",
+      "title": "Part 2 — Read in Daily Life",
+      "instructions": "閱讀生活情境短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Text 1",
+          "style": "email",
+          "body": [
+            "**From:** OIT Network Services",
+            "**Subject:** Old VPN client retires September 22 — action needed",
+            "The current VPN client, GlobalNet 4, will stop connecting on Monday, September 22. Anyone who works off campus should install its replacement, CampusConnect, before that date.",
+            "Install it yourself from the software portal; no appointment or support ticket is needed. The first login asks you to register a second factor — an app on your phone or a hardware key. Text-message codes are no longer accepted.",
+            "Personally owned machines are supported, but the installer will refuse to run on an operating system that is more than two versions out of date.",
+            "Research groups running licensed software that checks the campus network should write to us this week rather than upgrading on their own. Those licences have to be re-issued, and the process takes several days."
+          ],
+          "questions": [
+            {
+              "id": 21,
+              "prompt": "What is the main purpose of this email?",
+              "options": [
+                "To announce that one VPN client is being replaced and explain what users must do before September 22.",
+                "To warn that off-campus access to the campus network will end on September 22.",
+                "To ask everyone who works off campus to open a support ticket for the installation.",
+                "To announce that text-message codes are now the required second factor."
+              ],
+              "answer": "A",
+              "explanation": "第一、二段就是「舊的停用 + 裝新的 + 期限」三件事。(B) 停用的只是舊 client，換成 CampusConnect 後照樣能連；(C) 信中明寫 no appointment or support ticket is needed；(D) 完全相反——Text-message codes are no longer accepted。"
+            },
+            {
+              "id": 22,
+              "prompt": "A student's personal laptop runs an operating system that is three versions out of date. According to the email, what will happen?",
+              "options": [
+                "The laptop cannot be used off campus under any circumstances.",
+                "The installer will not run until the operating system is updated.",
+                "The student must use text-message codes instead of a phone app.",
+                "The student may keep using GlobalNet 4 after September 22."
+              ],
+              "answer": "B",
+              "explanation": "第四段：the installer will refuse to run on an operating system that is more than two versions out of date——落後三版就超過兩版，裝不起來。(A) 信中說 Personally owned machines are supported，只是有版本條件；(C) 簡訊碼已經不收；(D) 舊 client 9/22 起一律不能連。"
+            },
+            {
+              "id": 23,
+              "prompt": "What should a research group with licensed software that checks the campus network do?",
+              "options": [
+                "Install CampusConnect before anyone else in the group does.",
+                "Buy replacement licences through the software portal.",
+                "Contact Network Services this week instead of upgrading on its own.",
+                "Register a hardware key for every machine in the lab."
+              ],
+              "answer": "C",
+              "explanation": "最後一段：should write to us this week rather than upgrading on their own。(A) 信裡沒有先後順序的規定；(B) 授權是「重新核發（re-issued）」不是另外買；(D) 第二因素是每個「人」登入時註冊，不是每台機器。"
+            }
+          ]
+        },
+        {
+          "title": "Text 2",
+          "style": "notice",
+          "body": [
+            "**NOTICE — Campus Shuttle, Route B**",
+            "From September 14 until the end of the term, Route B will not enter the West Quad. Work on a water main has closed Alder Street to all traffic.",
+            "During the closure, Route B turns at Chestnut Street and uses the temporary stop beside the Physics Building. The walk from that stop to the West Quad takes about six minutes.",
+            "Buses run every twelve minutes at peak hours (7:30–9:30 a.m. and 4–6 p.m.) and every twenty minutes at all other times. Evening service after 9 p.m. is unchanged.",
+            "Riders who cannot manage the extra walk may book the accessible van by calling Transport Services at least one hour ahead. The van does not take walk-up passengers."
+          ],
+          "questions": [
+            {
+              "id": 24,
+              "prompt": "Why has Route B been changed?",
+              "options": [
+                "Too few riders were using the West Quad stop.",
+                "Work on a water main has closed a street on the route.",
+                "A new stop has opened beside the Physics Building.",
+                "The buses used on Route B are being replaced."
+              ],
+              "answer": "B",
+              "explanation": "第一段第二句直接給了原因：Work on a water main has closed Alder Street to all traffic。(C) 那個臨時站是改道的「結果」不是原因，而且是 temporary 不是 new；(A)(D) 公告完全沒提。"
+            },
+            {
+              "id": 25,
+              "prompt": "How often does Route B run at 5:00 p.m.?",
+              "options": [
+                "Every six minutes",
+                "Every twelve minutes",
+                "Every twenty minutes",
+                "It does not run at that hour."
+              ],
+              "answer": "B",
+              "explanation": "5 p.m. 落在 peak hours 的 4–6 p.m. 區間 → every twelve minutes。(C) 是離峰班距；(A) 把「走路六分鐘」誤當班距；(D) 停駛的是路線的西區段，不是整條線。"
+            },
+            {
+              "id": 26,
+              "prompt": "What does the notice say about the accessible van?",
+              "options": [
+                "It must be booked at least an hour in advance.",
+                "It runs every twenty minutes during the closure.",
+                "It picks passengers up in the West Quad after 9 p.m.",
+                "It is available only to riders who hold a permit."
+              ],
+              "answer": "A",
+              "explanation": "最後一段：by calling Transport Services at least one hour ahead，而且 does not take walk-up passengers（不能現場攔車）。(B) 班距講的是接駁車不是這台van；(C)(D) 公告沒有提到。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "type": "choice",
+      "title": "Part 3 — Read an Academic Passage",
+      "instructions": "閱讀約 200 字的學術短文，各回答 5 題。",
+      "blocks": [
+        {
+          "title": "Passage 1 — The Layout That Outlived Its Machine",
+          "style": "academic",
+          "body": [
+            "The keyboard in front of you was designed for a machine that no longer exists. In the 1870s a typewriter's metal typebars swung up to strike the paper from below, and two bars struck in quick succession would jam against each other. Christopher Sholes broke up the letter pairs most common in English and scattered them across the board. The layout that resulted, QWERTY, made typing a little slower and jamming far rarer.",
+            "The typebars are long gone. The layout has held up anyway. Rival arrangements have been proposed for a century — the best known, Dvorak's, puts the most frequent letters under the strongest fingers — and none has displaced it.",
+            "Economists call this path dependence: an early choice, made for reasons that have since disappeared, locks a whole system in place. The obstacle is not that QWERTY is good; it is that everyone already knows it. A firm that changed its keyboards would have to retrain its typists, and a typist who learned Dvorak would be slow on every other machine in the country.",
+            "Whether Dvorak is measurably faster remains disputed, and the careful trials show a small advantage at best. But the argument does not depend on the size of that advantage. Even a clearly better layout would face the same problem: the cost of switching falls on whoever moves first, while the benefit arrives only once everyone else has followed."
+          ],
+          "questions": [
+            {
+              "id": 27,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "The Dvorak layout is faster than QWERTY and should replace it.",
+                "QWERTY solved a problem that no longer exists, yet it survives because the cost of switching falls on whoever moves first.",
+                "Jamming remained a serious problem for typewriters until computers replaced them.",
+                "Economists have shown that early technical choices are usually the best ones available."
+              ],
+              "answer": "B",
+              "explanation": "全文結構：第一段講 QWERTY 當年為什麼這樣排（卡鍵），第二段說機器沒了排法還在，第三、四段解釋為什麼換不掉（path dependence、先換的人吃虧）。(A) 第四段明說速度優勢 disputed 且 small at best，作者不主張換；(C) 卡鍵問題早就隨機器消失（The typebars are long gone）；(D) 剛好相反，path dependence 說的是「當年的理由早就消失了」。"
+            },
+            {
+              "id": 28,
+              "prompt": "According to the passage, Sholes arranged the letters as he did in order to",
+              "options": [
+                "put the most frequent letters under the strongest fingers",
+                "keep frequently paired letters apart so that the typebars jammed less often",
+                "make the layout easier for beginners to memorize",
+                "let typists work as fast as the machine would allow"
+              ],
+              "answer": "B",
+              "explanation": "第一段：broke up the letter pairs most common in English and scattered them across the board，目的是 jamming far rarer。(A) 是 Dvorak 的設計原則，第二段才出現；(D) 相反——made typing a little slower；(C) 全文沒提背誦難易。"
+            },
+            {
+              "id": 29,
+              "prompt": "It can be inferred from paragraph 3 that a typist who learned the Dvorak layout would",
+              "options": [
+                "be unable to type at all on a QWERTY machine",
+                "type more slowly than any QWERTY typist on any keyboard",
+                "be at a disadvantage on the machines used everywhere else",
+                "be paid less than a typist trained on QWERTY"
+              ],
+              "answer": "C",
+              "explanation": "第三段最後一句：a typist who learned Dvorak would be slow on every other machine in the country——別人的機器都是 QWERTY，所以吃虧。(A) 是「慢」不是「不能打」，程度太強；(B) 在 Dvorak 鍵盤上他反而可能更快；(D) 薪水完全沒提。"
+            },
+            {
+              "id": 30,
+              "prompt": "The word displaced in paragraph 2 is closest in meaning to",
+              "options": [
+                "replaced",
+                "improved",
+                "criticized",
+                "copied"
+              ],
+              "answer": "A",
+              "explanation": "displace = 取代、把原本的東西擠掉；none has displaced it 意思是沒有任何對手把 QWERTY 換下來，後文 A firm that changed its keyboards 也呼應「取代」。(B) 改良過但沒取代，正是本文重點；(C)(D) 與 dis- 的「移走」字根無關。"
+            },
+            {
+              "id": 31,
+              "prompt": "The word it in paragraph 2 (\"none has displaced it\") refers to",
+              "options": [
+                "the QWERTY layout",
+                "Dvorak's arrangement",
+                "the typewriter's typebars",
+                "the strongest finger"
+              ],
+              "answer": "A",
+              "explanation": "句子主詞是 none（= 那些 rival arrangements 沒有一個），受詞只能是被挑戰的對象 QWERTY——上一句 The layout has held up anyway 就是這一段的主題。(B) Dvorak 本身屬於 none 所指的那群；(C) typebars 第二段開頭就說 long gone；(D) 只是 Dvorak 設計原則裡的字眼。"
+            }
+          ]
+        },
+        {
+          "title": "Passage 2 — Selling the Cold",
+          "style": "academic",
+          "body": [
+            "In 1806 a young Boston merchant named Frederic Tudor loaded a ship with blocks cut from a New England pond and sailed for the Caribbean. Almost everyone he knew thought the plan absurd: the cargo would melt long before it arrived, and nobody in Martinique had asked for ice. Most of that first shipment did melt, and Tudor spent the next several years in and out of debtors' prison.",
+            "What eventually saved the business was insulation, not refrigeration. Sawdust, a waste product of the region's sawmills, turned out to hold a block of ice almost indefinitely. Packed in sawdust and kept in thick-walled ice houses, ice could reach Calcutta — a voyage of four months — with two thirds of its weight intact.",
+            "Tudor's harder problem was demand. Ice was not something anyone in a hot city had grown up wanting. He gave it away to bartenders and to hospitals, on the theory that a customer who had once been served a cold drink would not go back. The theory held. By the 1860s ice was an ordinary household expense in New Orleans, and the ponds of Massachusetts were being harvested every winter by thousands of men.",
+            "The industry then vanished within a single generation. Mechanical refrigeration did not depend on a cold winter or a distant pond, and by 1900 it had made the whole apparatus of saws, sawdust and sailing ships unnecessary."
+          ],
+          "questions": [
+            {
+              "id": 32,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "How sawdust became the most valuable product of New England's sawmills",
+                "How one merchant built a long-distance trade in natural ice, and why that trade later disappeared",
+                "Why mechanical refrigeration was first developed in the city of Boston",
+                "The part that debt played in nineteenth-century American business"
+              ],
+              "answer": "B",
+              "explanation": "四段各是：起步失敗 → 用木屑解決保存 → 解決需求 → 被機械製冷取代，主線就是這門生意的興起與消失。(A) 木屑只是其中一個手段；(C) 文中沒說製冷是在波士頓發明的；(D) 債務只是第一段的一個細節。"
+            },
+            {
+              "id": 33,
+              "prompt": "According to the passage, what made the four-month voyage to Calcutta possible?",
+              "options": [
+                "Ships that were built with unusually thick hulls",
+                "Packing the ice in sawdust and keeping it in thick-walled ice houses",
+                "A run of unusually cold winters in New England",
+                "Early mechanical refrigeration installed on board the ships"
+              ],
+              "answer": "B",
+              "explanation": "第二段：Packed in sawdust and kept in thick-walled ice houses, ice could reach Calcutta ... with two thirds of its weight intact。(A) thick-walled 形容的是冰庫不是船身；(D) 第四段說機械製冷出現後這一行就消失了，時間上不可能；(C) 文中沒提。"
+            },
+            {
+              "id": 34,
+              "prompt": "It can be inferred from paragraph 3 that Tudor gave ice away because he believed that",
+              "options": [
+                "hospitals and bars were unable to pay for it",
+                "the ice would melt before it could be sold anyway",
+                "people who had once used ice would go on buying it",
+                "bartenders would recommend him to the owners of ships"
+              ],
+              "answer": "C",
+              "explanation": "第三段：on the theory that a customer who had once been served a cold drink would not go back（回不去了）——先送再養成習慣，後面 The theory held 與 1860s 的普及證明他賭對了。(A)(D) 文中沒有根據；(B) 融化問題第二段已經用木屑解決了。"
+            },
+            {
+              "id": 35,
+              "prompt": "The word harvested in paragraph 3 is closest in meaning to",
+              "options": [
+                "cut and collected",
+                "frozen solid",
+                "measured carefully",
+                "sold at a low price"
+              ],
+              "answer": "A",
+              "explanation": "harvest 本義是收割農作物，這裡把湖面的冰當成一種作物：每年冬天上千人把冰鋸下、搬走。(B) 結冰是天氣做的事，不是那些人做的；(C)(D) 與 harvest 的字義無關。"
+            },
+            {
+              "id": 36,
+              "prompt": "The word its in paragraph 2 (\"with two thirds of its weight intact\") refers to",
+              "options": [
+                "the ship",
+                "the ice",
+                "the sawdust",
+                "the ice house"
+              ],
+              "answer": "B",
+              "explanation": "整句主詞是 ice（ice could reach Calcutta），所以「保住三分之二重量」的當然是冰——這也正好呼應第一段擔心的 the cargo would melt。(A) 船的重量不會在航程中掉三分之一；(C) 木屑是包材；(D) 冰庫留在岸上，沒有上船。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
