@@ -85,3 +85,39 @@
 | 2026-09-05 | lie | /laɪ/ | v. | **位於**（三態 lie–lay–lain；別和 lay 放置 混淆） | Three cafés lie within walking distance of the station. | week03 reading | |
 | 2026-09-05 | astronomer | /əˈstrɑːnəmər/ | n. | 天文學家（學科是 astronomy /əˈstrɑːnəmi/） | An astronomer first noticed the pattern in the tree rings. | week03 reading | |
 | 2026-09-05 | pine | /paɪn/ | n. | 松樹（= pine tree；當動詞 pine for 是「渴望」） | The oldest pines in these mountains are over four thousand years old. | week03 reading | |
+| 2026-10-03 | Parliament | /ˈpɑːrləmənt/ | n. | 議會、國會（英國等國的立法機構；指特定國家時大寫、常不加 the；中間的 ia 幾乎不發音） | Parliament passed a law that requires companies to report data breaches within 72 hours. | week04 reading | |
+| 2026-10-03 | damp | /dæmp/ | adj. | 潮濕的（帶濕冷、不舒服的感覺，程度比 wet 輕；名詞 dampness） | The old server room in the basement was too damp to keep the hardware healthy. | week04 reading | |
+| 2026-10-03 | voyage | /ˈvɔɪɪdʒ/ | n. | （長途）航程、航行（多指海上或太空旅程） | The probe's voyage to Jupiter took almost five years. | week04 reading | |
+| 2026-10-03 | trial | /ˈtraɪəl/ | n. | 試驗、測試（重複進行的實驗；run a trial）；另一個意思是「審判」 | We ran five trials of the benchmark and reported the median. | week04 reading | |
+| 2026-10-03 | admit | /ədˈmɪt/ | v. | 承認（admit that… / admit + V-ing）；准許進入、錄取（be admitted to OMSCS 被 OMSCS 錄取） | The team lead finally admitted that the cache design had a flaw. | week04 reading | |
+| 2026-10-03 | before + V-ing | /bɪˈfɔːr/ | 句型 | before 當**介系詞**時後接**動名詞 V-ing**（before admitting）；當連接詞時接完整子句（before they admitted） | Always run the full test suite before merging a branch. | week04 reading | |
+| 2026-10-03 | turn A into B | /tɜːrn/ | v. phr. | 把 A 轉變成 B（the energy it consumes = the energy (that) it consumes，省略了關係代名詞 that） | Every server turns the energy it consumes into heat. | week04 reading | |
+| 2026-10-03 | carry away | /ˈkæri əˈweɪ/ | phr. v. | 帶走、移走（熱、水、垃圾；被動 be carried away）；get carried away 則是「得意忘形、太投入」 | Liquid cooling carries heat away from the chips faster than air does. | week04 reading | |
+| 2026-10-03 | shut off | /ʃʌt ˈɔːf/ | phr. v. | （機器）停機、關掉；（供應）切斷 | The laptop shuts off on its own when the CPU gets too hot. | week04 reading | |
+| 2026-10-03 | altogether | /ˌɔːltəˈɡeðər/ | adv. | 完全地、徹底地（≠ all together「全部一起」） | After the migration we stopped using the old queue altogether. | week04 reading | |
+| 2026-10-03 | unless | /ənˈles/ | conj. | 除非（= if … not，本身已含否定，不要再加 not） | The build will fail unless you pin the library version. | week04 reading | |
+| 2026-10-03 | aisle | /aɪl/ | n. | 走道（座位、貨架或機櫃之間的通道；**s 不發音**）；**不是**「頻道」（頻道是 channel） | In a data centre, cold aisles and hot aisles alternate between rows of racks. | week04 reading | |
+| 2026-10-03 | serve | /sɜːrv/ | v. | **供應、服務某地區／某群人**（水、電、網路、公車路線；serves nearby households 供應附近住戶） | This CDN node serves users across Southeast Asia. | week04 reading | |
+| 2026-10-03 | swing | /swɪŋ/ | v. | 擺動、揮動（三態 swing–**swung**–swung；swing up 向上揮起） | Latency swung between 50 and 500 ms during the incident. | week04 reading | |
+| 2026-10-03 | strike | /straɪk/ | v. | 敲擊、撞擊（三態 strike–**struck**–struck）；（災害）突然來襲 | The outage struck during peak traffic on Friday night. | week04 reading | |
+| 2026-10-03 | in quick succession | /ɪn kwɪk səkˈseʃn/ | prep. phr. | 接連地、一個接一個快速發生（succession 連續、一連串） | Three alerts fired in quick succession, and then the whole cluster went down. | week04 reading | |
+| 2026-10-03 | scatter | /ˈskætər/ | v. | 使分散、撒開（scatter A across B 把 A 散布到 B 各處） | The config values were scattered across a dozen files. | week04 reading | |
+| 2026-10-03 | displace | /dɪsˈpleɪs/ | v. | 取代、擠掉（原本的東西）；使離開原處（displaced people 流離失所的人） | Containers gradually displaced the team's hand-written deploy scripts. | week04 reading | |
+| 2026-10-03 | path dependence | /pæθ dɪˈpendəns/ | n. phr. | 路徑依賴（早期的選擇把整個系統鎖住，即使當初的理由早已不存在） | Our decade-old build tool is a textbook case of path dependence. | week04 reading | |
+| 2026-10-03 | since | /sɪns/ | adv. | **從那以後、此後**（副詞用法，常夾在完成式 have 和 p.p. 之間：have since disappeared / have since discovered） | The original author has since left the company, so nobody knows why this flag exists. | week04 reading | |
+| 2026-10-03 | N, + p.p. 片語 | — | 句型 | 過去分詞片語放在名詞後面補充說明（an early choice, made for reasons… = an early choice, which was made for reasons…） | The service, written in 2014, still handles every login request. | week04 reading | |
+| 2026-10-03 | obstacle | /ˈɑːbstəkl/ | n. | 障礙、阻礙（obstacle to X 對 X 的阻礙） | The biggest obstacle to the migration was the team's habits, not the code. | week04 reading | |
+| 2026-10-03 | typist | /ˈtaɪpɪst/ | n. | 打字員（type 打字 + -ist 做…的人） | A fast typist can reach a hundred words a minute. | week04 reading | |
+| 2026-10-03 | remain disputed | /rɪˈmeɪn dɪˈspjuːtɪd/ | v. phr. | 仍有爭議（remain + p.p. 當形容詞；dispute 本身見 week02） | Whether the new index actually helps remains disputed on the team. | week04 reading | |
+| 2026-10-03 | fall on | /fɔːl ɑːn/ | phr. v. | （成本、責任、負擔）**落在…身上**；（日期）剛好是（Christmas falls on a Friday） | When the pager goes off at 3 a.m., the work falls on whoever is on call. | week04 reading | |
+| 2026-10-03 | absurd | /əbˈsɜːrd/ | adj. | 荒謬的、不合理的（think + 受詞 + absurd：thought the plan absurd 覺得這計畫很荒謬） | Rewriting the whole system in one weekend is an absurd plan. | week04 reading | |
+| 2026-10-03 | debtors' prison | /ˈdetərz ˈprɪzn/ | n. phr. | 債務人監獄（還不出錢就被關；debt / debtor 的 **b 不發音**；debtors' 是複數所有格） | In the 1800s, people who could not pay their bills could end up in debtors' prison. | week04 reading | |
+| 2026-10-03 | insulation | /ˌɪnsəˈleɪʃn/ | n. | **隔熱**（本文意思）、絕緣、隔音（材料）；動詞 insulate | The battery pack needs better insulation to survive the winter. | week04 reading | |
+| 2026-10-03 | sawmill | /ˈsɔːmɪl/ | n. | 鋸木廠（saw 鋸子 + mill 工廠） | Sawdust was a waste product of the region's sawmills. | week04 reading | |
+| 2026-10-03 | indefinitely | /ɪnˈdefɪnətli/ | adv. | 無限期地；（本文）幾乎永久地 | The feature has been put on hold indefinitely. | week04 reading | |
+| 2026-10-03 | thick ↔ thin | /θɪk/ ↔ /θɪn/ | adj. | 厚的 ↔ 薄的（也可指濃稠 ↔ 稀；thin 還有「瘦」）；thick-walled 厚牆的 | A thin client does little work itself, while a thick client runs most of the logic locally. | week04 reading | |
+| 2026-10-03 | intact | /ɪnˈtækt/ | adj. | 完好無損的、原封不動的 | The backup restored every table intact. | week04 reading | |
+| 2026-10-03 | with + N + adj. | /wɪð/ | 句型 | 附帶狀況「在…的狀態下」（with two thirds of its weight intact 在保留 2/3 重量的狀態下） | The service restarted with all its data intact. | week04 reading | |
+| 2026-10-03 | two thirds | /tuː θɜːrdz/ | n. phr. | 三分之二（分數：分子用基數、分母用序數，分子 > 1 時分母加 s：one third / two thirds / three quarters） | Two thirds of the requests are served from the cache. | week04 reading | |
+| 2026-10-03 | apparatus | /ˌæpəˈrætəs/ | n. | 裝置、器材；（抽象）整套體系、機制（the whole apparatus of… 整套…） | CI/CD made the whole apparatus of manual deploys and checklists unnecessary. | week04 reading | |
+| 2026-10-03 | pendulum | /ˈpendʒələm/ | n. | 鐘擺、擺錘（來回擺動計時的重物；pendulum clock 擺鐘）；比喻「來回擺盪的趨勢」（the pendulum has swung back 風向又擺回來了） | On a rolling ship, an ordinary pendulum clock could not keep time. | week04 reading | |
