@@ -1,0 +1,432 @@
+{
+  "id": "week05",
+  "week": 5,
+  "title": "Week 05",
+  "date": "2026-10-03",
+  "topics": [
+    "Seed Dispersal & Photography vs Painting（科學／藝術）",
+    "Desire Paths & Foucault's Pendulum（社會／科學）"
+  ],
+  "timeLimitSec": 1620,
+  "parts": [
+    {
+      "id": "part1",
+      "type": "cloze",
+      "title": "Part 1 — Complete the Words",
+      "instructions": "每個空格是一個單字，只顯示前半部字母。依上下文補完整個單字（輸入完整拼字，不是只填缺的部分）。",
+      "blocks": [
+        {
+          "title": "Passage A",
+          "template": "A seed that falls straight beneath its parent rarely does well: it must compete with the parent for light and water, and it usually loses. Plants have therefore {{1}} a remarkable range of ways to move their seeds. Dandelion seeds carry tiny parachutes and can {{2}} for kilometres on a light wind. Coconuts float, and some have drifted across whole oceans before {{3}} on a distant beach. Many plants, however, {{4}} on animals. A bird that eats a cherry swallows the seed along with the fruit; the seed passes through the bird's gut {{5}} and is dropped far from the tree. Some seeds will not {{6}} at all unless digestion has first worn down their hard coat. Squirrels help in a less {{7}} way: they bury nuts to eat in winter and then forget a {{8}} of them, and every forgotten nut is a tree planted for free. In this way, animals {{9}} seeds across a wide area, and the plants that {{10}} them with food are rewarded with new ground.",
+          "blanks": [
+            {
+              "id": 1,
+              "prefix": "deve",
+              "missing": 5,
+              "answer": "developed",
+              "explanation": "have therefore ___ 是現在完成式 have + p.p. → developed。develop a range of ways = 發展出各式各樣的方法。devised 意思也通，但字首是 devi- 不是 deve-，長度也不符。"
+            },
+            {
+              "id": 2,
+              "prefix": "tra",
+              "missing": 3,
+              "answer": "travel",
+              "explanation": "can 是情態動詞，後面接原形 → travel。travel for kilometres on a light wind = 乘著微風飄好幾公里。"
+            },
+            {
+              "id": 3,
+              "prefix": "lan",
+              "missing": 4,
+              "answer": "landing",
+              "explanation": "before 在這裡是介系詞，後面接動名詞 V-ing → landing（week04 生字句型 before + V-ing）。land on a beach = 漂上海灘。"
+            },
+            {
+              "id": 4,
+              "prefix": "dep",
+              "missing": 3,
+              "answer": "depend",
+              "explanation": "主詞 Many plants 是複數，全文用現在式 → depend（不加 s）。depend on = 依賴；however 把「靠風、靠水」轉到「靠動物」。"
+            },
+            {
+              "id": 5,
+              "prefix": "int",
+              "missing": 3,
+              "answer": "intact",
+              "explanation": "the seed passes through the bird's gut ___：動詞 passes 已經完整，空格是補充種子「狀態」的形容詞 → intact 完好無損（week04 生字）。種子沒被消化掉，才能在遠處發芽。"
+            },
+            {
+              "id": 6,
+              "prefix": "germ",
+              "missing": 5,
+              "answer": "germinate",
+              "explanation": "will not 後接原形；種子「不會發芽」→ germinate /ˈdʒɜːrmɪneɪt/。unless digestion has first worn down their hard coat = 除非消化先把硬殼磨薄（unless 本身含否定，week04 生字）。"
+            },
+            {
+              "id": 7,
+              "prefix": "obv",
+              "missing": 4,
+              "answer": "obvious",
+              "explanation": "a less ___ way：less 修飾形容詞，形容詞再修飾 way → obvious。松鼠不是吃下種子再排出，而是用「比較不明顯」的方式——埋起來然後忘記。"
+            },
+            {
+              "id": 8,
+              "prefix": "por",
+              "missing": 4,
+              "answer": "portion",
+              "explanation": "forget a ___ of them：冠詞 a 後接可數名詞，of them 表示「其中的一部分」→ portion。"
+            },
+            {
+              "id": 9,
+              "prefix": "sca",
+              "missing": 4,
+              "answer": "scatter",
+              "explanation": "主詞 animals 複數、現在式 → scatter（不加 s）。scatter A across B = 把 A 散布到 B 各處（week04 生字）。"
+            },
+            {
+              "id": 10,
+              "prefix": "pro",
+              "missing": 4,
+              "answer": "provide",
+              "explanation": "provide A with B = 提供 B 給 A（provide them with food）。關係子句的主詞是 the plants，複數用原形。produce 長度相同，但 produce them with food 文法不通。"
+            }
+          ]
+        },
+        {
+          "title": "Passage B",
+          "template": "When the first practical photographs were shown in Paris in 1839, many painters {{11}} that their profession was finished. One famous remark, “From today, painting is dead”, is usually {{12}} to the painter Paul Delaroche, although whether he ever said it remains disputed. The fear was not absurd: within a few decades photography had largely {{13}} the portrait miniature, a small painted likeness that wealthy families had once {{14}} at considerable cost. A photograph was cheaper, {{15}}, and far more accurate. Yet painting did not die. Freed from the duty to record exactly what things looked like, many artists {{16}} their attention to what a camera could not capture: the movement of light, the texture of paint, the feeling of a passing moment. Some scholars {{17}} that Impressionism grew partly out of this pressure. Others reply that the movement had {{18}} of its own, and that the camera merely sped up a change already under way. Either way, the {{19}} between the two arts turned out to be less a war than a {{20}} of labour.",
+          "blanks": [
+            {
+              "id": 11,
+              "prefix": "fea",
+              "missing": 3,
+              "answer": "feared",
+              "explanation": "時間標記 in 1839 → 過去式。fear that... = 擔心…；後面 The fear was not absurd 直接呼應這個字。"
+            },
+            {
+              "id": 12,
+              "prefix": "attri",
+              "missing": 5,
+              "answer": "attributed",
+              "explanation": "is usually ___ to：be + p.p. 被動語態。attribute A to B = 把（一句話、一件作品）歸於 B，認為是 B 說的或做的。後面 whether he ever said it remains disputed 說的就是這個歸屬有爭議。"
+            },
+            {
+              "id": 13,
+              "prefix": "disp",
+              "missing": 5,
+              "answer": "displaced",
+              "explanation": "had largely ___ 是過去完成式 had + p.p.。displace = 取代、把原本的擠掉（week04 生字）：照片取代了小型肖像畫，證明「擔心不是沒道理」。dispersed（分散）長度相同，但語意不通。"
+            },
+            {
+              "id": 14,
+              "prefix": "commis",
+              "missing": 6,
+              "answer": "commissioned",
+              "explanation": "that wealthy families had once ___：過去完成式 had + p.p.。commission a painting = 委託畫家繪製作品，是藝術史常用字；at considerable cost 說明這種委託很貴。"
+            },
+            {
+              "id": 15,
+              "prefix": "fas",
+              "missing": 3,
+              "answer": "faster",
+              "explanation": "和 cheaper、more accurate 並列，三個都是比較級 → faster。"
+            },
+            {
+              "id": 16,
+              "prefix": "tur",
+              "missing": 3,
+              "answer": "turned",
+              "explanation": "turn one's attention to = 把注意力轉向…；與 painting did not die 同一條過去的時間軸，用過去式。"
+            },
+            {
+              "id": 17,
+              "prefix": "ar",
+              "missing": 3,
+              "answer": "argue",
+              "explanation": "Some scholars ___ that...：學者「主張」。現在式表示目前學界的看法，和下一句 Others reply 的現在式對應；主詞複數用原形。"
+            },
+            {
+              "id": 18,
+              "prefix": "cau",
+              "missing": 3,
+              "answer": "causes",
+              "explanation": "had ___ of its own：had 後接名詞。cause 是可數名詞，前面沒有冠詞，所以用複數 causes。意思是印象派有自己的成因，相機只是加速了這個變化。"
+            },
+            {
+              "id": 19,
+              "prefix": "riv",
+              "missing": 4,
+              "answer": "rivalry",
+              "explanation": "the ___ between the two arts：冠詞 the 後接名詞 → rivalry（競爭關係）。後面 less a war than... 說這場競爭與其說是戰爭，不如說是分工。"
+            },
+            {
+              "id": 20,
+              "prefix": "divi",
+              "missing": 4,
+              "answer": "division",
+              "explanation": "a division of labour = 分工（固定搭配）。less A than B = 與其說是 A，不如說是 B：照片負責記錄長相，繪畫轉去表現相機抓不到的東西。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "type": "choice",
+      "title": "Part 2 — Read in Daily Life",
+      "instructions": "閱讀生活情境短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Text 1",
+          "style": "email",
+          "body": [
+            "**From:** CS 6200 Teaching Staff",
+            "**Subject:** Project 2 — autograder outage and new deadline",
+            "The autograder was shut off on Tuesday night after one of its servers overheated. Submissions made between 9 p.m. and midnight may not have been recorded. If you submitted during that window, check your submission history and upload again if your work is missing.",
+            "Because of the outage, the Project 2 deadline moves from Friday to Sunday at 11:59 p.m. The extension applies to everyone, so there is no need to request it.",
+            "You may still use the autograder up to ten times. Runs that failed because of the outage will not count toward that limit.",
+            "Questions about your own grade should go in a private post on Ed, not on the class forum."
+          ],
+          "questions": [
+            {
+              "id": 21,
+              "prompt": "What is the main purpose of this email?",
+              "options": [
+                "To announce that the autograder will be shut off for the rest of the term.",
+                "To ask students who need more time to request an extension.",
+                "To explain a problem with the autograder and announce a later deadline for everyone.",
+                "To reduce the number of autograder runs each student may use."
+              ],
+              "answer": "C",
+              "explanation": "第一段講 autograder 出事（停機、部分提交沒記錄到），第二段講 deadline 延到週日而且全班適用。(A) shut off 是週二晚上的事故，不是永久停用；(B) 信中明寫 there is no need to request it；(D) 還是十次，沒有減少。"
+            },
+            {
+              "id": 22,
+              "prompt": "A student submitted Project 2 at 10:30 p.m. on Tuesday. What should the student do?",
+              "options": [
+                "Email the teaching staff and ask them to restore the submission.",
+                "Check the submission history and upload the work again if it is missing.",
+                "Nothing, because every submission made on Tuesday was recorded.",
+                "Post a question about the submission on the class forum."
+              ],
+              "answer": "B",
+              "explanation": "10:30 p.m. 落在 9 p.m.–midnight 之間，第一段的指示是 check your submission history and upload again if your work is missing。(A) 信中沒說助教會幫忙恢復；(C) 正好相反，這段時間的提交 may not have been recorded；(D) 最後一段只說個人成績問題不要發在論壇。"
+            },
+            {
+              "id": 23,
+              "prompt": "A student has used the autograder three times, and all three runs failed because of the outage. How many runs does the student have left?",
+              "options": [
+                "Seven",
+                "Three",
+                "None, until the student requests more",
+                "Ten"
+              ],
+              "answer": "D",
+              "explanation": "第三段：Runs that failed because of the outage will not count toward that limit。三次都是因為事故而失敗，一次都不算，所以還有十次。(A) 7 次是漏讀最後一句的陷阱；(B) 沒有根據；(C) 信中沒有「申請更多次數」這回事。"
+            }
+          ]
+        },
+        {
+          "title": "Text 2",
+          "style": "notice",
+          "body": [
+            "**NOTICE — Lower-Level Stacks Closing October 6**",
+            "From October 6, the lower level of the Main Library will be closed to visitors. A leaking pipe has left the area damp, and the books must be moved before mould can damage them.",
+            "About two thirds of the collection will go to the Library Annex on Hollis Street. The rest will stay on the lower level, sealed off while the walls are repaired. Every item remains available on request.",
+            "To borrow a book, place a request through the online catalogue. Items held at the Annex reach the main desk within one working day. Items still on the lower level are fetched by staff twice a day, at 10 a.m. and 3 p.m.",
+            "The study carrels on the lower level will reopen once repairs are complete. Until then, quiet study space is available on the third floor."
+          ],
+          "questions": [
+            {
+              "id": 24,
+              "prompt": "Why is the lower level of the library closing?",
+              "options": [
+                "A leaking pipe has made the area damp.",
+                "The study carrels are being replaced.",
+                "The library is moving its entire collection to the Annex.",
+                "Too few visitors were using the lower level."
+              ],
+              "answer": "A",
+              "explanation": "第一段第二句：A leaking pipe has left the area damp（damp 是 week04 生字）。(B) carrels 只是會重新開放，不是關閉原因；(C) 搬到 Annex 的只有約三分之二，不是全部；(D) 公告沒提。"
+            },
+            {
+              "id": 25,
+              "prompt": "At 11 a.m., a student requests a book that is still on the lower level. When will staff most likely fetch it?",
+              "options": [
+                "At 10 a.m. the next day",
+                "At 3 p.m. the same day",
+                "Within one working day, from the Annex",
+                "Only after the repairs are complete"
+              ],
+              "answer": "B",
+              "explanation": "第三段：留在 lower level 的書每天 10 a.m. 和 3 p.m. 各取一次。11 a.m. 已經錯過 10 點那一趟，下一趟是當天下午 3 點。(A) 隔天 10 點之前，當天 3 點就有一趟；(C) one working day 說的是放在 Annex 的書；(D) 公告說 Every item remains available on request。"
+            },
+            {
+              "id": 26,
+              "prompt": "What does the notice say about the library's collection?",
+              "options": [
+                "All of it will be moved to the Annex.",
+                "Books on the lower level cannot be borrowed until the repairs are complete.",
+                "About one third of it will stay on the lower level.",
+                "Requests must be made in person at the main desk."
+              ],
+              "answer": "C",
+              "explanation": "About two thirds of the collection will go to the Library Annex. The rest will stay on the lower level：三分之二搬走，剩下約三分之一留在原地（two thirds 是 week04 生字）。(A) 不是全部；(B) 封起來的書仍可申請借閱；(D) 是 through the online catalogue 申請，不用親自到櫃台。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "type": "choice",
+      "title": "Part 3 — Read an Academic Passage",
+      "instructions": "閱讀約 200 字的學術短文，各回答 5 題。",
+      "blocks": [
+        {
+          "title": "Passage 1 — Paths Nobody Planned",
+          "style": "academic",
+          "body": [
+            "Almost every park and campus has them: narrow strips of bare earth worn across the grass by people who decided that the paved route was too long. Planners call them desire paths. They record, more honestly than any survey, where people actually want to go.",
+            "For a long time the official response was to block them. Fences, hedges and other obstacles went up, signs asked walkers to keep off the grass, and fresh turf was laid over the worn strips. The paths usually came back within weeks. A shortcut that saves even thirty seconds may be used by hundreds of people a day, and the grass never has time to recover between their steps.",
+            "Some designers have since taken the opposite approach. Instead of guessing where a path should run, they leave a new lawn unpaved for a season, watch where the lines appear, and then pave those. The method costs little, and it produces routes that people actually follow.",
+            "Not every desire path deserves to be paved, of course. Some cut across fragile ground; others lead walkers straight into traffic. But even these remain useful, because they show a planner exactly where the original design failed the people it was meant to serve."
+          ],
+          "questions": [
+            {
+              "id": 27,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "Fences and signs are the most effective way to protect the grass in public parks.",
+                "Desire paths show where people really want to walk, and some designers now use them to decide where paths should go.",
+                "Desire paths are usually dangerous, so planners should never pave them.",
+                "Surveys are a more reliable guide than observation when planners lay out walkways."
+              ],
+              "answer": "B",
+              "explanation": "四段結構：第一段定義 desire paths，說它最誠實地反映人想去哪；第二段舊做法（擋）失敗；第三段新做法（先觀察再鋪）；第四段就算不鋪也有參考價值。(A) 第二段正好說擋不住；(C) 第四段只說 not every desire path 都該鋪，不是全部都不該鋪；(D) 第一段說它 more honestly than any survey，剛好相反。"
+            },
+            {
+              "id": 28,
+              "prompt": "According to paragraph 2, why did the desire paths usually come back?",
+              "options": [
+                "Walkers ignored the fences because no signs had been put up.",
+                "The fresh turf was laid at the wrong time of year.",
+                "Planners removed the obstacles after a few weeks.",
+                "So many people used each shortcut that the grass never had time to recover."
+              ],
+              "answer": "D",
+              "explanation": "第二段最後一句：A shortcut that saves even thirty seconds may be used by hundreds of people a day, and the grass never has time to recover between their steps。(A) 文中明寫有立牌 signs asked walkers to keep off the grass；(B) 季節沒有提到；(C) 沒說拆掉障礙物。"
+            },
+            {
+              "id": 29,
+              "prompt": "What can be inferred about the approach described in paragraph 3?",
+              "options": [
+                "It costs more than the traditional way of planning paths.",
+                "It guarantees that no new desire paths will ever appear.",
+                "It requires planners to delay their final decision about where the paths will go.",
+                "It was the standard method before fences and signs were used."
+              ],
+              "answer": "C",
+              "explanation": "they leave a new lawn unpaved for a season, watch where the lines appear, and then pave those：先放一季、看完才決定鋪哪裡，等於把最後決定往後延。(A) 原文 The method costs little，相反；(B) 文中沒有這種保證；(D) have since taken 表示這是「後來才有」的做法（since 當副詞，week04 生字）。"
+            },
+            {
+              "id": 30,
+              "prompt": "The word fragile in paragraph 4 is closest in meaning to",
+              "options": [
+                "easily damaged",
+                "privately owned",
+                "very steep",
+                "recently planted"
+              ],
+              "answer": "A",
+              "explanation": "fragile = 脆弱的、容易受損的。cut across fragile ground = 穿過一踩就壞的地面，所以這種小路不該鋪成正式步道。(D) recently planted 會讓人聯想到第三段的 new lawn，是誘答；(B)(C) 沒有根據。"
+            },
+            {
+              "id": 31,
+              "prompt": "The word it in paragraph 4 (\"the people it was meant to serve\") refers to",
+              "options": [
+                "the traffic",
+                "the fragile ground",
+                "the desire path",
+                "the original design"
+              ],
+              "answer": "D",
+              "explanation": "it was meant to serve the people = 「它本來就是為了讓人使用而設計的」，只能是 the original design；整句說小路顯示了原設計在哪裡辜負了它要服務的人（serve 是 week04 生字）。(A)(B) 車流和地面都不是被設計來服務人的東西；(C) desire path 是人自己踩出來的，沒有人「設計」它。"
+            }
+          ]
+        },
+        {
+          "title": "Passage 2 — The Pendulum That Proved the Earth Turns",
+          "style": "academic",
+          "body": [
+            "By 1851 no serious scientist doubted that the Earth rotated. What nobody had managed was to show it directly, so that an ordinary person could see the motion with their own eyes. That year the French physicist Léon Foucault did exactly that, with an apparatus so simple it seemed almost absurd: a heavy metal ball hung from a long wire.",
+            "A pendulum, once set swinging, keeps moving back and forth in the same plane unless some force pushes it aside. Foucault reasoned that if the Earth turned beneath the pendulum, the floor would turn while the swing stayed fixed. To people standing on that floor, the pendulum would seem to change direction slowly over the day.",
+            "After early trials in his own cellar, he hung a 28-kilogram ball from a 67-metre wire under the dome of the Panthéon in Paris. A pin beneath the ball traced each swing in a ring of sand on the floor, and visitors watched the line creep around the circle at roughly eleven degrees an hour.",
+            "The rate depends on latitude. At the North Pole the line would go all the way round in about a day; at the equator it would not turn at all. Foucault's apparatus, in other words, showed not only that the Earth turns but roughly where on its surface the observer is standing."
+          ],
+          "questions": [
+            {
+              "id": 32,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "Why scientists in 1851 were still unsure whether the Earth rotated",
+                "Why the Panthéon was the only building tall enough for Foucault's experiment",
+                "How a simple pendulum gave the first direct, visible demonstration that the Earth rotates",
+                "How Foucault improved pendulum clocks so that they could keep time at sea"
+              ],
+              "answer": "C",
+              "explanation": "第一段：科學家早就相信地球自轉，但沒人能「直接讓一般人看見」，Foucault 做到了；後三段說明原理、實驗經過、和緯度的關係。(A) 第一段明說 no serious scientist doubted；(B) 他先在自家地窖做過試驗，文中也沒說 Panthéon 是唯一夠高的建築；(D) 讓時鐘在海上準確計時是 week04 Harrison 的故事，本文的擺錘不是時鐘。"
+            },
+            {
+              "id": 33,
+              "prompt": "According to paragraph 3, how could visitors see the pendulum change direction?",
+              "options": [
+                "A pin under the ball left a line in a ring of sand.",
+                "An assistant turned the wire by hand every hour.",
+                "They could feel the floor of the Panthéon moving beneath them.",
+                "The ball was stopped and restarted in a new direction each hour."
+              ],
+              "answer": "A",
+              "explanation": "第三段：A pin beneath the ball traced each swing in a ring of sand on the floor, and visitors watched the line creep around the circle。(B) 沒人轉動鋼索——整個原理就是擺動平面不會自己改變；(C) 人感覺不到地球轉動，所以才需要擺錘來顯示；(D) 擺錘沒有停下重來。"
+            },
+            {
+              "id": 34,
+              "prompt": "It can be inferred from paragraph 4 that the same pendulum set up in a city nearer the equator than Paris would",
+              "options": [
+                "change direction faster than it did in Paris",
+                "go all the way round in about a day",
+                "stop swinging altogether",
+                "change direction more slowly than it did in Paris"
+              ],
+              "answer": "D",
+              "explanation": "第四段：北極約一天轉一整圈（360° ÷ 24 ≈ 每小時 15°），赤道完全不轉；第三段說巴黎每小時約 11°，介於兩者之間。所以越靠近赤道轉得越慢。(A) 方向相反；(B) 一天一圈是北極的情況；(C) 在赤道上是「擺動平面不轉」，擺錘照樣會擺。"
+            },
+            {
+              "id": 35,
+              "prompt": "The word creep in paragraph 3 is closest in meaning to",
+              "options": [
+                "jump suddenly",
+                "move slowly",
+                "disappear",
+                "shake"
+              ],
+              "answer": "B",
+              "explanation": "creep = 慢慢地爬、悄悄地移動；每小時才轉約 11 度，是肉眼要盯著才看得出的慢速移動。(A) 意思相反；(C)(D) 與上下文不符。"
+            },
+            {
+              "id": 36,
+              "prompt": "The word it in paragraph 2 (\"unless some force pushes it aside\") refers to",
+              "options": [
+                "the pendulum",
+                "the plane",
+                "the Earth",
+                "the floor"
+              ],
+              "answer": "A",
+              "explanation": "主詞是 A pendulum, once set swinging, keeps moving... unless some force pushes it aside：被外力推開的是擺錘本身。(B) plane（擺動平面）是抽象的方向，不是被推的物體，是最大的誘答；(C)(D) 地球和地板在下一句才出現。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
