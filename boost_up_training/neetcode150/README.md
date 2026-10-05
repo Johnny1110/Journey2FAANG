@@ -87,4 +87,5 @@ link: https://leetcode.com/problem-list/plakya4j
 72. Palindromic Substrings -> [link](palindromic_substrings) -> DP 解法值得重新做一遍
 73. Single Number -> [link](single_number)
 74. Copy List with Random Pointer -> [link](copy_list_with_random_pointer)
-75. Word Break -> [link](word_break) 👈 
+75. Word Break -> [link](word_break) 
+76. Linked List Cycle -> [link](linked_list_cycle/README.md) 👈 
