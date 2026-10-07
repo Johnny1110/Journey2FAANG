@@ -89,4 +89,5 @@ link: https://leetcode.com/problem-list/plakya4j
 74. Copy List with Random Pointer -> [link](copy_list_with_random_pointer)
 75. Word Break -> [link](word_break) 
 76. Linked List Cycle -> [link](linked_list_cycle)
-77. ? -> [link](?) 👈 
+77. Reorder List -> [link](reorder_list) 
+78. LRU Cache -> [link](lru_cache/README.md) 👈
