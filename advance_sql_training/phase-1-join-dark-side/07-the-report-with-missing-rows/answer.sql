@@ -29,11 +29,21 @@
 -- Q3: 為什麼 2026-04 還是不出現 + 結論句
 -- ------------------------------------------------------------
 
+-- sales table ain't got any sales data in 2026-04.
+-- 報表的維度值只能來自 維度表（或你自己造的骨架），不能來自 事實表（交易資料）。
 
 -- ------------------------------------------------------------
 -- Q4: 完整的 16 行解法（骨架 CROSS JOIN + LEFT JOIN + COALESCE）
 -- ------------------------------------------------------------
 
+select r.name AS region,
+       TO_CHAR(m.month, 'YYYY-MM') as month,
+        coalesce(sum(s.amount), 0) as revenue
+from regions as r
+cross join (select generate_series('2026-01-01'::date, '2026-04-30'::date, interval '1 month')::date as month) as m
+left join sales as s on r.id = s.region_id and TO_CHAR(s.sold_on, 'YYYY-MM') = TO_CHAR(m.month, 'YYYY-MM')
+group by r.name, TO_CHAR(m.month, 'YYYY-MM')
+order by 1, 2;
 
 -- ------------------------------------------------------------
 -- Q5: 三種改動的預測 vs 實測（特別是 COALESCE(SUM()) vs SUM(COALESCE()))
