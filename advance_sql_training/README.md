@@ -159,7 +159,7 @@ SELECT ...
 | 04 | [Ledger Reconciliation](phase-1-join-dark-side/04-ledger-reconciliation) | FULL OUTER JOIN、`IS DISTINCT FROM` | ★★★★☆ | 🟢 |
 | 05 | [Top-3 Orders per Customer, Four Ways](phase-1-join-dark-side/05-top-n-four-ways) | LATERAL vs Window vs Correlated vs `DISTINCT ON` | ★★★★☆ | 🔴 |
 | 06 | [The Self-Join That Counted Twice](phase-1-join-dark-side/06-the-self-join-that-counted-twice) | 對稱配對去重、自我配對邊界 | ★★★☆☆ | 🟢 |
-| 07 | [The Report With Missing Rows](phase-1-join-dark-side/07-the-report-with-missing-rows) | CROSS JOIN 維度骨架、`ON` vs `WHERE` 陷阱 | ★★★★☆ | ⏳ |
+| 07 | [The Report With Missing Rows](phase-1-join-dark-side/07-the-report-with-missing-rows) | CROSS JOIN 維度骨架、`ON` vs `WHERE` 陷阱 | ★★★★☆ | 🟢 |
 
 ### Phase 1 自我檢測
 
@@ -207,7 +207,7 @@ WHERE id NOT IN (SELECT customer_id FROM orders);
 
 | # | 題目 | 核心技巧 | 難度 | 狀態 |
 |---|------|---------|------|------|
-| 01 | [One Query, Four Subtotals](phase-2-aggregation-limits/01-one-query-four-subtotals) | `GROUPING SETS` + `GROUPING()` 辨識小計行 | ★★★★☆ |  |
+| 01 | [One Query, Four Subtotals](phase-2-aggregation-limits/01-one-query-four-subtotals) | `GROUPING SETS` + `GROUPING()` 辨識小計行 | ★★★★☆ | ⏳ |
 | 02 | [FILTER vs CASE WHEN](phase-2-aggregation-limits/02-filter-vs-case-when) | `FILTER` 子句、`COUNT` 的 NULL 語意、計畫對比 | ★★★☆☆ |  |
 | 03 | [The Median Without a Median Function](phase-2-aggregation-limits/03-the-median-without-a-median-function) | `PERCENTILE_CONT` vs `DISC` + 手寫雙向排名版 | ★★★★☆ |  |
 | 04 | [The Mode That Ties](phase-2-aggregation-limits/04-the-mode-that-ties) | 眾數並列全取、`RANK` vs `ROW_NUMBER`、非決定性查詢 | ★★★☆☆ |  |

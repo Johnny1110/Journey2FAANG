@@ -49,6 +49,17 @@ order by 1, 2;
 -- Q5: 三種改動的預測 vs 實測（特別是 COALESCE(SUM()) vs SUM(COALESCE()))
 -- ------------------------------------------------------------
 
+-- Q5-1
+-- forecast: 一樣得到 16 個 rows
+-- actual: 一樣得到 16 個 rows
+-- reason: `INNER JOIN` 每組對左右配對求 ON 條件，只留下 TRUE。 `on TRUE` 每一個都是 TRUE，所以全部配對都留下．(Cartesian Product)
+-- CROSS JOIN 就是直接表明用 Cartesian Product．
+
+-- Q5-2
+
+
+
+-- Q5-3
 
 -- ------------------------------------------------------------
 -- 面試官追問 1~4
