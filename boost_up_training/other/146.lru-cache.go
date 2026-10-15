@@ -7,105 +7,88 @@
 // @lc code=start
 type LRUCache struct {
 	capacity int
-	size     int
+	kvmap    map[int]*Node
 	head     *Node
 	tail     *Node
-	data     map[int]*Node
 }
 
 func Constructor(capacity int) LRUCache {
-	head := &Node{}
-	tail := &Node{}
-	head.next = tail
-	tail.prev = head
+	head, tail := &Node{}, &Node{}
+	head.Next = tail
+	tail.Prev = head
+
 	return LRUCache{
 		capacity: capacity,
-		size:     0,
+		kvmap:    make(map[int]*Node),
 		head:     head,
 		tail:     tail,
-		data:     make(map[int]*Node),
 	}
 }
 
 func (this *LRUCache) Get(key int) int {
-	if node, exists := this.data[key]; exists {
-
-		// update node list
-		if this.head.next != node {
-			// remove target node from node lists.
-			prev, next := node.prev, node.next
-			prev.next = next
-			next.prev = prev
-
-			// move to front
-			tmp := this.head.next
-			this.head.next = node
-			node.prev = this.head
-			tmp.prev = node
-			node.next = tmp
-		}
-
-		return node.val
-	} else {
+	node, exists := this.kvmap[key]
+	if !exists {
 		return -1
 	}
+
+	this.moveToFront(node)
+	return node.Val
 }
 
 func (this *LRUCache) Put(key int, value int) {
-	if node, exists := this.data[key]; exists {
-		// updaate Nodes
-		node.val = value
-		prev, next := node.prev, node.next
-		// remove target node from node lists.
-		prev.next = next
-		next.prev = prev
-
-		// move to front
-		tmp := this.head.next
-		this.head.next = node
-		node.prev = this.head
-		tmp.prev = node
-		node.next = tmp
-
-		this.data[key] = node
-	} else {
-		// insert Node
-
-		node := &Node{
-			key: key,
-			val: value,
-		}
-
-		// add new node to front
-		tmp := this.head.next
-		this.head.next = node
-		node.prev = this.head
-		tmp.prev = node
-		node.next = tmp
-
-		this.data[key] = node
-		this.size++
-
-		if this.size > this.capacity { // remove expired node
-			// remove last one
-			deleteNode := this.tail.prev
-			prev := deleteNode.prev
-			prev.next = this.tail
-			this.tail.prev = prev
-			// delete data
-			delete(this.data, deleteNode.key)
-			this.size--
-		}
+	node, exists := this.kvmap[key]
+	if exists {
+		node.Val = value
+		this.moveToFront(node)
+		return
 	}
 
-	//fmt.Printf("After Put: %v: %v, data: %v \n", key, value, this.data)
+	if this.reachedLimit() {
+		// remove last
+		lastNode := this.tail.Prev
+		this.unlink(lastNode)
+		delete(this.kvmap, lastNode.Key)
+	}
+
+	node = &Node{
+		Key: key,
+		Val: value,
+	}
+
+	// add into kvmap
+	this.kvmap[key] = node
+	this.pushFront(node)
+
+}
+
+func (this *LRUCache) reachedLimit() bool {
+	return len(this.kvmap) >= this.capacity
+}
+
+func (this *LRUCache) unlink(node *Node) {
+	node.Prev.Next = node.Next
+	node.Next.Prev = node.Prev
+}
+
+func (this *LRUCache) pushFront(node *Node) {
+	node.Prev, node.Next = this.head, this.head.Next
+	this.head.Next.Prev = node
+	this.head.Next = node
+}
+
+func (this *LRUCache) moveToFront(node *Node) {
+	if this.head.Next == node {
+		return
+	}
+	this.unlink(node)
+	this.pushFront(node)
 }
 
 type Node struct {
-	key  int
-	val  int
-	prev *Node
-	next *Node
+	Key  int
+	Val  int
+	Prev *Node
+	Next *Node
 }
 
 /**
