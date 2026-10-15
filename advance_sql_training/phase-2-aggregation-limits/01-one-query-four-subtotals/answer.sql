@@ -8,10 +8,32 @@
 -- A1: UNION ALL 笨方法 + EXPLAIN（這張表掃了幾次？）
 -- ------------------------------------------------------------
 
+-- union all 3 select
+select region, product, sum(amount) as revenue from sales group by region, product
+union all
+select region, NULL, sum(amount) as revenue from sales group by region
+union all
+select NULL, NULL, sum(amount) as revenue from sales
+order by region, product;
+
+-- Seq Scan on sales table 3 times
+
+-- 1st select: seq scan + hashAggregate (6 rows)
+-- 2th select: seq scan + hashAggregate (3 rows)
+-- 3th select: seq scan + aggregate (1 row)
 
 -- ------------------------------------------------------------
 -- A2: ROLLUP 改寫 + EXPLAIN 對比
 -- ------------------------------------------------------------
+
+select region, product, sum(amount) as revenue 
+from sales group by rollup (region, product)
+order by region, product;
+
+-- Seq Scan on sales table (row = 6), + MixedAggregate.
+-- Hash Key: region, product"
+-- Hash Key: region
+-- Group Key: ()
 
 
 -- ------------------------------------------------------------
