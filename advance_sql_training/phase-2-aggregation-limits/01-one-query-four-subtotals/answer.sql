@@ -40,16 +40,30 @@ order by region, product;
 -- B1: 兩行 (NULL,NULL) 各代表什麼
 -- ------------------------------------------------------------
 
+-- revenue = 400 -> Unknown region total revenue
+-- revenue = 900 -> All region total revenue
 
 -- ------------------------------------------------------------
 -- B2: ROLLUP 展開成哪 3 個 grouping set，兩行為什麼撞在一起
 -- ------------------------------------------------------------
 
+-- answer is 3 ROLLUP group set: (region, product), (region), ALL
+
+-- 400: group set (region), region null is unknown region. product null is group set null.
+-- 900: group set ALL, region null is group set null. product null is group set null.
 
 -- ------------------------------------------------------------
 -- B3: GROUPING() 的定義 — 為什麼它能分辨而 IS NULL 不行
 -- ------------------------------------------------------------
 
+select region, product, sum(amount) as revenue,
+       grouping(region) as GPR, grouping(product) as GPP
+from sales group by rollup (region, product)
+order by region, product;
+
+-- 400:  GROUPING(region): 0, GROUPING(product): 1
+-- 900:  GROUPING(region): 1, GROUPING(product): 1
+-- 一個欄位留白，可能是「不詳」，也可能是「不適用」。光看空白分不出來，所以正式的表單會另外加一個「不適用」的勾選框。GROUPING() 就是那個勾選框。
 
 -- ------------------------------------------------------------
 -- B4: 加上 row_type 與 (unknown)/(all) 標籤的完整報表（注意排序）
