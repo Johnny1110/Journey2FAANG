@@ -121,3 +121,35 @@
 | 2026-10-03 | two thirds | /tuː θɜːrdz/ | n. phr. | 三分之二（分數：分子用基數、分母用序數，分子 > 1 時分母加 s：one third / two thirds / three quarters） | Two thirds of the requests are served from the cache. | week04 reading | |
 | 2026-10-03 | apparatus | /ˌæpəˈrætəs/ | n. | 裝置、器材；（抽象）整套體系、機制（the whole apparatus of… 整套…） | CI/CD made the whole apparatus of manual deploys and checklists unnecessary. | week04 reading | |
 | 2026-10-03 | pendulum | /ˈpendʒələm/ | n. | 鐘擺、擺錘（來回擺動計時的重物；pendulum clock 擺鐘）；比喻「來回擺盪的趨勢」（the pendulum has swung back 風向又擺回來了） | On a rolling ship, an ordinary pendulum clock could not keep time. | week04 reading | |
+| 2026-10-17 | devise | /dɪˈvaɪz/ | v. | 設計、想出（方法／計畫）；p.p. devised。字尾 s 唸 /z/；名詞 device /dɪˈvaɪs/「裝置」字尾 c 唸 /s/。week05 克漏字要填 **deve**loped，不是 **devi**sed | The team devised a caching strategy that cut the response time in half. | week05 reading | |
+| 2026-10-17 | dandelion | /ˈdændəlaɪən/ | n. | 蒲公英（種子帶小降落傘，隨風飄散） | Dandelion seeds drift on the wind and sprout in cracks in the pavement. | week05 reading | |
+| 2026-10-17 | gut | /ɡʌt/ | n. | 腸道、消化道（gut microbiome 腸道菌群）；口語：直覺（gut feeling） | My gut feeling says the bug is in the cache layer, not the database. | week05 reading | |
+| 2026-10-17 | germinate | /ˈdʒɜːrmɪneɪt/ | v. | （種子）發芽、萌芽；比喻（想法）萌生 | The idea for the project germinated during a late-night debugging session. | week05 reading | |
+| 2026-10-17 | portion | /ˈpɔːrʃn/ | n. | 一部分、一份（a portion of + 名詞；餐點的一份也用） | Only a small portion of the traffic is routed to the new service. | week05 reading | |
+| 2026-10-17 | attribute A to B | /əˈtrɪbjuːt/ | v. phr. | 把 A 歸因於 B；被動 A is attributed to B：（言論、作品）被認為出自 B。名詞 attribute 重音在前 /ˈætrɪbjuːt/ =「屬性」 | The outage was attributed to a misconfigured load balancer. | week05 reading | |
+| 2026-10-17 | whether + S + V 當主詞 | /ˈweðər/ | 句型 | although whether he ever said it remains disputed：whether 子句是**名詞子句當主詞**，後面動詞用單數（remains）；although 連接前面整句。remain disputed 見 week04 | Although whether the migration saved money remains unclear, the team prefers the new setup. | week05 reading | |
+| 2026-10-17 | portrait | /ˈpɔːrtrət/ | n. | 肖像（畫、照片）；也指對人物的生動描寫 | The museum displays a portrait of the university's founder. | week05 reading | |
+| 2026-10-17 | portrait miniature | /ˈpɔːrtrət ˈmɪniətʃər/ | n. phr. | 肖像微型畫（可隨身攜帶的小幅手繪肖像）；miniature 當名詞＝微型畫，當形容詞＝迷你的 | Before photography, a portrait miniature was how families kept a loved one's likeness close. | week05 reading | |
+| 2026-10-17 | at considerable cost | /æt kənˈsɪdərəbl kɔːst/ | prep. phr. | 花費不少、付出相當大的代價；considerable＝相當大的、可觀的（≠ considerate 體貼的） | The legacy database was migrated at considerable cost, both in money and in engineering time. | week05 reading | |
+| 2026-10-17 | Freed from X, S + V | /friːd/ | 句型 | 過去分詞構句：Freed from … ＝ Because they were freed from …。省略主詞與 be，且分詞的邏輯主詞必須和主要子句主詞相同（many artists） | Freed from manual deployments, the team shipped twice as often. | week05 reading | |
+| 2026-10-17 | Impressionism | /ɪmˈpreʃənɪzəm/ | n. | 印象派（19 世紀法國畫派，著重捕捉光影與瞬間印象；畫家叫 Impressionist） | Impressionism cared more about the movement of light than about exact detail. | week05 reading | |
+| 2026-10-17 | partly out of + N | /ˈpɑːrtli aʊt əv/ | prep. phr. | 部分出於…（動機或原因）；out of curiosity 出於好奇、out of necessity 出於必要 | She joined the open-source project partly out of curiosity and partly to build her portfolio. | week05 reading | |
+| 2026-10-17 | have X of its own | — | 句型 | 有其自身的…（the movement had causes of its own）；of + 所有格 own 放在名詞**後面**，had + 名詞 | Every microservice has constraints of its own. | week05 reading | |
+| 2026-10-17 | rivalry | /ˈraɪvlri/ | n. | 對抗、競爭（兩方長期較勁；rivalry between A and B）；rival 是對手 | The rivalry between the two frameworks has pushed both to improve. | week05 reading | |
+| 2026-10-17 | division of labour | /dɪˈvɪʒn əv ˈleɪbər/ | n. phr. | 勞動分工（labour 是英式拼法，美式 labor） | Our team has a clear division of labour between frontend and backend. | week05 reading | |
+| 2026-10-17 | turn out to be less A than B | /tɜːrn aʊt/ | 句型 | turn out (to be) ＝ 結果是、最終證明是；less (a) A than (a) B ＝ 與其說是 A，不如說是 B | The outage turned out to be less a hardware failure than a configuration mistake. | week05 reading | |
+| 2026-10-17 | mould | /moʊld/ | n. | 黴、黴菌（英式拼法，美式 mold）；動詞：塑造、使成型 | Mould grew on the books stored in the damp basement. | week05 reading | |
+| 2026-10-17 | narrow strip | /ˈnæroʊ strɪp/ | n. phr. | 狹長的一條（strip 長條、帶狀物；a narrow strip of land） | A narrow strip of coast separates the mountains from the sea. | week05 reading | |
+| 2026-10-17 | bare earth worn (by …) | /ber ɜːrθ wɔːrn/ | n. phr. | 被磨出來的裸露土地；bare 光禿禿的；worn ＝ wear 的 p.p.（wear–wore–worn），是**過去分詞後置修飾**（strips of bare earth (which were) worn across the grass）。wear out 見 week02 | Paths of bare earth worn by thousands of footsteps crossed the lawn. | week05 reading | |
+| 2026-10-17 | paved route | /peɪvd ruːt/ | n. phr. | 鋪設好的路線（pave 鋪路；pave the way for 為…鋪路；route 美式唸 /ruːt/ 或 /raʊt/） | The paved route is longer, so most students take the dirt shortcut. | week05 reading | |
+| 2026-10-17 | fence | /fens/ | n. | 柵欄、圍籬；動詞 fence off ＝ 用柵欄圍起 | A tall fence surrounds the data centre. | week05 reading | |
+| 2026-10-17 | hedge | /hedʒ/ | n. | 樹籬、灌木圍牆；另有「避險」之意（hedge against risk） | A neat hedge separates the garden from the road. | week05 reading | |
+| 2026-10-17 | turf | /tɜːrf/ | n. | 草皮（一塊塊鋪好的草）；口語：地盤、勢力範圍（turf war 地盤之爭） | Ownership of the shared library turned into a turf war between the two teams. | week05 reading | |
+| 2026-10-17 | lawn | /lɔːn/ | n. | 草地、草坪（人工維護的草地） | Students ate lunch on the lawn in front of the library. | week05 reading | |
+| 2026-10-17 | fragile | /ˈfrædʒl/ | adj. | 脆弱的、易碎的（fragile ground 脆弱的地面；系統不穩健也可說 fragile）。英式唸 /ˈfrædʒaɪl/ | The old test suite is fragile and breaks whenever we rename a file. | week05 reading | |
+| 2026-10-17 | What S + had p.p. was (to) V | — | 句型 | 假分裂句（pseudo-cleft）：What nobody had managed was to show it directly。What 子句當主詞，be 動詞後接 to V（口語可省 to）；manage to V ＝ 設法做到 | What the team needed was to cut the build time in half. | week05 reading | |
+| 2026-10-17 | in the same plane | /ɪn ðə seɪm pleɪn/ | prep. phr. | 在同一個平面內（plane 平面；也是飛機、刨子） | All the points lie in the same plane, so we can plot them on a 2D graph. | week05 reading | |
+| 2026-10-17 | reason | /ˈriːzn/ | v. | 推斷、推論（reason that… ＝ 推斷出…；Foucault reasoned that…）；名詞：理由、理性 | The engineer reasoned that the memory leak came from the cache. | week05 reading | |
+| 2026-10-17 | cellar | /ˈselər/ | n. | 地窖、地下儲藏室（存酒、食物；比 basement 更簡陋） | He tested his first prototype in the cellar of his house. | week05 reading | |
+| 2026-10-17 | creep | /kriːp/ | v. | 緩慢地移動、爬行（三態 creep–**crept**–crept；creep around the circle 繞著圈慢慢爬） | Memory usage slowly crept up over the weekend until the server crashed. | week05 reading | |
+| 2026-10-17 | equator | /ɪˈkweɪtər/ | n. | 赤道（the equator；形容詞 equatorial） | Daylight hours barely change throughout the year near the equator. | week05 reading | |
