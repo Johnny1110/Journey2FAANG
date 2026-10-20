@@ -70,10 +70,58 @@ order by region, product;
 -- ------------------------------------------------------------
 
 
+select coalesce(region,
+                case
+                    when region is null and grouping(region) = 1 and grouping(product) = 1 then '(all)'
+                    else '(unknown)' end
+       )                          as region,
+       coalesce(product, '(all)') as product,
+       sum(amount)                as revenue,
+       case
+           when grouping(region) = 1 and grouping(product) = 1 then 'GRAND TOTAL'
+           when grouping(region) = 0 and grouping(product) = 1 then 'region subtotal'
+           else 'detail'
+           end                    as row_type
+from sales
+group by rollup (region, product)
+ORDER BY GROUPING(sales.region),
+         GROUPING(sales.product),
+         sales.region,
+         sales.product;
+
 -- ------------------------------------------------------------
 -- B5: GROUPING(a,b) 位元遮罩 — 四種組合的值 + 簡潔 CASE
 -- ------------------------------------------------------------
 
+-- 00: 0, 01: 1, 10: 2, 11: 3
+
+-- 00: per region, per product
+-- 01: per region, all products
+-- 11: all regions, all products
+
+-- sql:
+
+
+
+select coalesce(region,
+                case
+                    when region is null and grouping(region) = 1 and grouping(product) = 1 then '(all)'
+                    else '(unknown)' end
+       )                          as region,
+       coalesce(product, '(all)') as product,
+       sum(amount)                as revenue,
+       case
+           grouping(region, product)
+           when 0 then 'detil'
+           when 1 then 'region subtotal'
+           when 3 then 'GRAND total'
+           end                    as row_type
+from sales
+group by rollup (region, product)
+ORDER BY GROUPING(sales.region),
+         GROUPING(sales.product),
+         sales.region,
+         sales.product;
 
 -- ------------------------------------------------------------
 -- C1: CUBE 多出的 2 行是什麼 + ROLLUP/CUBE grouping set 數量通式
