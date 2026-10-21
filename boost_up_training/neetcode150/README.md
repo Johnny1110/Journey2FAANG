@@ -93,4 +93,4 @@ link: https://leetcode.com/problem-list/plakya4j
 78. LRU Cache -> [link](lru_cache) 
 79. Evaluate Reverse Polish Notation -> [link](erpn)
 80. Maximum Product Subarray -> [link](mps) 
-81. Find Minimum in Rotated Sorted Array -> [link](fmirsa/README.md) 👈
+81. Find Minimum in Rotated Sorted Array -> [link](fmirsa) 這題很難，要重複刷背下來 👈
