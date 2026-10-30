@@ -95,4 +95,5 @@ link: https://leetcode.com/problem-list/plakya4j
 80. Maximum Product Subarray -> [link](mps) 
 81. Find Minimum in Rotated Sorted Array -> [link](fmirsa) 這題很難，要重複刷背下來 
 82. Min Stack -> [link](min_stack)
-83. ? -> [link](?) 👈
+83. Valid Parenthesis String -> [link](vps) 有趣的 Parenthesis 類型題目，值得重做
+84. ? -> [link](?/README.md) 👈
