@@ -146,10 +146,30 @@
 | 2026-10-17 | hedge | /hedʒ/ | n. | 樹籬、灌木圍牆；另有「避險」之意（hedge against risk） | A neat hedge separates the garden from the road. | week05 reading | |
 | 2026-10-17 | turf | /tɜːrf/ | n. | 草皮（一塊塊鋪好的草）；口語：地盤、勢力範圍（turf war 地盤之爭） | Ownership of the shared library turned into a turf war between the two teams. | week05 reading | |
 | 2026-10-17 | lawn | /lɔːn/ | n. | 草地、草坪（人工維護的草地） | Students ate lunch on the lawn in front of the library. | week05 reading | |
-| 2026-10-17 | fragile | /ˈfrædʒl/ | adj. | 脆弱的、易碎的（fragile ground 脆弱的地面；系統不穩健也可說 fragile）。英式唸 /ˈfrædʒaɪl/ | The old test suite is fragile and breaks whenever we rename a file. | week05 reading | |
+| 2026-10-17 | fragile | /ˈfrædʒl/ | adj. | 脆弱的、易碎的（fragile ground 脆弱的地面；系統不穩健也可說 fragile）。英式唸 /ˈfrædʒaɪl/ | The old test suite is fragile and breaks whenever we rename a file. | week05 reading, week06 reading | |
 | 2026-10-17 | What S + had p.p. was (to) V | — | 句型 | 假分裂句（pseudo-cleft）：What nobody had managed was to show it directly。What 子句當主詞，be 動詞後接 to V（口語可省 to）；manage to V ＝ 設法做到 | What the team needed was to cut the build time in half. | week05 reading | |
 | 2026-10-17 | in the same plane | /ɪn ðə seɪm pleɪn/ | prep. phr. | 在同一個平面內（plane 平面；也是飛機、刨子） | All the points lie in the same plane, so we can plot them on a 2D graph. | week05 reading | |
 | 2026-10-17 | reason | /ˈriːzn/ | v. | 推斷、推論（reason that… ＝ 推斷出…；Foucault reasoned that…）；名詞：理由、理性 | The engineer reasoned that the memory leak came from the cache. | week05 reading | |
 | 2026-10-17 | cellar | /ˈselər/ | n. | 地窖、地下儲藏室（存酒、食物；比 basement 更簡陋） | He tested his first prototype in the cellar of his house. | week05 reading | |
 | 2026-10-17 | creep | /kriːp/ | v. | 緩慢地移動、爬行（三態 creep–**crept**–crept；creep around the circle 繞著圈慢慢爬） | Memory usage slowly crept up over the weekend until the server crashed. | week05 reading | |
 | 2026-10-17 | equator | /ɪˈkweɪtər/ | n. | 赤道（the equator；形容詞 equatorial） | Daylight hours barely change throughout the year near the equator. | week05 reading | |
+| 2026-10-31 | torn | /tɔːrn/ | adj. / p.p. | 撕破的、撕裂的；tear（撕）的過去分詞，三態 tear–tore–torn。tear 當「撕」唸 /ter/，當「眼淚」唸 /tɪr/ | The shipping label was torn, but the scanner still read the barcode. | week06 reading | |
+| 2026-10-31 | woven into the pattern | /ˈwoʊvn/ | v. phr. | 被編織進圖案中；weave 三態 weave–wove–**woven**；weave A into B ＝ 把 A 織進／自然融入 B | Accessibility should be woven into the design from day one, not added at the end. | week06 reading | |
+| 2026-10-31 | faint signals | /feɪnt ˈsɪɡnəlz/ | n. phr. | 微弱的訊號；faint ＝ 微弱的、模糊的（a faint smell / a faint hope）；動詞 faint ＝ 昏倒 | The dashboard showed faint signals of a memory leak days before the crash. | week06 reading | |
+| 2026-10-31 | curtain | /ˈkɜːrtn/ | n. | 窗簾、簾幕（hang curtains 掛窗簾；draw the curtains 拉上窗簾）；第二音節弱讀 /tn/ | I drew the curtains so the glare would not hit my screen during the exam. | week06 reading | |
+| 2026-10-31 | soak | /soʊk/ | v. | 浸泡、浸透（soak A in B 把 A 泡在 B 裡；curtains soaked in chemicals 泡過化學藥劑的窗簾，p.p. 後置修飾）；工程用語 soak test ＝ 長時間負載測試 | We ran a 48-hour soak test to make sure the service had no memory leaks. | week06 reading | |
+| 2026-10-31 | ironically | /aɪˈrɑːnɪkli/ | adv. | 諷刺的是、出乎意料的是（結果和原本的意圖相反；常放句首加逗號）；形容詞 ironic、名詞 irony | Ironically, the script written to speed up deployments became the slowest step in the pipeline. | week06 reading | |
+| 2026-10-31 | sewage | /ˈsuːɪdʒ/ | n. | 污水、下水道污物（**不可數**）；sewer /ˈsuːər/ ＝ 下水道（管道本身） | The new treatment plant cleans the city's sewage before it reaches the river. | week06 reading | |
+| 2026-10-31 | outbreak | /ˈaʊtbreɪk/ | n. | （疾病、戰爭、暴力的）爆發（cholera outbreak 霍亂疫情）；動詞片語 break out ＝ 爆發 | A flu outbreak forced half the team to work from home for a week. | week06 reading | |
+| 2026-10-31 | proctor | /ˈprɑːktər/ | n. / v. | 監考人員（n.）；監考（v.）。be proctored ＝ 被監考（The exam is proctored online. 考試採線上監考） | OMSCS exams are proctored online, so you need a working webcam. | week06 reading | |
+| 2026-10-31 | throughout | /θruːˈaʊt/ | adv. / prep. | 自始至終、從頭到尾（時間：throughout the exam）；遍及（空間：throughout the city）。可放句尾當副詞（must stay on throughout） | The on-call engineer stayed online throughout the database migration. | week06 reading | |
+| 2026-10-31 | medieval | /ˌmediˈiːvl/ | adj. | 中世紀的（歐洲約 500–1500 年）；口語比喻：極度老舊落後的 | Our release process felt almost medieval before we set up CI/CD. | week06 reading | |
+| 2026-10-31 | tower over | /ˈtaʊər ˈoʊvər/ | phr. v. | 高聳於…之上；比喻：遠遠勝過。tower 當名詞是「塔」，當動詞是「高聳」 | In the latency benchmark, the new cache towers over the old one. | week06 reading | |
+| 2026-10-31 | architect | /ˈɑːrkɪtekt/ | n. | 建築師；軟體領域：架構師（software architect / solutions architect）。ch 唸 /k/；architecture ＝ 建築、架構 | The architect drew the system diagram before anyone wrote a line of code. | week06 reading | |
+| 2026-10-31 | linear perspective | /ˈlɪniər pərˈspektɪv/ | n. phr. | 線性透視法（平行線匯聚到同一個消失點 vanishing point）；linear 線性的（linear time O(n)）；perspective 也指「觀點」 | In Computational Photography, we used linear perspective to estimate depth from a single image. | week06 reading | |
+| 2026-10-31 | set out (the rules) | /set ˈaʊt/ | phr. v. | 有條理地列出、闡述（set out the rules in a short book 在一本小書裡列出規則）；另一義：出發、啟程（set out for Paris）。三態 set–set–set | Our style guide sets out the rules for naming functions and variables. | week06 reading | |
+| 2026-10-31 | calm | /kɑːm/ | adj. | （人）冷靜的；（天氣）**無風的、平靜的**（本文 a calm summer evening ＝ 無風的夏夜，所以熱散不掉）。l 不發音 | Stay calm in the interview, even if you get stuck on the first approach. | week06 reading | |
+| 2026-10-31 | asphalt | /ˈæsfɔːlt/ | n. | 瀝青、柏油（鋪路材料，**不可數**） | The asphalt in the parking lot was hot enough to melt my shoes. | week06 reading | |
+| 2026-10-31 | open soil | /ˈoʊpən sɔɪl/ | n. phr. | 裸露的土壤（沒被水泥、柏油蓋住的土地；open ＝ 沒有遮蓋的）。soil 見 week01 | Rain soaks into open soil, but it runs straight off asphalt. | week06 reading | |
+| 2026-10-31 | evaporate | /ɪˈvæpəreɪt/ | v. | 蒸發；比喻：（優勢、希望）消失（our lead evaporated）；名詞 evaporation | Our performance gains evaporated once real traffic hit the server. | week06 reading | |
+| 2026-10-31 | cope (with) | /koʊp/ | v. / phr. v. | 應付、處理（困難、壓力）；cope 是不及物動詞，接受詞要加 with（cope with a heat wave） | The old server could not cope with the sudden spike in traffic. | week06 reading | |

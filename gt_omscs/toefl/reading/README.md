@@ -48,3 +48,4 @@ App 的題庫在 `toefl-reading/src/data/weekXX.json`（含答案），本資料
 | [Week 03](week03/README.md) | 2026-08-29 | Public Libraries & Third Places（社會）、Ice Cores & Tree Rings（科學） | 未作答 |
 | [Week 04](week04/README.md) | 2026-09-05 | Longitude & Data Centres（歷史／科技）、QWERTY & the Ice Trade（科技／歷史） | 未作答 |
 | [Week 05](week05/README.md) | 2026-10-03 | Seed Dispersal & Photography vs Painting（科學／藝術）、Desire Paths & Foucault's Pendulum（社會／科學） | 未作答 |
+| [Week 06](week06/README.md) | 2026-10-31 | QR Codes & the Great Stink（科技／歷史）、Linear Perspective & Urban Heat Islands（藝術／科學） | 未作答 |

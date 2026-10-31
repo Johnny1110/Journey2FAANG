@@ -1,0 +1,431 @@
+{
+  "id": "week06",
+  "week": 6,
+  "title": "Week 06",
+  "date": "2026-10-31",
+  "topics": [
+    "QR Codes & the Great Stink（科技／歷史）",
+    "Linear Perspective & Urban Heat Islands（藝術／科學）"
+  ],
+  "timeLimitSec": 1620,
+  "parts": [
+    {
+      "id": "part1",
+      "type": "cloze",
+      "title": "Part 1 — Complete the Words",
+      "instructions": "每個空格是一個單字，只顯示前半部字母。依上下文補完整個單字（輸入完整拼字，不是只填缺的部分）。",
+      "blocks": [
+        {
+          "title": "Passage A",
+          "template": "A QR code can often be read even when part of it is torn, dirty or {{1}} by a logo. This is not luck; it is the {{2}} of error correction, a technique devised by two mathematicians in 1960, more than thirty years before the QR code itself. When a code is generated, the message is not simply stored once. Extra data is calculated from the original and {{3}} into the pattern. If a scanner cannot read some of the squares, it uses this extra data to {{4}} the missing portion. At the highest level of protection, about thirty percent of a code can be {{5}} and the message still arrives intact. The {{6}} is space: the more protection a code carries, the {{7}} it must be to hold the same message. The same idea protects music on scratched discs and the faint {{8}} sent home by distant spacecraft, where a lost message cannot simply be sent {{9}}. Without it, much of modern technology would be far more {{10}}.",
+          "blanks": [
+            {
+              "id": 1,
+              "prefix": "cov",
+              "missing": 4,
+              "answer": "covered",
+              "explanation": "torn, dirty or ___ by a logo：三個並列的描述語，torn（tear 的 p.p.）、dirty，第三個後面接 by a logo → 被動意味的 p.p. covered（被 logo 蓋住）。"
+            },
+            {
+              "id": 2,
+              "prefix": "res",
+              "missing": 3,
+              "answer": "result",
+              "explanation": "it is the ___ of error correction：the + 名詞 + of → result。the result of X = X 造成的結果；整句是「這不是運氣，而是錯誤更正的結果」。後面的 devised 是 week05 生字（devise 設計出）。"
+            },
+            {
+              "id": 3,
+              "prefix": "wo",
+              "missing": 3,
+              "answer": "woven",
+              "explanation": "Extra data is calculated ... and ___ into the pattern：and 連接兩個被動 p.p.（is calculated and (is) woven）→ weave 的 p.p. woven（三態 weave–wove–woven）。weave A into B = 把 A 織進 B。只看到 wo + 3 格，要從 into the pattern 推出「編織進去」。"
+            },
+            {
+              "id": 4,
+              "prefix": "reb",
+              "missing": 4,
+              "answer": "rebuild",
+              "explanation": "uses this extra data to ___：to 不定詞接原形 → rebuild（重建；re- = 再一次）。the missing portion（week05 生字 portion）= 遺失的那一部分。"
+            },
+            {
+              "id": 5,
+              "prefix": "dam",
+              "missing": 4,
+              "answer": "damaged",
+              "explanation": "can be ___：情態動詞 + be + p.p. 被動 → damaged。和後半句 the message still arrives intact（week04 生字）形成對比：code 壞了三成，訊息仍完好。"
+            },
+            {
+              "id": 6,
+              "prefix": "pr",
+              "missing": 3,
+              "answer": "price",
+              "explanation": "The ___ is space：冒號後在解釋「代價」—保護越多，code 就要越大 → price（代價）。the price is X = 代價是 X。cost 意思也對，但字首是 pr、共 5 個字母。"
+            },
+            {
+              "id": 7,
+              "prefix": "lar",
+              "missing": 3,
+              "answer": "larger",
+              "explanation": "the more protection a code carries, the ___ it must be：「the + 比較級 ..., the + 比較級 ...」越…就越… 句型 → large 的比較級 larger。"
+            },
+            {
+              "id": 8,
+              "prefix": "sig",
+              "missing": 4,
+              "answer": "signals",
+              "explanation": "the faint ___ sent home by distant spacecraft：faint（微弱的）修飾名詞，sent 是後置 p.p.。太空船傳回地球的是 signals（訊號）；底線 4 格 → 複數 signals。distant 是 week03 生字。"
+            },
+            {
+              "id": 9,
+              "prefix": "ag",
+              "missing": 3,
+              "answer": "again",
+              "explanation": "cannot simply be sent ___：動詞片語已經完整，缺的是副詞 → again（再一次）。太空船太遠，沒辦法請它「再傳一次」，所以只能靠錯誤更正把資料救回來。"
+            },
+            {
+              "id": 10,
+              "prefix": "fra",
+              "missing": 4,
+              "answer": "fragile",
+              "explanation": "far more ___：far 修飾比較級 more + 形容詞 → fragile（脆弱的，week05 生字）。沒有錯誤更正，現代科技會「一點損壞就整個壞掉」。"
+            }
+          ]
+        },
+        {
+          "title": "Passage B",
+          "template": "In the hot summer of 1858, the River Thames smelled so bad that Londoners called the event the Great Stink. For decades the city's waste had {{11}} straight into the river. Members of Parliament, whose new building {{12}} on the riverbank, hung curtains {{13}} in chemicals over the windows, but the smell came through anyway. Within weeks they {{14}} funding for a project that had been delayed for years. The engineer Joseph Bazalgette designed a {{15}} of large tunnels that would catch the waste before it {{16}} the river and carry it away to the east, downstream of the city. He is said to have {{17}} the size of the pipes his calculations called for, reasoning that the city would only build such a system once. The work was completed at considerable cost, yet it turned out to be one of the best {{18}} in the city's history. Ironically, most officials believed that disease spread through bad air, so the tunnels were built to remove a smell. They succeeded for a different {{19}}: by keeping sewage out of the water supply, they helped end the cholera {{20}} that had killed tens of thousands of Londoners.",
+          "blanks": [
+            {
+              "id": 11,
+              "prefix": "flo",
+              "missing": 3,
+              "answer": "flowed",
+              "explanation": "For decades ... had ___：過去完成式 had + p.p.（在 1858 年之前持續了幾十年）→ flowed。flow straight into the river = 直接流進河裡。flow 是規則動詞（flow–flowed–flowed），別和 fly–flew–flown 搞混。"
+            },
+            {
+              "id": 12,
+              "prefix": "st",
+              "missing": 3,
+              "answer": "stood",
+              "explanation": "whose new building ___ on the riverbank：關係子句缺動詞，全文是過去式 → stand 的過去式 stood。建築物「坐落於某處」英文常用 stand。"
+            },
+            {
+              "id": 13,
+              "prefix": "soa",
+              "missing": 3,
+              "answer": "soaked",
+              "explanation": "hung curtains ___ in chemicals：p.p. 後置修飾 curtains（= curtains (which were) soaked in chemicals），和 week05 的 bare earth worn by… 是同一個句型。soak = 浸泡。"
+            },
+            {
+              "id": 14,
+              "prefix": "appr",
+              "missing": 4,
+              "answer": "approved",
+              "explanation": "Within weeks they ___ funding：主詞 they（議員們），過去式 → approved。approve funding = 核准經費。Parliament 是 week04 生字。"
+            },
+            {
+              "id": 15,
+              "prefix": "net",
+              "missing": 4,
+              "answer": "network",
+              "explanation": "a ___ of large tunnels：a + 名詞 + of → network（網絡、管網）。a network of pipes / tunnels / servers 在工程語境很常見。"
+            },
+            {
+              "id": 16,
+              "prefix": "ent",
+              "missing": 4,
+              "answer": "entered",
+              "explanation": "before it ___ the river：這裡的 before 是**連接詞**，後面接完整子句 S + V；it = the waste，過去式 → entered。（對照 week04：before 當介系詞時才接 V-ing。）"
+            },
+            {
+              "id": 17,
+              "prefix": "dou",
+              "missing": 4,
+              "answer": "doubled",
+              "explanation": "He is said to have ___：to have + p.p. 是完成式不定詞，指更早發生的事 → doubled（加倍）。is said to = 據說，作者在提醒這是流傳的說法（和 week05 attributed / remains disputed 同類語氣）。"
+            },
+            {
+              "id": 18,
+              "prefix": "inves",
+              "missing": 6,
+              "answer": "investments",
+              "explanation": "one of the best ___：one of the + 最高級 + **複數名詞** → investments（inves + 6 格 = 11 字母）。花費很大（at considerable cost, week05 生字）但回報更大，所以 turned out to be 最好的投資之一。"
+            },
+            {
+              "id": 19,
+              "prefix": "rea",
+              "missing": 3,
+              "answer": "reason",
+              "explanation": "They succeeded for a different ___：for a … reason = 因為…的原因 → reason（名詞）。冒號後揭曉真正原因：不是消除臭味，而是讓污水遠離飲用水。前面 reasoning that 是動詞用法（推斷，week05 生字）。"
+            },
+            {
+              "id": 20,
+              "prefix": "outb",
+              "missing": 5,
+              "answer": "outbreaks",
+              "explanation": "the cholera ___ that had killed tens of thousands：outbreak（疫情爆發）。單數 outbreak 只要 4 格，底線 5 格 → 複數 outbreaks（倫敦在 19 世紀爆發過好幾次霍亂）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "type": "choice",
+      "title": "Part 2 — Read in Daily Life",
+      "instructions": "閱讀生活情境短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Text 1",
+          "style": "email",
+          "body": [
+            "**From:** CS 6250 Instructional Team",
+            "**Subject:** Exam 1 — time window, rules, and connection problems",
+            "Exam 1 opens on Friday, November 6, at 8:00 a.m. Eastern Time and closes on Monday, November 9, at 8:00 a.m. You may start at any point in that window. Once you begin, you have 90 minutes, but the exam closes at the end of the window whether or not your time has run out.",
+            "The exam is proctored online. Your webcam must stay on throughout, and you will be asked to show your desk before you start. One sheet of handwritten notes is allowed; printed notes and calculators are not.",
+            "If your connection drops, do not close the browser. First contact the proctoring service through its chat window. If the problem cannot be solved there, make a private post on Ed with the time it happened."
+          ],
+          "questions": [
+            {
+              "id": 21,
+              "prompt": "What is the main purpose of this email?",
+              "options": [
+                "To announce that Exam 1 has been moved to a later date.",
+                "To explain when Exam 1 can be taken and what rules students must follow.",
+                "To ask students to choose a time slot for Exam 1.",
+                "To describe how Exam 1 will be graded."
+              ],
+              "answer": "B",
+              "explanation": "三段分別是：考試開放時段與時間限制、監考規則與可帶的東西、斷線時怎麼處理 → 整封信在說明考試的時間與規則。(A) 沒有延期；(C) 信中說 You may start at any point in that window，不需要選時段；(D) 完全沒提評分方式。"
+            },
+            {
+              "id": 22,
+              "prompt": "A student starts Exam 1 at 7:00 a.m. Eastern Time on Monday, November 9. How much time will the student have to work on it?",
+              "options": [
+                "90 minutes",
+                "30 minutes",
+                "60 minutes",
+                "None, because the exam has already closed."
+              ],
+              "answer": "C",
+              "explanation": "關鍵在第一段最後一句：the exam closes at the end of the window whether or not your time has run out。考試在週一 8:00 a.m. 關閉，7:00 才開始就只剩 60 分鐘。(A) 90 分鐘是正常時限，但會被關閉時間截斷 — 這是典型「只看到一半條件」的陷阱；(B) 算錯；(D) 7:00 時考試還開著。"
+            },
+            {
+              "id": 23,
+              "prompt": "According to the email, what should a student do first if the internet connection is lost during the exam?",
+              "options": [
+                "Contact the proctoring service through its chat window.",
+                "Close the browser and restart the exam.",
+                "Make a private post on Ed with the time of the problem.",
+                "Email the instructional team to request a new exam."
+              ],
+              "answer": "A",
+              "explanation": "第三段：do not close the browser. **First** contact the proctoring service through its chat window。(B) 信中明確說不要關瀏覽器；(C) 在 Ed 發私人貼文是 chat 解決不了時的**第二步**，題目問的是 first；(D) 信中沒提 email，也沒提重考。"
+            }
+          ]
+        },
+        {
+          "title": "Text 2",
+          "style": "notice",
+          "body": [
+            "**NOTICE — Campus Shuttle Winter Schedule**",
+            "Daylight saving time ends on Sunday, November 1, when clocks go back one hour. The winter shuttle schedule begins the next day.",
+            "Because it now gets dark earlier, the Night Safety Route will start at 5 p.m. instead of 6 p.m. The last bus will still leave the Student Center at 2 a.m.",
+            "From November 2 until December 18, road work on Tenth Street will close the Library stop on the Red Route. Riders should use the Cherry Street stop, a two-minute walk away.",
+            "On November 1, arrival times in the campus app may be inaccurate while the system adjusts to the time change. Please check the printed timetables at each stop instead."
+          ],
+          "questions": [
+            {
+              "id": 24,
+              "prompt": "Why will the Night Safety Route begin earlier than before?",
+              "options": [
+                "More students now study late at the library.",
+                "Road work has closed one of its stops.",
+                "The last bus will leave the Student Center earlier.",
+                "It gets dark earlier after the time change."
+              ],
+              "answer": "D",
+              "explanation": "第二段：Because it now gets dark earlier → 夜間路線提早到 5 p.m. 發車。(A) 原文沒提；(B) 道路施工影響的是 Red Route 的 Library 站，不是夜間路線；(C) 剛好相反，The last bus will **still** leave at 2 a.m.（收班時間不變）。"
+            },
+            {
+              "id": 25,
+              "prompt": "A student usually catches the Red Route at the Library stop. Where should the student board the bus on December 10?",
+              "options": [
+                "At the Library stop, as usual",
+                "At the Cherry Street stop",
+                "At the Student Center",
+                "At any stop on the Night Safety Route"
+              ],
+              "answer": "B",
+              "explanation": "第三段：From November 2 until December 18, road work ... will close the Library stop on the Red Route. Riders should use the Cherry Street stop。12 月 10 日落在這段期間內 → Cherry Street。(A) Library 站封閉中；(C)(D) 公告沒有這樣建議。"
+            },
+            {
+              "id": 26,
+              "prompt": "What does the notice suggest riders do on Sunday, November 1?",
+              "options": [
+                "Use the campus app to see real-time arrival times.",
+                "Avoid the shuttle until the winter schedule begins.",
+                "Rely on the printed timetables rather than the app.",
+                "Set their clocks forward one hour."
+              ],
+              "answer": "C",
+              "explanation": "第四段：On November 1, arrival times in the campus app may be inaccurate ... Please check the printed timetables at each stop instead。(A) 剛好相反；(B) 沒有叫人別搭車；(D) 夏令時間結束是 clocks go **back**（撥慢一小時），不是 forward。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "type": "choice",
+      "title": "Part 3 — Read an Academic Passage",
+      "instructions": "閱讀約 200 字的學術短文，各回答 5 題。",
+      "blocks": [
+        {
+          "title": "Passage 1 — Learning to Paint Distance",
+          "style": "academic",
+          "body": [
+            "Paintings from medieval Europe often look strangely flat to modern eyes. Figures were usually sized by importance rather than by distance, so a saint might tower over the building behind him. Painters knew that faraway objects look smaller, but they had no reliable method for showing it.",
+            "That changed in Florence in the early 1400s. The architect Filippo Brunelleschi is credited with the first demonstration of linear perspective, a system in which parallel lines, such as the edges of a road, meet at a single vanishing point. He painted a church on a small wooden panel and drilled a hole through the middle. A viewer stood behind the panel, looked through the hole and saw the painting reflected in a mirror. When the mirror was lowered, the real church appeared exactly where the painted one had been.",
+            "The panel itself has been lost, and the experiment is known only from an account written decades later by one of Brunelleschi's admirers. Some historians therefore question how much of it happened as described.",
+            "What is not disputed is how quickly the idea spread. In 1435 the scholar Leon Battista Alberti set out the rules in a short book for painters, and within a few decades artists across Italy were using vanishing points to create a convincing sense of depth. Perspective did more than make pictures look real. It placed the viewer at one fixed point, as if every painting were a window that a single person was looking through."
+          ],
+          "questions": [
+            {
+              "id": 27,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "How linear perspective was first demonstrated in Florence and then spread among Italian painters",
+                "Why medieval painters refused to show distance in their work",
+                "How Brunelleschi used mirrors to design churches",
+                "Why historians doubt that Alberti wrote a book about painting"
+              ],
+              "answer": "A",
+              "explanation": "四段結構：第一段中世紀畫作看起來扁平（問題）；第二段 Brunelleschi 首次示範線性透視；第三段證據的不確定；第四段 Alberti 寫書、透視法迅速傳遍義大利。(B) 第一段說畫家知道遠物會變小，只是 had no reliable method，不是 refused；(C) 他是在木板上**畫**教堂，鏡子是示範工具，不是拿來設計教堂；(D) 有爭議的是 Brunelleschi 實驗的細節，不是 Alberti 有沒有寫書。"
+            },
+            {
+              "id": 28,
+              "prompt": "According to paragraph 2, what did the viewer see after the mirror was lowered?",
+              "options": [
+                "A reflection of the painted panel",
+                "The hole drilled in the panel",
+                "A second painting placed behind the first",
+                "The real church in the same position as the painted one"
+              ],
+              "answer": "D",
+              "explanation": "第二段最後一句：When the mirror was lowered, the real church appeared exactly where the painted one had been。(A) 鏡中倒影是放下鏡子**之前**看到的；(B)(C) 原文沒有這樣說。"
+            },
+            {
+              "id": 29,
+              "prompt": "What can be inferred from paragraph 3 about Brunelleschi's experiment?",
+              "options": [
+                "It was described in detail by Brunelleschi himself.",
+                "Historians cannot examine the original panel to check the account.",
+                "It was repeated by Alberti in 1435.",
+                "Most historians believe it never took place."
+              ],
+              "answer": "B",
+              "explanation": "第三段：The panel itself has been lost，而且實驗只留下數十年後一位崇拜者的記述 → 推論：歷史學家沒辦法拿原作來核對記述。(A) 記述是 admirer 寫的，不是他本人；(C) 第四段的 Alberti 是寫書整理規則，沒說他重做實驗；(D) 原文是 question how much of it happened as described（質疑細節），推不出「多數人認為根本沒發生」— most + never 太極端。"
+            },
+            {
+              "id": 30,
+              "prompt": "The word convincing in paragraph 4 is closest in meaning to",
+              "options": [
+                "colorful",
+                "dramatic",
+                "believable",
+                "complicated"
+              ],
+              "answer": "C",
+              "explanation": "a convincing sense of depth = 讓人信服的立體感 → believable（可信的、看起來像真的）。convince 是「說服」，convincing 是「有說服力的」。下一句 make pictures look real 也在呼應這個意思。(A)(B)(D) 都不是「看起來像真的」。"
+            },
+            {
+              "id": 31,
+              "prompt": "The word It in paragraph 4 (\"It placed the viewer at one fixed point\") refers to",
+              "options": [
+                "perspective",
+                "Alberti's book",
+                "a sense of depth",
+                "a single person"
+              ],
+              "answer": "A",
+              "explanation": "Perspective did more than make pictures look real. **It** placed the viewer at one fixed point… 前一句主詞是 Perspective，下一句的 It 延續同一個主詞。(B) Alberti 的書是整理規則的工具，不是讓觀者站在固定點的東西；(C) a sense of depth 是透視法的效果之一；(D) a single person 出現在 It 之後，而且是人，不會用 it 指代。"
+            }
+          ]
+        },
+        {
+          "title": "Passage 2 — Why Cities Stay Warm at Night",
+          "style": "academic",
+          "body": [
+            "On a calm summer evening, the center of a large city can be several degrees warmer than the countryside around it. Scientists call this the urban heat island effect, and it has several causes.",
+            "Dark surfaces such as asphalt and roofs absorb sunlight during the day and release the stored heat slowly after sunset. Tall buildings trap this heat and block winds that might otherwise carry it away. Cities also have fewer trees and less open soil. In the countryside, plants draw water from the ground and release it through their leaves; as the water evaporates, it cools the surrounding air, much as sweat cools the skin. Finally, cars, air conditioners and factories add waste heat of their own.",
+            "The effect is usually strongest at night rather than at noon. After sunset the countryside loses its heat quickly, while the city keeps releasing what it stored during the day. This matters for health. During a heat wave, most people can cope with a hot afternoon if they are able to recover overnight; in the center of a city, that relief may never come.",
+            "Cities have begun to respond. Some paint roofs white or light gray so that they reflect sunlight instead of absorbing it; others plant trees along their streets. Neither measure removes the effect altogether, but studies suggest that both can lower local temperatures by a few degrees."
+          ],
+          "questions": [
+            {
+              "id": 32,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "Why trees grow more slowly in cities than in the countryside",
+                "How air conditioners have made cities warmer",
+                "Why heat waves are becoming more common",
+                "Why cities are often warmer than the surrounding countryside, and what can be done about it"
+              ],
+              "answer": "D",
+              "explanation": "第一段定義熱島效應；第二段列出原因；第三段說它夜間最強、對健康的影響；第四段說城市怎麼因應 → 「城市為何比郊區熱 + 能怎麼辦」。(A) 第二段只說城市樹比較少，沒說長得慢；(B) 冷氣只是四個原因之一（waste heat），太窄；(C) 文章沒說熱浪變多。"
+            },
+            {
+              "id": 33,
+              "prompt": "According to paragraph 2, how do plants help to cool the air?",
+              "options": [
+                "Their leaves block sunlight from reaching the asphalt.",
+                "They slow down winds that carry heat into the countryside.",
+                "Water released through their leaves evaporates and cools the air.",
+                "They absorb waste heat from cars and factories."
+              ],
+              "answer": "C",
+              "explanation": "第二段：plants draw water from the ground and release it through their leaves; as the water evaporates, it cools the surrounding air。(A) 原文沒說葉子遮住柏油；(B) 擋風的是 tall buildings，而且擋風反而讓熱留住；(D) 原文沒提植物吸收廢熱。"
+            },
+            {
+              "id": 34,
+              "prompt": "What can be inferred from paragraph 3 about people living in a city center during a heat wave?",
+              "options": [
+                "Their main risk comes from nights that stay too warm for the body to recover.",
+                "Their afternoons are much hotter than afternoons in the countryside.",
+                "They are safer than rural residents because cities cool quickly after dark.",
+                "They can avoid all health risks by staying indoors at noon."
+              ],
+              "answer": "A",
+              "explanation": "第三段：most people can cope with a hot afternoon **if they are able to recover overnight**; in the center of a city, that relief may never come → 推論：市中心的主要風險是夜裡太熱、身體無法恢復。(B) 第一句說效應 strongest at night **rather than at noon**，下午的城鄉差距反而較小；(C) 相反，是鄉下 loses its heat quickly；(D) 原文沒有這個說法，all 也太絕對。"
+            },
+            {
+              "id": 35,
+              "prompt": "The word trap in paragraph 2 is closest in meaning to",
+              "options": [
+                "create",
+                "keep from escaping",
+                "reflect",
+                "measure"
+              ],
+              "answer": "B",
+              "explanation": "Tall buildings trap this heat and block winds that might otherwise carry it away：大樓把熱「困住」，不讓它被風帶走 → keep from escaping。(A) 熱是柏油和屋頂吸收來的，大樓沒有 create 熱；(C) reflect 是第四段白色屋頂的作用；(D) 無關。carry away 是 week04 生字。"
+            },
+            {
+              "id": 36,
+              "prompt": "The word they in paragraph 4 (\"so that they reflect sunlight\") refers to",
+              "options": [
+                "cities",
+                "trees",
+                "streets",
+                "roofs"
+              ],
+              "answer": "D",
+              "explanation": "Some paint roofs white or light gray so that **they** reflect sunlight instead of absorbing it：會反射陽光的是被漆成白色的 roofs。(A) cities 文法上也是複數，但城市本身不會「反射陽光、不吸收陽光」— 指代題要用語意判斷，不能只看單複數；(B)(C) trees、streets 在分號後的另一個子句裡。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
