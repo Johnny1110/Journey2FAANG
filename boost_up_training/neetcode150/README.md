@@ -96,4 +96,20 @@ link: https://leetcode.com/problem-list/plakya4j
 81. Find Minimum in Rotated Sorted Array -> [link](fmirsa) 這題很難，要重複刷背下來 
 82. Min Stack -> [link](min_stack)
 83. Valid Parenthesis String -> [link](vps) 有趣的 Parenthesis 類型題目，值得重做
-84. ? -> [link](?/README.md) 👈
+84. Two Sum II - Input Array Is Sorted -> [link](2sum2) 👈
+85. ? -> [link](?/README.md)
+86. ? -> [link](?/README.md)
+87. ? -> [link](?/README.md)
+88. ? -> [link](?/README.md)
+89. ? -> [link](?/README.md)
+90. ? -> [link](?/README.md)
+91. ? -> [link](?/README.md)
+92. ? -> [link](?/README.md)
+93. ? -> [link](?/README.md)
+94. ? -> [link](?/README.md)
+95. ? -> [link](?/README.md)
+96. ? -> [link](?/README.md)
+97. ? -> [link](?/README.md)
+98. ? -> [link](?/README.md)
+99. ? -> [link](?/README.md)
+100. ? -> [link](?/README.md)
