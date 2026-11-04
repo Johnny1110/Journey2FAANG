@@ -207,8 +207,8 @@ WHERE id NOT IN (SELECT customer_id FROM orders);
 
 | # | 題目 | 核心技巧 | 難度 | 狀態 |
 |---|------|---------|------|------|
-| 01 | [One Query, Four Subtotals](phase-2-aggregation-limits/01-one-query-four-subtotals) | `GROUPING SETS` + `GROUPING()` 辨識小計行 | ★★★★☆ | ⏳ |
-| 02 | [FILTER vs CASE WHEN](phase-2-aggregation-limits/02-filter-vs-case-when) | `FILTER` 子句、`COUNT` 的 NULL 語意、計畫對比 | ★★★☆☆ |  |
+| 01 | [One Query, Four Subtotals](phase-2-aggregation-limits/01-one-query-four-subtotals) | `GROUPING SETS` + `GROUPING()` 辨識小計行 | ★★★★☆ | 🟠 |
+| 02 | [FILTER vs CASE WHEN](phase-2-aggregation-limits/02-filter-vs-case-when) | `FILTER` 子句、`COUNT` 的 NULL 語意、計畫對比 | ★★★☆☆ | ⏳ |
 | 03 | [The Median Without a Median Function](phase-2-aggregation-limits/03-the-median-without-a-median-function) | `PERCENTILE_CONT` vs `DISC` + 手寫雙向排名版 | ★★★★☆ |  |
 | 04 | [The Mode That Ties](phase-2-aggregation-limits/04-the-mode-that-ties) | 眾數並列全取、`RANK` vs `ROW_NUMBER`、非決定性查詢 | ★★★☆☆ |  |
 | 05 | [The Weighted Average Trap](phase-2-aggregation-limits/05-the-weighted-average-trap) | `AVG(AVG())` 謬誤、聚合可組合性 | ★★★☆☆ |  |
