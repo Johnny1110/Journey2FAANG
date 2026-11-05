@@ -12,34 +12,35 @@ func minCostConnectPoints(points [][]int) int {
 
 	// go Prim’s algorithm
 	n := len(points)
-	minDist := make([]int, n) // from j to tree, min cost
+	minDist := make([]int, n)
 	visited := make([]bool, n)
-	for i := range minDist {
-		minDist[i] = math.MaxInt // init
+
+	// init minDist
+	for i := 1; i < n; i++ {
+		minDist[i] = math.MaxInt
 	}
+	// first point is the root of the tree
+	// minDist[0] = 0
 
-	minDist[0] = 0 // start from point 0, connecting it costs nothing
-
+	// step 1. find min cost in minDist
 	for round := 0; round < n; round++ {
-		// Step 1: find u = the unvisited point with the smallest minDist
-		u := -1
-		for j := 0; j < n; j++ {
-			if !visited[j] && (u == -1 || minDist[u] > minDist[j]) {
-				u = j
+		u := -1 // target point index
+		for i := 0; i < n; i++ {
+			if !visited[i] && (u == -1 || minDist[i] < minDist[u]) {
+				u = i
 			}
 		}
-		// Step 2: add u to the tree
+
+		// step 2. add u into tree and update visited
 		result += minDist[u]
 		visited[u] = true
 
-		// Step 3: u is now in the tree, so update minDist for every unvisited v
+		// step 3. update minDist
 		weights := graph[u]
-		for v := 0; v < n; v++ {
-			// update minDist
-			if !visited[v] {
-				minDist[v] = min(minDist[v], weights[v])
-			}
+		for i := 0; i < n; i++ {
+			minDist[i] = min(minDist[i], weights[i])
 		}
+
 	}
 
 	return result
