@@ -15,7 +15,7 @@ The cost of connecting two points [xi, yi] and [xj, yj] is the manhattan distanc
 Return the minimum cost to make all points connected. All points are connected if there is exactly one simple path between any two points.
 
 
-## Coding
+## Coding - Prim's
 
 ```go
 func minCostConnectPoints(points [][]int) int {
@@ -91,7 +91,7 @@ func abs(a int) int {
 <br>
 <br>
 
-## Time & Space Complexity
+## Time & Space Complexity  - Prim's
 
 ```
 Assume: N = len of points
@@ -102,3 +102,21 @@ Space: O(N square)
 
 <br>
 <br>
+
+## Coding - Kruskal’s
+
+```go
+
+```
+
+<br>
+<br>
+
+## Time & Space Complexity  - Kruskal’s
+
+```
+Assume:
+
+Time:
+Space:
+```
