@@ -106,8 +106,96 @@ Space: O(N square)
 ## Coding - Kruskal’s
 
 ```go
+type Edge struct {
+	cost int
+	a, b int
+}
 
+func minCostConnectPoints(points [][]int) int {
+	n := len(points)
+
+	allEdges := []*Edge{}
+
+	for i := 0; i < n; i++ {
+		for j := i + 1; j < n; j++ {
+			pa, pb := points[i], points[j]
+
+			edge := &Edge{
+				cost: distance(pa, pb),
+				a:    i,
+				b:    j,
+			}
+			allEdges = append(allEdges, edge)
+		}
+	}
+
+	// sort: order by cost
+	sort.Slice(allEdges, func(a, b int) bool {
+		return allEdges[a].cost < allEdges[b].cost
+	})
+
+	// Union-Find
+	parents := make([]int, n)
+	// init parent
+	for i := 0; i < n; i++ {
+		parents[i] = i
+	}
+
+	// find root
+	var find func(i int) int
+	find = func(i int) int {
+		p := parents[i]
+		if p == i {
+			return p
+		}
+		parents[i] = find(p)
+		return parents[i]
+	}
+
+	// union func
+	union := func(i, j int) bool {
+		rootOfI, rootOfJ := find(i), find(j)
+		if rootOfI == rootOfJ {
+			return false
+		}
+		// merge two group
+		parents[rootOfI] = rootOfJ // merge: one root now points at the other
+		return true
+	}
+
+	result := 0
+	count := 0 // max connect count is n - 1
+	// main loop
+	for _, e := range allEdges {
+		if union(e.a, e.b) {
+			result += e.cost
+			count++
+
+			if count >= n-1 {
+				break
+			}
+		}
+
+	}
+
+	return result
+}
+
+func distance(a, b []int) int {
+	return abs(a[0]-b[0]) + abs(a[1]-b[1])
+}
+
+func abs(a int) int {
+	if a < 0 {
+		return -a
+	}
+	return a
+}
 ```
+
+* 72/72 cases passed (486 ms)
+* Your runtime beats 22.47 % of golang submissions
+* Your memory usage beats 68.84 % of golang submissions (28.5 MB)
 
 <br>
 <br>
@@ -115,8 +203,15 @@ Space: O(N square)
 ## Time & Space Complexity  - Kruskal’s
 
 ```
-Assume:
+Assume: N = len of points, E = N(N-1)/2 edges
 
-Time:
-Space:
+Time:  O(N² log N)
+       - build edges: O(N²)
+       - sort edges:  O(E log E) = O(N² log N)   ← dominant
+       - union-find:  O(E · log N) amortized with path compression
+                      (O(E · α(N)) ≈ O(E) with union by rank too)
+
+Space: O(N²)
+       - edge list: O(N²)   ← dominant
+       - parents:   O(N)
 ```

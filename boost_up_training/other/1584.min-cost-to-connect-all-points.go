@@ -5,58 +5,79 @@
  */
 
 // @lc code=start
+type Edge struct {
+	cost int
+	a, b int
+}
+
 func minCostConnectPoints(points [][]int) int {
-	// build distance graph
-	graph := buildGraph(points)
-	result := 0
-
-	// go Prim’s algorithm
 	n := len(points)
-	minDist := make([]int, n)
-	visited := make([]bool, n)
 
-	// init minDist
-	for i := 1; i < n; i++ {
-		minDist[i] = math.MaxInt
-	}
-	// first point is the root of the tree
-	// minDist[0] = 0
+	allEdges := []*Edge{}
 
-	// step 1. find min cost in minDist
-	for round := 0; round < n; round++ {
-		u := -1 // target point index
-		for i := 0; i < n; i++ {
-			if !visited[i] && (u == -1 || minDist[i] < minDist[u]) {
-				u = i
+	for i := 0; i < n; i++ {
+		for j := i + 1; j < n; j++ {
+			pa, pb := points[i], points[j]
+
+			edge := &Edge{
+				cost: distance(pa, pb),
+				a:    i,
+				b:    j,
 			}
+			allEdges = append(allEdges, edge)
 		}
+	}
 
-		// step 2. add u into tree and update visited
-		result += minDist[u]
-		visited[u] = true
+	// sort: order by cost
+	sort.Slice(allEdges, func(a, b int) bool {
+		return allEdges[a].cost < allEdges[b].cost
+	})
 
-		// step 3. update minDist
-		weights := graph[u]
-		for i := 0; i < n; i++ {
-			minDist[i] = min(minDist[i], weights[i])
+	// Union-Find
+	parents := make([]int, n)
+	// init parent
+	for i := 0; i < n; i++ {
+		parents[i] = i
+	}
+
+	// find root
+	var find func(i int) int
+	find = func(i int) int {
+		p := parents[i]
+		if p == i {
+			return p
+		}
+		parents[i] = find(p)
+		return parents[i]
+	}
+
+	// union func
+	union := func(i, j int) bool {
+		rootOfI, rootOfJ := find(i), find(j)
+		if rootOfI == rootOfJ {
+			return false
+		}
+		// merge two group
+		parents[rootOfI] = rootOfJ // merge: one root now points at the other
+		return true
+	}
+
+	result := 0
+	count := 0 // max connect count is n - 1
+	// main loop
+	for _, e := range allEdges {
+		if union(e.a, e.b) {
+			result += e.cost
+			count++
+
+			if count >= n-1 {
+				break
+			}
 		}
 
 	}
 
 	return result
-}
-
-func buildGraph(points [][]int) [][]int {
-	graph := make([][]int, len(points))
-
-	for i, pointA := range points {
-		graph[i] = make([]int, len(points))
-		for j, pointB := range points {
-			graph[i][j] = distance(pointA, pointB)
-		}
-	}
-
-	return graph
 }
 
 func distance(a, b []int) int {
