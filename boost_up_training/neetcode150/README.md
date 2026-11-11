@@ -98,8 +98,8 @@ link: https://leetcode.com/problem-list/plakya4j
 83. Valid Parenthesis String -> [link](vps) 有趣的 Parenthesis 類型題目，值得重做
 84. Two Sum II - Input Array Is Sorted -> [link](2sum2)
 85. Min Cost to Connect All Points -> [link](mctcap) -> 考 Minimum Spanning Tree (MST) 特殊題型 2 種算法都要會 (Kruskal, Prim) 
-86. Redundant Connection -> [link](redundant_connection/README.md) 👈
-87. ? -> [link](?/README.md)
+86. Redundant Connection -> [link](redundant_connection) -> union find
+87. ? -> [link](?/README.md)  👈
 88. ? -> [link](?/README.md)
 89. ? -> [link](?/README.md)
 90. ? -> [link](?/README.md)
