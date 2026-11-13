@@ -100,8 +100,8 @@ link: https://leetcode.com/problem-list/plakya4j
 85. Min Cost to Connect All Points -> [link](mctcap) -> 考 Minimum Spanning Tree (MST) 特殊題型 2 種算法都要會 (Kruskal, Prim) 
 86. Redundant Connection -> [link](redundant_connection) -> union find
 87. Max Area of Island -> [link](maoi)
-88. ? -> [link](?/README.md) 👈
-89. ? -> [link](?/README.md)
+88. Reverse Bits -> [link](reverse_bits)
+89. ? -> [link](?/README.md) 👈
 90. ? -> [link](?/README.md)
 91. ? -> [link](?/README.md)
 92. ? -> [link](?/README.md)
