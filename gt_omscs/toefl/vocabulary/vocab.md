@@ -30,7 +30,7 @@
 | 2026-08-22 | collapsible | /kəˈlæpsəbl/ | adj. | 可摺疊的、可壓扁的 | The team packed the demo gear into a collapsible crate. | week02 reading | |
 | 2026-08-22 | collapsible metal tube | /kəˈlæpsəbl ˈmetl tuːb/ | n. phr. | 可擠壓金屬軟管（顏料管） | The collapsible metal tube let painters carry oil paint outdoors. | week02 reading | |
 | 2026-08-22 | mineral | /ˈmɪnərəl/ | n. | 礦物 | Blue paint was once made from a mineral more expensive than gold. | week02 reading | |
-| 2026-08-22 | pigment | /ˈpɪɡmənt/ | n. | 顏料、色素（可數，常用複數 pigments） | Artists once prepared their own pigments before every painting. | week02 reading | |
+| 2026-08-22 | pigment | /ˈpɪɡmənt/ | n. | 顏料、色素（可數，常用複數 pigments） | Artists once prepared their own pigments before every painting. | week02 reading, week07 reading | |
 | 2026-08-22 | grind | /ɡraɪnd/ | v. | 磨碎、碾碎（三態 grind–**ground**–ground，注意過去式和「地面」同形） | They ground mineral pigments by hand and mixed them with oil. | week02 reading | |
 | 2026-08-22 | outage | /ˈaʊtɪdʒ/ | n. | （電力／服務）中斷、停擺 | A three-hour outage took the payment service offline last night. | week02 reading | |
 | 2026-08-22 | landscape | /ˈlændskeɪp/ | n. | 景觀、風景（畫）；（抽象）整體局勢 | Painting outdoors changed how artists captured a landscape. | week02 reading | |
@@ -162,7 +162,7 @@
 | 2026-10-31 | sewage | /ˈsuːɪdʒ/ | n. | 污水、下水道污物（**不可數**）；sewer /ˈsuːər/ ＝ 下水道（管道本身） | The new treatment plant cleans the city's sewage before it reaches the river. | week06 reading | |
 | 2026-10-31 | outbreak | /ˈaʊtbreɪk/ | n. | （疾病、戰爭、暴力的）爆發（cholera outbreak 霍亂疫情）；動詞片語 break out ＝ 爆發 | A flu outbreak forced half the team to work from home for a week. | week06 reading | |
 | 2026-10-31 | proctor | /ˈprɑːktər/ | n. / v. | 監考人員（n.）；監考（v.）。be proctored ＝ 被監考（The exam is proctored online. 考試採線上監考） | OMSCS exams are proctored online, so you need a working webcam. | week06 reading | |
-| 2026-10-31 | throughout | /θruːˈaʊt/ | adv. / prep. | 自始至終、從頭到尾（時間：throughout the exam）；遍及（空間：throughout the city）。可放句尾當副詞（must stay on throughout） | The on-call engineer stayed online throughout the database migration. | week06 reading | |
+| 2026-10-31 | throughout | /θruːˈaʊt/ | adv. / prep. | 自始至終、從頭到尾（時間：throughout the exam）；遍及（空間：throughout the city）。可放句尾當副詞（must stay on throughout） | The on-call engineer stayed online throughout the database migration. | week06 reading, week07 reading | |
 | 2026-10-31 | medieval | /ˌmediˈiːvl/ | adj. | 中世紀的（歐洲約 500–1500 年）；口語比喻：極度老舊落後的 | Our release process felt almost medieval before we set up CI/CD. | week06 reading | |
 | 2026-10-31 | tower over | /ˈtaʊər ˈoʊvər/ | phr. v. | 高聳於…之上；比喻：遠遠勝過。tower 當名詞是「塔」，當動詞是「高聳」 | In the latency benchmark, the new cache towers over the old one. | week06 reading | |
 | 2026-10-31 | architect | /ˈɑːrkɪtekt/ | n. | 建築師；軟體領域：架構師（software architect / solutions architect）。ch 唸 /k/；architecture ＝ 建築、架構 | The architect drew the system diagram before anyone wrote a line of code. | week06 reading | |
@@ -173,3 +173,26 @@
 | 2026-10-31 | open soil | /ˈoʊpən sɔɪl/ | n. phr. | 裸露的土壤（沒被水泥、柏油蓋住的土地；open ＝ 沒有遮蓋的）。soil 見 week01 | Rain soaks into open soil, but it runs straight off asphalt. | week06 reading | |
 | 2026-10-31 | evaporate | /ɪˈvæpəreɪt/ | v. | 蒸發；比喻：（優勢、希望）消失（our lead evaporated）；名詞 evaporation | Our performance gains evaporated once real traffic hit the server. | week06 reading | |
 | 2026-10-31 | cope (with) | /koʊp/ | v. / phr. v. | 應付、處理（困難、壓力）；cope 是不及物動詞，接受詞要加 with（cope with a heat wave） | The old server could not cope with the sudden spike in traffic. | week06 reading | |
+| 2026-11-14 | It is tempting to think that … | /ˈtemptɪŋ/ | 句型 | 人們很容易以為…（但其實不是）；作者常用來**先立一個錯誤印象再推翻**，後面通常接 but。tempting ＝ 誘人的 | It is tempting to think that more servers will fix the latency, but the real bottleneck is the database. | week07 reading | |
+| 2026-11-14 | present | /ˈpreznt/ (adj.) · /prɪˈzent/ (v.) | adj. / v. | adj. 存在的、在場的（be present in the leaves 存在於葉子裡）；v. 展示、呈現、報告（**重音移到後面**）；n. 禮物、現在 | The bug was present in the code all along; we just never hit that branch. | week07 reading | |
+| 2026-11-14 | all along | /ɔːl əˈlɔːŋ/ | adv. phr. | 一直以來、從頭到尾都是（常帶「原來早就…」的語氣） | It turned out the test had been failing all along; nobody had checked the logs. | week07 reading | |
+| 2026-11-14 | chlorophyll | /ˈklɔːrəfɪl/ | n. | **葉綠素**（不是綠葉素；負責光合作用吸收光能的綠色色素；ch 唸 /k/） | Leaves look green because chlorophyll absorbs red and blue light and reflects green. | week07 reading | |
+| 2026-11-14 | sunscreen | /ˈsʌnskriːn/ | n. | 防曬乳（sun + screen 遮擋）；本文比喻紅色素是葉子的防曬 | Bring sunscreen if the team offsite is at the beach. | week07 reading | |
+| 2026-11-14 | stamp out (the practice) | /stæmp ˈaʊt/ | phr. v. | 根除、杜絕（stamp 本意是用腳踩，stamp out a fire 踩熄火 → 引申為消滅某種做法、疾病）；practice ＝ 做法、慣例（week01） | The new lint rule stamped out the practice of committing debug prints. | week07 reading | |
+| 2026-11-14 | leisure | /ˈliːʒər/ | n. | 閒暇、休閒（**不可數**；leisure time 空閒時間；at your leisure 有空時再…）。英式唸 /ˈleʒə/ | Read the paper at your leisure; we will discuss it next week. | week07 reading | |
+| 2026-11-14 | norm | /nɔːrm/ | n. | 常態、標準做法（the norm，單數；become the norm 成為常態）；複數 norms ＝ 社會規範、準則 | Remote work has become the norm for many software teams. | week07 reading | |
+| 2026-11-14 | conductor | /kənˈdʌktər/ | n. | （樂團）指揮；另義：**導體**（a good conductor of heat）、列車長。動詞 conduct ＝ 指揮；進行（conduct an experiment） | Copper is an excellent conductor of electricity, which is why it is used in most cables. | week07 reading | |
+| 2026-11-14 | ensemble | /ɑːnˈsɑːmbl/ | n. | 合奏團、小型樂團（a small ensemble；不是「合奏」這個動作）；整體。ML 用語：**ensemble methods 集成學習**（結合多個模型一起預測） | In CS 7641, we built an ensemble of decision trees to improve accuracy. | week07 reading | |
+| 2026-11-14 | nod | /nɑːd/ | n. / v. | 點頭（nods 是複數名詞；動詞 nod–nodded）；give a nod ＝ 點頭同意、默許 | My manager gave a nod, so I merged the pull request. | week07 reading | |
+| 2026-11-14 | gesture | /ˈdʒestʃər/ | n. / v. | 手勢、姿勢；（表達心意的）舉動（a kind gesture 好意的表示） | He used hand gestures to explain the architecture on the whiteboard. | week07 reading | |
+| 2026-11-14 | pound | /paʊnd/ | v. / n. | v. 敲打、重擊（pound it on the floor 往地上猛敲）；（心臟）狂跳；n. 磅（重量）、英鎊（£） | My heart was pounding before the onsite interview. | week07 reading | |
+| 2026-11-14 | infected | /ɪnˈfektɪd/ | adj. / p.p. | 受感染的（傷口、人）；（電腦）中毒的。infect v. 感染、infection n. 感染 | The infected laptop was disconnected from the network immediately. | week07 reading | |
+| 2026-11-14 | constantly | /ˈkɑːnstəntli/ | adv. | 不斷地、一直（constant adj. 持續的；程式／數學的 constant ＝ 常數） | The requirements changed constantly, so we shipped in small iterations. | week07 reading | |
+| 2026-11-14 | let alone | /let əˈloʊn/ | conj. phr. | 更不用說…（接在**否定句**之後，後面放更不可能的事：can't A, let alone B） | I could not even compile the code, let alone pass the tests. | week07 reading | |
+| 2026-11-14 | baton | /bəˈtɑːn/ | n. | 指揮棒；接力棒（pass the baton ＝ 交棒、把工作交接出去）；警棍 | Before I left the team, I passed the baton to a new engineer. | week07 reading | |
+| 2026-11-14 | Once in place, … | /wʌns ɪn pleɪs/ | 句型 | 一旦就位／建立起來（＝ Once it was in place，省略主詞與 be，邏輯主詞要和主要子句相同）；once 當連接詞 ＝ 一旦；in place ＝ 就位、已實施（put X in place 建立某制度） | Once in place, the new alerts caught most outages within a minute. | week07 reading | |
+| 2026-11-14 | symphony | /ˈsɪmfəni/ | n. | 交響曲（作品本身）；symphony orchestra ＝ 交響樂團 | I like listening to a symphony while studying for exams. | week07 reading | |
+| 2026-11-14 | propeller | /prəˈpelər/ | n. | 螺旋槳（propeller plane 螺旋槳飛機）；propel v. 推進 | A drone's propellers spin thousands of times per minute. | week07 reading | |
+| 2026-11-14 | fleet | /fliːt/ | n. | 艦隊；（同一單位擁有的）**機隊、車隊**（the whole fleet was grounded 整個機隊停飛）；工程上也指一整批伺服器（a fleet of servers） | We rolled out the patch to the entire fleet of servers overnight. | week07 reading | |
+| 2026-11-14 | pile up | /paɪl ˈʌp/ | phr. v. | 堆積起來、越積越多（工作、問題、債務都可以 pile up）；pile n. 一堆 | Unread messages piled up while I was on vacation. | week07 reading | |
+| 2026-11-14 | too faint to notice | /tuː feɪnt tə ˈnoʊtɪs/ | 句型 | 太微弱以至於察覺不到；too + adj. + to V ＝ 太…而無法…（本身已是否定，不要再加 not）。faint 見 week06 faint signals | The memory leak was too small to notice at first, but it crashed the server a week later. | week07 reading | |

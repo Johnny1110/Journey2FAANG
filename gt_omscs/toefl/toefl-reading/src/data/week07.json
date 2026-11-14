@@ -1,0 +1,431 @@
+{
+  "id": "week07",
+  "week": 7,
+  "title": "Week 07",
+  "date": "2026-11-14",
+  "topics": [
+    "Autumn Leaves & the Weekend（科學／社會）",
+    "Conductors & the Comet Jet（藝術／科技）"
+  ],
+  "timeLimitSec": 1620,
+  "parts": [
+    {
+      "id": "part1",
+      "type": "cloze",
+      "title": "Part 1 — Complete the Words",
+      "instructions": "每個空格是一個單字，只顯示前半部字母。依上下文補完整個單字（輸入完整拼字，不是只填缺的部分）。",
+      "blocks": [
+        {
+          "title": "Passage A",
+          "template": "Every autumn, the forests of New England and Japan turn yellow, orange and red. It is tempting to think that trees produce these colors as summer ends, but most of them have been {{1}} in the leaves all along. Throughout the summer, leaves are packed with chlorophyll, a green pigment that {{2}} energy from sunlight. There is so much of it that it {{3}} every other color. As the days grow shorter, the tree stops {{4}} new chlorophyll, and the green slowly fades. The yellow and orange pigments underneath finally {{5}}. Red is different. It comes from a pigment that many trees produce only in autumn, and scientists still {{6}} why a tree would spend energy on a leaf it is about to {{7}}. One idea is that the red works as a kind of sunscreen, {{8}} the leaf while the tree pulls valuable nutrients back into its branches. Sunny days and cool nights {{9}} the brightest displays, which is why the same forest can look quite {{10}} from one year to the next.",
+          "blanks": [
+            {
+              "id": 1,
+              "prefix": "pre",
+              "missing": 4,
+              "answer": "present",
+              "explanation": "have been ___ in the leaves all along：現在完成式 have been + 形容詞 → present（存在的）。all along ＝ 一直以來。作者在糾正「顏色是秋天才產生的」這個想法：其實早就在葉子裡了。"
+            },
+            {
+              "id": 2,
+              "prefix": "capt",
+              "missing": 4,
+              "answer": "captures",
+              "explanation": "a green pigment that ___ energy：關係代名詞 that 指 a pigment（單數），講普遍事實用現在簡單式 → captures（加 s）。capture energy from sunlight ＝ 從陽光擷取能量。pigment 是 week02 生字。"
+            },
+            {
+              "id": 3,
+              "prefix": "hi",
+              "missing": 3,
+              "answer": "hides",
+              "explanation": "There is so much of it that it ___ every other color：so … that 句型（多到…以致於…），it ＝ chlorophyll（單數）→ hides。綠色太多，把其他顏色都蓋住了。"
+            },
+            {
+              "id": 4,
+              "prefix": "mak",
+              "missing": 3,
+              "answer": "making",
+              "explanation": "the tree stops ___ new chlorophyll：stop + **V-ing** ＝ 停止做某事；stop + to V ＝ 停下來（去做另一件事）。這裡是「不再製造」→ making。"
+            },
+            {
+              "id": 5,
+              "prefix": "app",
+              "missing": 3,
+              "answer": "appear",
+              "explanation": "The yellow and orange pigments underneath finally ___：主詞是複數 pigments，現在式 → appear（不加 s）。綠色褪去後，底下的黃橙色才「顯現」，呼應前面的 all along。"
+            },
+            {
+              "id": 6,
+              "prefix": "deb",
+              "missing": 3,
+              "answer": "debate",
+              "explanation": "scientists still ___ why …：主詞複數、現在式 → debate（爭論）；後面接 why 子句（間接問句，用直述句語序 why a tree would spend…）。"
+            },
+            {
+              "id": 7,
+              "prefix": "dr",
+              "missing": 2,
+              "answer": "drop",
+              "explanation": "a leaf it is about to ___：be about to + 原形 ＝ 即將…。樹「即將掉落」的葉子 → drop（及物：樹 drop 葉子）。前面 spend energy on 是「把精力花在…」。"
+            },
+            {
+              "id": 8,
+              "prefix": "prote",
+              "missing": 5,
+              "answer": "protecting",
+              "explanation": "the red works as a kind of sunscreen, ___ the leaf：逗號後的分詞構句，補充說明紅色素在做什麼，主動 → V-ing protecting（保護著葉子）。"
+            },
+            {
+              "id": 9,
+              "prefix": "cre",
+              "missing": 3,
+              "answer": "create",
+              "explanation": "Sunny days and cool nights ___ the brightest displays：主詞複數、現在式 → create（造就、產生）。"
+            },
+            {
+              "id": 10,
+              "prefix": "diff",
+              "missing": 5,
+              "answer": "different",
+              "explanation": "can look quite ___ from one year to the next：look 是連綴動詞，後接**形容詞**；different from ＝ 和…不同 → different（不是副詞 differently）。"
+            }
+          ]
+        },
+        {
+          "title": "Passage B",
+          "template": "The two-day weekend is a surprisingly recent invention. In medieval Europe, most people rested on Sundays and religious holidays, but there was no regular second day off. In nineteenth-century Britain, many factory workers {{11}} stayed home on Mondays, a habit so common that it was jokingly called “Saint Monday”. Employers, {{12}} to stamp out the practice, gradually accepted a {{13}}: a half-day off on Saturday in exchange for a full day's work on Monday. In the United States, the change came {{14}}. In 1926 Henry Ford {{15}} the working week in his car factories from six days to five. He was not acting {{16}} out of kindness. He argued that people with more free time would travel and shop more, and would therefore {{17}} more products, including his cars. Ironically, a policy {{18}} to sell cars helped create a new idea of leisure. A federal law passed in 1938 required employers to pay extra for any work {{19}} a standard week, and by 1940 that standard had been set at forty hours. The five-day week soon became the {{20}} across much of American industry.",
+          "blanks": [
+            {
+              "id": 11,
+              "prefix": "sim",
+              "missing": 3,
+              "answer": "simply",
+              "explanation": "many factory workers ___ stayed home：主詞和動詞之間放副詞 → simply（乾脆就、直接就）。強調工人「就是不來上班」，不是請假。"
+            },
+            {
+              "id": 12,
+              "prefix": "una",
+              "missing": 3,
+              "answer": "unable",
+              "explanation": "Employers, ___ to stamp out the practice, …：插入的形容詞片語（= who were unable to …），be unable to V ＝ 無法…。stamp out ＝ 根除；practice ＝ 做法、慣例（week01 生字）。"
+            },
+            {
+              "id": 13,
+              "prefix": "compr",
+              "missing": 5,
+              "answer": "compromise",
+              "explanation": "gradually accepted a ___：冒號後說明雙方各退一步（週六休半天，換週一全天上班）→ compromise（妥協方案），a + 名詞。"
+            },
+            {
+              "id": 14,
+              "prefix": "la",
+              "missing": 3,
+              "answer": "later",
+              "explanation": "In the United States, the change came ___：和前面的英國相比，美國「比較晚」→ 比較級副詞 later。後面的 1926 年也印證了這點。"
+            },
+            {
+              "id": 15,
+              "prefix": "red",
+              "missing": 4,
+              "answer": "reduced",
+              "explanation": "In 1926 Henry Ford ___ the working week：過去時間 → 過去式。reduce A from X to Y ＝ 把 A 從 X 減到 Y。"
+            },
+            {
+              "id": 16,
+              "prefix": "pur",
+              "missing": 3,
+              "answer": "purely",
+              "explanation": "He was not acting ___ out of kindness：not purely ＝ 並非純粹；out of kindness ＝ 出於善意（和 week05 生字 partly out of 同一個句型）。後一句揭曉他的商業動機。"
+            },
+            {
+              "id": 17,
+              "prefix": "b",
+              "missing": 2,
+              "answer": "buy",
+              "explanation": "would therefore ___ more products：would 是情態助動詞，後接原形 → buy。"
+            },
+            {
+              "id": 18,
+              "prefix": "desi",
+              "missing": 4,
+              "answer": "designed",
+              "explanation": "a policy ___ to sell cars：p.p. 後置修飾 → designed（= a policy (which was) designed to …）。be designed to V ＝ 目的是為了…。Ironically 是 week06 生字：為了賣車的政策，反而創造了「休閒」的概念。"
+            },
+            {
+              "id": 19,
+              "prefix": "bey",
+              "missing": 3,
+              "answer": "beyond",
+              "explanation": "pay extra for any work ___ a standard week：缺介系詞，「超過」標準工時的工作 → beyond。"
+            },
+            {
+              "id": 20,
+              "prefix": "no",
+              "missing": 2,
+              "answer": "norm",
+              "explanation": "became the ___ across much of American industry：the + 名詞 → norm（常態、標準做法）。become the norm ＝ 成為常態，寫作也很好用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "type": "choice",
+      "title": "Part 2 — Read in Daily Life",
+      "instructions": "閱讀生活情境短文，回答問題。",
+      "blocks": [
+        {
+          "title": "Text 1",
+          "style": "email",
+          "body": [
+            "**From:** CS 7646 Teaching Staff",
+            "**Subject:** Thanksgiving week — office hours and Ed response times",
+            "Because of the Thanksgiving holiday, Thursday's office hours on November 26 are cancelled. Instead, we will hold an extra session on Tuesday, November 24, at 8 p.m. Eastern Time. It will be recorded and posted on Canvas the next morning for anyone who cannot attend.",
+            "Project 4 is still due on Monday, November 30, at 11:59 p.m. We strongly recommend starting this week rather than waiting until after the break.",
+            "From Wednesday to Sunday, most TAs will be away. We will still answer Ed posts, but please allow up to 48 hours for a reply instead of the usual 24."
+          ],
+          "questions": [
+            {
+              "id": 21,
+              "prompt": "What is the main purpose of this email?",
+              "options": [
+                "To announce that the Project 4 deadline has been extended.",
+                "To ask students to vote on a new time for office hours.",
+                "To explain how course support will change during the holiday week.",
+                "To remind students that Thursday's session will be recorded."
+              ],
+              "answer": "C",
+              "explanation": "三段分別講：感恩節週的 office hours 改期、Project 4 期限不變、TA 回覆時間變長 → 假期期間課程支援的變化。(A) 原文 still due，期限沒延；(B) 沒有投票；(D) 會錄影的是週二 11/24 的加開場，週四那場是**取消**。"
+            },
+            {
+              "id": 22,
+              "prompt": "A student posts a question on Ed at 9 a.m. on Wednesday, November 25. By when can the student reasonably expect a reply?",
+              "options": [
+                "By Wednesday evening",
+                "By Thursday morning",
+                "Not until Monday, November 30",
+                "By Friday morning"
+              ],
+              "answer": "D",
+              "explanation": "第三段：From Wednesday to Sunday … allow up to 48 hours for a reply instead of the usual 24。週三早上 9 點發問，48 小時內 → 最晚週五早上。(B) 是用平常的 24 小時去算 — 忽略了假期條件；(A) 更短；(C) 11/30 是 Project 4 的截止日，和回覆時間無關。"
+            },
+            {
+              "id": 23,
+              "prompt": "What does the email say about the extra session on November 24?",
+              "options": [
+                "It will be shorter than the usual office hours.",
+                "A recording will be available the following morning.",
+                "Only students who register in advance can attend.",
+                "It will take place on Thursday evening."
+              ],
+              "answer": "B",
+              "explanation": "第一段：It will be recorded and posted on Canvas the next morning for anyone who cannot attend。(A)(C) 原文沒提；(D) 加開場是週二晚上 8 點，週四那場是取消的。"
+            }
+          ]
+        },
+        {
+          "title": "Text 2",
+          "style": "notice",
+          "body": [
+            "**NOTICE — Water Shut-Off in Building C**",
+            "On Tuesday, November 17, water will be shut off throughout Building C from 9 a.m. to 1 p.m. while plumbers replace a worn valve in the basement.",
+            "Please fill a few bottles or containers before 9 a.m. Each toilet can still be flushed once using the water left in its tank.",
+            "When the water comes back on, it may look brown for a few minutes. This is harmless rust from the pipes. Run the cold tap until the water is clear before drinking it or using the washing machine.",
+            "If your water has not returned by 2 p.m., call Maintenance at 555-0142."
+          ],
+          "questions": [
+            {
+              "id": 24,
+              "prompt": "Why will the water be shut off?",
+              "options": [
+                "A worn valve needs to be replaced.",
+                "The water has been found unsafe to drink.",
+                "The building's washing machines are being repaired.",
+                "Rust must be cleaned out of the pipes."
+              ],
+              "answer": "A",
+              "explanation": "第一段：while plumbers replace a worn valve in the basement（worn 是 wear 的 p.p.「磨損的」，week05 生字 bare earth worn）。(B) 沒說水不安全；(C) 洗衣機只出現在恢復供水後的建議；(D) 鐵鏽是修好後**可能出現的現象**，不是停水原因。shut off 是 week04 生字。"
+            },
+            {
+              "id": 25,
+              "prompt": "A resident wants to use the washing machine at 1:15 p.m. on Tuesday. What should the resident do first?",
+              "options": [
+                "Call Maintenance.",
+                "Run the cold tap until the water is clear.",
+                "Fill a few containers with water.",
+                "Wait until the next morning."
+              ],
+              "answer": "B",
+              "explanation": "1 p.m. 恢復供水，所以 1:15 時水已經回來了。第三段：Run the cold tap until the water is clear before drinking it or using the washing machine → 先放冷水到清澈。(A) 2 p.m. 還沒來水才需要打給維修；(C) 裝水是 9 a.m. **之前**要做的；(D) 不需要等到隔天。"
+            },
+            {
+              "id": 26,
+              "prompt": "What does the notice say about brown water after the repair?",
+              "options": [
+                "It means the repair was not successful.",
+                "It should be reported to Maintenance immediately.",
+                "It is caused by rust and is harmless.",
+                "It is safe to drink once it has been boiled."
+              ],
+              "answer": "C",
+              "explanation": "第三段：This is harmless rust from the pipes。(A)(B) 原文說無害、只會持續幾分鐘，不代表修理失敗，也不用回報；(D) 原文沒提煮沸，而是叫你放水直到清澈。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "type": "choice",
+      "title": "Part 3 — Read an Academic Passage",
+      "instructions": "閱讀約 200 字的學術短文，各回答 5 題。",
+      "blocks": [
+        {
+          "title": "Passage 1 — The Musician Who Plays Nothing",
+          "style": "academic",
+          "body": [
+            "For most of the history of Western music, orchestras had no conductor in the modern sense. A small ensemble was usually led by one of its own players, often the first violinist or the musician at the keyboard, who kept everyone together with nods and small gestures while playing.",
+            "Some leaders beat time more forcefully. In 1687 the French composer Jean-Baptiste Lully was marking the beat with a heavy staff, pounding it on the floor, when he struck his own foot. The wound became infected, and he died a few months later. Ironically, the tool he used to keep musicians in order cost him his life.",
+            "In the nineteenth century, orchestras grew much larger, and new works by composers such as Beethoven and Wagner changed speed and volume constantly. A player buried in the violin section could no longer hear, let alone see, everyone else. A leader who stood in front, played nothing and held only a light stick, the baton, became necessary. Who introduced the baton first remains disputed; several musicians later claimed the honor.",
+            "Once in place, the conductor did far more than keep time. By deciding how fast a passage should move and which instrument should stand out, conductors became interpreters, and audiences began to buy tickets to hear a particular conductor's version of a familiar symphony."
+          ],
+          "questions": [
+            {
+              "id": 27,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "How Lully's death changed the way orchestras were led",
+                "How the modern conductor developed as orchestras and music grew more complex",
+                "Why the first violinist is the most important player in an orchestra",
+                "How Beethoven invented the baton"
+              ],
+              "answer": "B",
+              "explanation": "第一段：以前沒有現代意義的指揮；第二段：Lully 打拍子出事的插曲；第三段：19 世紀樂團變大、作品變複雜 → 需要專職指揮；第四段：指揮變成詮釋者。(A) Lully 只是一個例子，原文沒說他的死改變了樂團領導方式；(C) 首席小提琴只是早期的領導者之一；(D) 原文說誰先用指揮棒 remains disputed，沒說是 Beethoven。"
+            },
+            {
+              "id": 28,
+              "prompt": "According to paragraph 2, how did Lully injure himself?",
+              "options": [
+                "He struck his foot with the staff he used to beat time.",
+                "He fell from the stage during a performance.",
+                "A musician dropped an instrument on him.",
+                "He hurt his hand while playing the violin."
+              ],
+              "answer": "A",
+              "explanation": "第二段：marking the beat with a heavy staff, pounding it on the floor, when he struck his own foot。staff 在這裡是「長杖」，不是「員工」。(B)(C)(D) 原文都沒有。"
+            },
+            {
+              "id": 29,
+              "prompt": "What can be inferred from paragraph 3 about orchestras before the nineteenth century?",
+              "options": [
+                "Their music never changed speed or volume.",
+                "Batons were not allowed in their concert halls.",
+                "Composers always led performances of their own works.",
+                "They were small enough for the players to hear one another."
+              ],
+              "answer": "D",
+              "explanation": "第三段：A player buried in the violin section could **no longer** hear, let alone see, everyone else。no longer 暗示「以前可以」→ 早期樂團小，邊演奏邊帶團也聽得到彼此（呼應第一段 a small ensemble）。(A) never 太極端，原文只說新作品 changed speed constantly；(B) 原文沒提禁止；(C) 原文沒這樣說。"
+            },
+            {
+              "id": 30,
+              "prompt": "The word buried in paragraph 3 is closest in meaning to",
+              "options": [
+                "hidden deep inside",
+                "forgotten by",
+                "trained in",
+                "seated at the front of"
+              ],
+              "answer": "A",
+              "explanation": "a player buried in the violin section ＝ 被淹沒在一大群小提琴手中間 → hidden deep inside。bury 本意是「埋」，這裡比喻被包圍住，所以聽不到也看不到其他人。(B) forgotten 也是 bury 的引申義，但這裡講的是**位置**；(C) 不合；(D) 坐前排反而看得到，意思相反。"
+            },
+            {
+              "id": 31,
+              "prompt": "The phrase \"the honor\" in paragraph 3 refers to",
+              "options": [
+                "playing in the violin section",
+                "composing works like Beethoven's",
+                "being the first to introduce the baton",
+                "standing in front of the orchestra"
+              ],
+              "answer": "C",
+              "explanation": "the honor 回指同一句前半的 Who introduced the baton first：好幾位音樂家後來都聲稱自己是「最早使用指揮棒的人」。claim the honor ＝ 聲稱這份榮譽屬於自己。(D) 站在前面是新式指揮的特徵，但大家爭的是「誰第一個」；(A)(B) 不是被爭奪的東西。remains disputed 見 week04 生字。"
+            }
+          ]
+        },
+        {
+          "title": "Passage 2 — Why Airplane Windows Have Round Corners",
+          "style": "academic",
+          "body": [
+            "In 1952 the de Havilland Comet became the first jet airliner to carry paying passengers. It flew higher and faster than any propeller plane, and for a short time it was the pride of British engineering. Then, in 1954, two Comets broke apart in mid-air within four months, and the whole fleet was grounded.",
+            "To find the cause, investigators placed an entire Comet body in a huge tank of water and pumped water in and out of the cabin again and again. Each cycle imitated one flight. In the air, a cabin is pressurized so that passengers can breathe, and the metal stretches slightly; on the ground, it relaxes again. After the equivalent of about three thousand flights, the metal split open.",
+            "The failure began at the corner of an opening cut into the body. Sharp corners concentrate stress: a force that is spread evenly across a smooth surface piles up wherever an edge turns suddenly. With every flight, tiny cracks grew at these points, too faint to notice, until the metal finally tore. Engineers call this process metal fatigue.",
+            "The lesson changed aircraft design. Openings in later airliners were given rounded corners, which spread the stress more evenly, and new designs were tested for fatigue over many thousands of pressure cycles. That is why the windows of every passenger jet today have rounded corners."
+          ],
+          "questions": [
+            {
+              "id": 32,
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "How the Comet's failures exposed the danger of sharp corners and changed airliner design",
+                "Why jet airliners fly higher and faster than propeller planes",
+                "How investigators use water tanks to train pilots",
+                "Why British engineering lost its reputation after 1954"
+              ],
+              "answer": "A",
+              "explanation": "第一段：Comet 是第一架噴射客機，1954 年兩架空中解體；第二段：水槽實驗找原因；第三段：尖角集中應力 → 金屬疲勞；第四段：從此開口改成圓角。(B) 只是第一段的背景；(C) 水槽是拿來測機身，不是訓練飛行員；(D) 原文只說 pride of British engineering，沒有討論聲譽下滑。"
+            },
+            {
+              "id": 33,
+              "prompt": "According to paragraph 2, why did investigators pump water in and out of the cabin?",
+              "options": [
+                "To find out whether the plane could float on water",
+                "To clean the metal before inspecting it",
+                "To check whether the windows leaked",
+                "To imitate the pressure changes of many flights"
+              ],
+              "answer": "D",
+              "explanation": "第二段：Each cycle imitated one flight — 每次灌水加壓再放掉，就等於模擬一次飛行的加壓與釋壓。(A) 放進水槽不是測試會不會浮；(B)(C) 原文沒提。"
+            },
+            {
+              "id": 34,
+              "prompt": "What can be inferred from paragraph 3 about the cracks that caused the failure?",
+              "options": [
+                "They were caused by a single violent storm.",
+                "They grew slowly over many flights before the metal failed.",
+                "Inspectors could easily see them during routine checks.",
+                "They appeared only after the plane had broken apart."
+              ],
+              "answer": "B",
+              "explanation": "第三段：With every flight, tiny cracks grew at these points, too faint to notice, until the metal finally tore → 裂縫隨著飛行次數**逐漸**長大。(A) 不是單一事件；(C) 相反，too faint to notice（faint 是 week06 生字）；(D) 裂縫在解體**之前**就在長了。tore 是 tear 的過去式（torn 見 week06）。"
+            },
+            {
+              "id": 35,
+              "prompt": "The word concentrate in paragraph 3 is closest in meaning to",
+              "options": [
+                "pay close attention to",
+                "reduce",
+                "gather in one place",
+                "hide"
+              ],
+              "answer": "C",
+              "explanation": "Sharp corners concentrate stress: a force that is spread evenly … piles up wherever an edge turns suddenly → 冒號後的解釋就是答案：力量「堆在一個點」→ gather in one place。(A) pay close attention（專心）是 concentrate 最常見的意思，但主詞是 corners、受詞是 stress，不可能是「專心」— 典型的「常見義陷阱」；(B) 意思相反；(D) 無關。"
+            },
+            {
+              "id": 36,
+              "prompt": "The word which in paragraph 4 (\"which spread the stress more evenly\") refers to",
+              "options": [
+                "later airliners",
+                "openings",
+                "passengers",
+                "rounded corners"
+              ],
+              "answer": "D",
+              "explanation": "Openings … were given rounded corners, **which** spread the stress more evenly：逗號後的非限定關係子句，which 指最接近的名詞 rounded corners；能把應力分散開的是圓角（對照第三段尖角會集中應力）。(A)(B)(C) 都不會分散應力。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
