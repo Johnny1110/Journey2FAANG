@@ -101,9 +101,9 @@ link: https://leetcode.com/problem-list/plakya4j
 86. Redundant Connection -> [link](redundant_connection) -> union find
 87. Max Area of Island -> [link](maoi)
 88. Reverse Bits -> [link](reverse_bits)
-89. ? -> [link](?/README.md) 👈
-90. ? -> [link](?/README.md)
-91. ? -> [link](?/README.md)
+89. Number of 1 Bits -> [link](number_of_1_bits)
+90. House Robber -> [link](house_robber)
+91. ? -> [link](?/README.md) 👈
 92. ? -> [link](?/README.md)
 93. ? -> [link](?/README.md)
 94. ? -> [link](?/README.md)
