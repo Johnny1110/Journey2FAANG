@@ -69,6 +69,29 @@ WHERE created_at > '2099-01-01';
 -- ------------------------------------------------------------
 
 
+-- filter:
+select count(id) as total_amount,
+       count(id) filter (where status = 'completed') as completed_amount,
+       count(id) filter (where status = 'pending') as pending_amount,
+       count(id) filter (where status = 'cancelled') as cancelled_amount,
+       sum(amount) filter (where status = 'completed') as completed_total_amount,
+       avg(amount) filter (where status = 'completed') as completed_avg_amount,
+       count(id) filter (where status = 'completed' and paid_with = 'card') as completed_credit_card_amount,
+       count(distinct customer_id) filter (where status = 'completed') as completed_customer_amount
+       from orders;
+-- case:
+select count(id) as total_amount,
+       sum(case when status = 'completed' then 1 else 0 end) as completed_amount,
+       sum(case when status = 'pending' then 1 else 0 end) as pending_amount,
+       sum(case when status = 'cancelled' then 1 else 0 end) as cancelled_amount,
+       sum(case when status = 'completed' then amount else 0 end) as completed_total_amount,
+       avg(case when status = 'completed' then amount else null end) as completed_avg_amount,
+       sum(case when status = 'completed' and paid_with = 'card' then 1 else 0 end) as completed_credit_card_amount,
+       count(distinct case when status = 'completed' then customer_id else null end) as completed_customer_amount
+       from orders;
+
+-- filter is much more readable and shorter then case when.
+
 -- ------------------------------------------------------------
 -- B2: AVG 三種寫法 — 175 vs 70 的推導 + 商業後果
 -- ------------------------------------------------------------
