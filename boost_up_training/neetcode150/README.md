@@ -105,8 +105,8 @@ link: https://leetcode.com/problem-list/plakya4j
 90. House Robber -> [link](house_robber)
 91. Binarty Tree Right Side View -> [link](btrsv)
 92. Number of Islands -> [link](noi)
-93. Happy Number -> [link](happy_number/README.md)  👈
-94. Reverse Linked List -> [link](rll/README.md)
+93. Happy Number -> [link](happy_number)
+94. Reverse Linked List -> [link](rll/README.md)  👈
 95. ? -> [link](?/README.md)
 96. ? -> [link](?/README.md)
 97. ? -> [link](?/README.md)
