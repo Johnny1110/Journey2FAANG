@@ -106,8 +106,8 @@ link: https://leetcode.com/problem-list/plakya4j
 91. Binarty Tree Right Side View -> [link](btrsv)
 92. Number of Islands -> [link](noi)
 93. Happy Number -> [link](happy_number)
-94. Reverse Linked List -> [link](rll/README.md)  👈
-95. ? -> [link](?/README.md)
+94. Reverse Linked List -> [link](rll)
+95. Course Schedule -> [link](course_schedule/README.md)  👈
 96. ? -> [link](?/README.md)
 97. ? -> [link](?/README.md)
 98. ? -> [link](?/README.md)
